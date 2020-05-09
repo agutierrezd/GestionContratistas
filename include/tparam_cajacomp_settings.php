@@ -9,11 +9,11 @@ $tdatatparam_cajacomp[".OwnerID"] = "";
 $tdatatparam_cajacomp[".OriginalTable"] = "tparam_cajacomp";
 
 
-$tdatatparam_cajacomp[".pagesByType"] = my_json_decode( "{\"list\":[\"list\"]}" );
+$tdatatparam_cajacomp[".pagesByType"] = my_json_decode( "{\"list\":[\"list\"],\"search\":[\"search\"]}" );
 $tdatatparam_cajacomp[".originalPagesByType"] = $tdatatparam_cajacomp[".pagesByType"];
-$tdatatparam_cajacomp[".pages"] = types2pages( my_json_decode( "{\"list\":[\"list\"]}" ) );
+$tdatatparam_cajacomp[".pages"] = types2pages( my_json_decode( "{\"list\":[\"list\"],\"search\":[\"search\"]}" ) );
 $tdatatparam_cajacomp[".originalPages"] = $tdatatparam_cajacomp[".pages"];
-$tdatatparam_cajacomp[".defaultPages"] = my_json_decode( "{\"list\":\"list\"}" );
+$tdatatparam_cajacomp[".defaultPages"] = my_json_decode( "{\"list\":\"list\",\"search\":\"search\"}" );
 $tdatatparam_cajacomp[".originalDefaultPages"] = $tdatatparam_cajacomp[".defaultPages"];
 
 //	field labels

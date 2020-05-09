@@ -44,7 +44,7 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldToolTipscontractor_master["Spanish"]["contractor_pwd"] = "";
 	$placeHolderscontractor_master["Spanish"]["contractor_pwd"] = "";
 	$fieldLabelscontractor_master["Spanish"]["contractor_image"] = "Foto de perfil";
-	$fieldToolTipscontractor_master["Spanish"]["contractor_image"] = "";
+	$fieldToolTipscontractor_master["Spanish"]["contractor_image"] = "Subir fotografía";
 	$placeHolderscontractor_master["Spanish"]["contractor_image"] = "";
 	$fieldLabelscontractor_master["Spanish"]["contractor_name"] = "Nombres";
 	$fieldToolTipscontractor_master["Spanish"]["contractor_name"] = "";
@@ -164,8 +164,8 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldToolTipscontractor_master["Spanish"]["dem_discapacidad"] = "";
 	$placeHolderscontractor_master["Spanish"]["dem_discapacidad"] = "";
 	$fieldLabelscontractor_master["Spanish"]["emergencia"] = "En caso de emergencia contactar a:";
-	$fieldToolTipscontractor_master["Spanish"]["emergencia"] = "";
-	$placeHolderscontractor_master["Spanish"]["emergencia"] = "";
+	$fieldToolTipscontractor_master["Spanish"]["emergencia"] = "Escriba el nombre y número de teléfono de la persona o personas que debemos contactar en caso de emergencia";
+	$placeHolderscontractor_master["Spanish"]["emergencia"] = "Escriba el nombre y número de teléfono de la persona o personas que debemos contactar en caso de emergencia";
 	$fieldLabelscontractor_master["Spanish"]["terms_msj"] = "Términos y condiciones";
 	$fieldToolTipscontractor_master["Spanish"]["terms_msj"] = "";
 	$placeHolderscontractor_master["Spanish"]["terms_msj"] = "";
@@ -221,9 +221,9 @@ $pages = $tdatacontractor_master[".defaultPages"];
 
 if( $pages[PAGE_EDIT] ) {
 	$tdatacontractor_master[".edit"] = true;
-	$tdatacontractor_master[".afterEditAction"] = 1;
+	$tdatacontractor_master[".afterEditAction"] = 0;
 	$tdatacontractor_master[".closePopupAfterEdit"] = 1;
-	$tdatacontractor_master[".afterEditActionDetTable"] = "";
+	$tdatacontractor_master[".afterEditActionDetTable"] = "Detail tables not found!";
 }
 
 if( $pages[PAGE_ADD] ) {
@@ -1148,8 +1148,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 		$fdata["isSQLExpression"] = true;
 	$fdata["FullName"] = "contractor_image";
 
-		$fdata["DeleteAssociatedFile"] = true;
-
+	
 	
 				$fdata["UploadFolder"] = "foto_perfil";
 
@@ -1160,11 +1159,8 @@ $tdatacontractor_master[".hideMobileList"] = array();
 
 	
 	
-				$vdata["ShowThumbnail"] = true;
-	$vdata["ThumbWidth"] = 200;
-	$vdata["ThumbHeight"] = 150;
-	$vdata["ImageWidth"] = 600;
-	$vdata["ImageHeight"] = 400;
+				$vdata["ImageWidth"] = 150;
+	$vdata["ImageHeight"] = 200;
 
 			$vdata["multipleImgMode"] = 1;
 	$vdata["maxImages"] = 0;
@@ -1215,11 +1211,8 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	
 	
 	
-							$edata["acceptFileTypes"] = "jpg";
-			$edata["acceptFileTypesHtml"] = ".jpg";
-						$edata["acceptFileTypes"] .= "|png";
-			$edata["acceptFileTypesHtml"] .= ",.png";
-		$edata["acceptFileTypes"] = "(".$edata["acceptFileTypes"].")$";
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
 
 		$edata["maxNumberOfFiles"] = 1;
 
@@ -1240,10 +1233,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	
 	//	End validation
 
-		$edata["CreateThumbnail"] = true;
-	$edata["StrThumbnail"] = "th";
-			$edata["ThumbnailSize"] = 250;
-
+	
 			
 	
 	
@@ -1350,7 +1340,8 @@ $tdatacontractor_master[".hideMobileList"] = array();
 
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 	
@@ -1374,7 +1365,8 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-	
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 	//	End validation
 
@@ -1485,7 +1477,8 @@ $tdatacontractor_master[".hideMobileList"] = array();
 
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 	
@@ -1509,7 +1502,8 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-	
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 	//	End validation
 
@@ -1895,7 +1889,8 @@ $tdatacontractor_master[".hideMobileList"] = array();
 
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 	
@@ -1919,7 +1914,8 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-	
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 	//	End validation
 
@@ -2165,7 +2161,8 @@ $tdatacontractor_master[".hideMobileList"] = array();
 
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 	
@@ -2189,7 +2186,8 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-	
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 	//	End validation
 
@@ -2435,7 +2433,8 @@ $tdatacontractor_master[".hideMobileList"] = array();
 
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 	
@@ -2459,7 +2458,8 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-	
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 	//	End validation
 
@@ -2901,7 +2901,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 		$edata["HorizontalLookup"] = true;
 
 		
-	$edata["LinkField"] = "cta_tipotext";
+	$edata["LinkField"] = "cta_numero";
 	$edata["LinkFieldType"] = 200;
 	$edata["DisplayField"] = "des_cuenta";
 
@@ -3055,7 +3055,8 @@ $tdatacontractor_master[".hideMobileList"] = array();
 
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 	
@@ -3079,7 +3080,8 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-	
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 	//	End validation
 
@@ -3218,7 +3220,8 @@ $tdatacontractor_master[".hideMobileList"] = array();
 // End Lookup Settings
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 	
@@ -3239,7 +3242,8 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 	//	End validation
 
@@ -4554,8 +4558,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -4577,8 +4580,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+	
 	
 	//	End validation
 
@@ -6171,7 +6173,8 @@ $tdatacontractor_master[".hideMobileList"] = array();
 
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 	
@@ -6195,7 +6198,8 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-	
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 	//	End validation
 
@@ -6793,7 +6797,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	$fdata["GoodName"] = "dem_discapacidad";
 	$fdata["ownerTable"] = "contractor_master";
 	$fdata["Label"] = GetFieldLabel("contractor_master","dem_discapacidad");
-	$fdata["FieldType"] = 3;
+	$fdata["FieldType"] = 200;
 
 	
 	
@@ -7000,7 +7004,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Text area");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -7012,7 +7016,8 @@ $tdatacontractor_master[".hideMobileList"] = array();
 
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 	
@@ -7024,19 +7029,19 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	
 	
 	
+				$edata["nRows"] = 100;
+			$edata["nCols"] = 200;
+
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=500";
-
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-	
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 	//	End validation
 
@@ -7090,7 +7095,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	$fdata["GoodName"] = "terms_msj";
 	$fdata["ownerTable"] = "contractor_master";
 	$fdata["Label"] = GetFieldLabel("contractor_master","terms_msj");
-	$fdata["FieldType"] = 200;
+	$fdata["FieldType"] = 201;
 
 	
 	

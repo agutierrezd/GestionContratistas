@@ -58,6 +58,125 @@
 			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
 				{$menu main}			</div>
 		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}" >
+
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Búsqueda			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Mostrar opciones</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>todas las condiciones</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>cualquier condición</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>esconder</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_caj_cdcajcom_b}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_caj_cdcajcom_b}" {$filterRow_attrs_caj_cdcajcom_b}>
+			<label>{$label tparam_cajacomp caj_cdcajcom_b }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_caj_cdcajcom_b}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_caj_cdcajcom_b}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_caj_cdcajcom_b}</span>
+						</div>
+		{END searchCtrlBlock_caj_cdcajcom_b}
+																{BEGIN searchCtrlBlock_caj_concepto_b}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_caj_concepto_b}" {$filterRow_attrs_caj_concepto_b}>
+			<label>{$label tparam_cajacomp caj_concepto_b }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_caj_concepto_b}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_caj_concepto_b}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_caj_concepto_b}</span>
+						</div>
+		{END searchCtrlBlock_caj_concepto_b}
+																{BEGIN searchCtrlBlock_caj_listado_b}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_caj_listado_b}" {$filterRow_attrs_caj_listado_b}>
+			<label>{$label tparam_cajacomp caj_listado_b }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_caj_listado_b}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_caj_listado_b}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_caj_listado_b}</span>
+						</div>
+		{END searchCtrlBlock_caj_listado_b}
+																{BEGIN searchCtrlBlock_caj_diskette_b}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_caj_diskette_b}" {$filterRow_attrs_caj_diskette_b}>
+			<label>{$label tparam_cajacomp caj_diskette_b }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_caj_diskette_b}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_caj_diskette_b}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_caj_diskette_b}</span>
+						</div>
+		{END searchCtrlBlock_caj_diskette_b}
+																{BEGIN searchCtrlBlock_caj_dscajcom_b}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_caj_dscajcom_b}" {$filterRow_attrs_caj_dscajcom_b}>
+			<label>{$label tparam_cajacomp caj_dscajcom_b }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_caj_dscajcom_b}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_caj_dscajcom_b}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_caj_dscajcom_b}</span>
+						</div>
+		{END searchCtrlBlock_caj_dscajcom_b}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Buscar</button>
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>Mostrar todo</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
     {END left_block}
 </div>				</div>	
 			<div class="r-content-col" data-resize-left="leftbar">
@@ -120,6 +239,20 @@
 		 
 				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
 				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-cog"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="tparam_cajacomp_search.php" {$advsearchlink_attrs}  title="" >
+				
+		Búsqueda avanzada		
+		</a>
+	</li>
+					</ul>
+	</span>
 </span>
 			</span>
 		 

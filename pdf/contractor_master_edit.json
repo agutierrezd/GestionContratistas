@@ -295,7 +295,10 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel contractor_master contractor_image }","bold":true},{"text":{$contractor_image_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field4}","text":{$contractor_image_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_edit_field_tooltip}","text":{$contractor_image_pdfvalue}},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -646,6 +649,60 @@ pdfDocument = {
 			},
 							],
 				{END row_section_6}
+								{BEGIN row_section_7}
+				[
+												{BEGIN cellblock_section_c13}
+{
+	cellId: 'c13',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":"<div class=\"alert alert-info\">\n  <a href=\"https://www.funcionpublica.gov.co/web/sigep/hojas-de-vida\" class=\"alert-link\" target=\"_blank\">Clic para ir a la página de función pública</a>\n</div>","hidden":"{$item_hide_text}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section_c13}
+																			{BEGIN cellblock_section_c14}
+{
+	cellId: 'c14',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section_c14}
+											],
+				{END row_section_7}
 									]
 					}
 				}]

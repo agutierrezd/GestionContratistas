@@ -9,11 +9,11 @@ $tdatatparam_genero[".OwnerID"] = "";
 $tdatatparam_genero[".OriginalTable"] = "tparam_genero";
 
 
-$tdatatparam_genero[".pagesByType"] = my_json_decode( "{}" );
+$tdatatparam_genero[".pagesByType"] = my_json_decode( "{\"search\":[\"search\"]}" );
 $tdatatparam_genero[".originalPagesByType"] = $tdatatparam_genero[".pagesByType"];
-$tdatatparam_genero[".pages"] = types2pages( my_json_decode( "{}" ) );
+$tdatatparam_genero[".pages"] = types2pages( my_json_decode( "{\"search\":[\"search\"]}" ) );
 $tdatatparam_genero[".originalPages"] = $tdatatparam_genero[".pages"];
-$tdatatparam_genero[".defaultPages"] = my_json_decode( "{}" );
+$tdatatparam_genero[".defaultPages"] = my_json_decode( "{\"search\":\"search\"}" );
 $tdatatparam_genero[".originalDefaultPages"] = $tdatatparam_genero[".defaultPages"];
 
 //	field labels

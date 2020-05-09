@@ -58,6 +58,99 @@
 			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
 				{$menu main}			</div>
 		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}" >
+
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Búsqueda			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Mostrar opciones</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>todas las condiciones</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>cualquier condición</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>esconder</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_tfo_cdfdosal_b}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tfo_cdfdosal_b}" {$filterRow_attrs_tfo_cdfdosal_b}>
+			<label>{$label tparam_fondosalud tfo_cdfdosal_b }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tfo_cdfdosal_b}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tfo_cdfdosal_b}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tfo_cdfdosal_b}</span>
+						</div>
+		{END searchCtrlBlock_tfo_cdfdosal_b}
+																{BEGIN searchCtrlBlock_tfo_status}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tfo_status}" {$filterRow_attrs_tfo_status}>
+			<label>{$label tparam_fondosalud tfo_status }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tfo_status}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tfo_status}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tfo_status}</span>
+						</div>
+		{END searchCtrlBlock_tfo_status}
+																{BEGIN searchCtrlBlock_tfo_dsfdosal_b}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tfo_dsfdosal_b}" {$filterRow_attrs_tfo_dsfdosal_b}>
+			<label>{$label tparam_fondosalud tfo_dsfdosal_b }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tfo_dsfdosal_b}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tfo_dsfdosal_b}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tfo_dsfdosal_b}</span>
+						</div>
+		{END searchCtrlBlock_tfo_dsfdosal_b}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Buscar</button>
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>Mostrar todo</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
     {END left_block}
 </div>				</div>	
 			<div class="r-content-col" data-resize-left="leftbar">

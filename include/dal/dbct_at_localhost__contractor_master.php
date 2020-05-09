@@ -45,9 +45,9 @@ $dalTablecontractor_master["ct_fecha_nacimiento"] = array("type"=>7,"varname"=>"
 $dalTablecontractor_master["ct_nacionalidad"] = array("type"=>200,"varname"=>"ct_nacionalidad", "name" => "ct_nacionalidad");
 $dalTablecontractor_master["dem_edad"] = array("type"=>3,"varname"=>"dem_edad", "name" => "dem_edad");
 $dalTablecontractor_master["dem_educacion"] = array("type"=>3,"varname"=>"dem_educacion", "name" => "dem_educacion");
-$dalTablecontractor_master["dem_discapacidad"] = array("type"=>3,"varname"=>"dem_discapacidad", "name" => "dem_discapacidad");
+$dalTablecontractor_master["dem_discapacidad"] = array("type"=>200,"varname"=>"dem_discapacidad", "name" => "dem_discapacidad");
 $dalTablecontractor_master["emergencia"] = array("type"=>200,"varname"=>"emergencia", "name" => "emergencia");
-$dalTablecontractor_master["terms_msj"] = array("type"=>200,"varname"=>"terms_msj", "name" => "terms_msj");
+$dalTablecontractor_master["terms_msj"] = array("type"=>201,"varname"=>"terms_msj", "name" => "terms_msj");
 $dalTablecontractor_master["terms_acepta"] = array("type"=>16,"varname"=>"terms_acepta", "name" => "terms_acepta");
 	$dalTablecontractor_master["contractor_id"]["key"]=true;
 	$dalTablecontractor_master["contractor_doc_id"]["key"]=true;

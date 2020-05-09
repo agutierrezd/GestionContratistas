@@ -6669,7 +6669,7 @@ $tdataadmin_users[".hideMobileList"] = array();
 	$fdata["GoodName"] = "dem_discapacidad";
 	$fdata["ownerTable"] = "contractor_master";
 	$fdata["Label"] = GetFieldLabel("admin_users","dem_discapacidad");
-	$fdata["FieldType"] = 3;
+	$fdata["FieldType"] = 200;
 
 	
 	
@@ -6742,15 +6742,15 @@ $tdataadmin_users[".hideMobileList"] = array();
 			$edata["HTML5InuptType"] = "text";
 
 		$edata["EditParams"] = "";
-		
+			$edata["EditParams"].= " maxlength=1";
+
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
+	
 	
 	//	End validation
 
@@ -6939,7 +6939,7 @@ $tdataadmin_users[".hideMobileList"] = array();
 	$fdata["GoodName"] = "terms_msj";
 	$fdata["ownerTable"] = "contractor_master";
 	$fdata["Label"] = GetFieldLabel("admin_users","terms_msj");
-	$fdata["FieldType"] = 200;
+	$fdata["FieldType"] = 201;
 
 	
 	

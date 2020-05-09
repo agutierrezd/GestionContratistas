@@ -162,7 +162,7 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field53}","stack":[{"text":"{$jslabel contractor_master terms_msj }","bold":true},{"text":{$terms_msj_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field54}","stack":[{"text":"{$jslabel contractor_master terms_acepta }","bold":true},{"text":{$terms_acepta_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -192,7 +192,7 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field54}","stack":[{"text":"{$jslabel contractor_master terms_acepta }","bold":true},{"text":{$terms_acepta_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field53}","stack":[{"text":"{$jslabel contractor_master terms_msj }","bold":true},{"text":{$terms_msj_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],

@@ -280,9 +280,6 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_simple_grid_field8}","text":"{$jslabel contractor_master contractor_image }","bold":true},
 				
-				
-			{"hidden":"{$item_hide_grid_field_label}","text":"{$jslabel contractor_master dem_profesion }","bold":true},
-				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'right',
@@ -309,12 +306,9 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_simple_grid_field5}","text":{$contractor_image_pdfvalue}},
 				
-				
-			{"hidden":"{$item_hide_grid_field}","text":{$dem_profesion_pdfvalue}},
-				
 		  ],
   "border": [ false, false, false, false ],
-          "alignment": 'left',
+          "alignment": '{$contractor_image_align}',
   },
 
 {END cellblock_grid_cell_label7}
@@ -439,8 +433,10 @@ pdfDocument = {
 	
 			"text": [
 		
-				'',
-	  ],
+				
+			{"hidden":"{$item_hide_grid_field_label}","text":"{$jslabel contractor_master dem_profesion }","bold":true},
+				
+		  ],
   "border": [ false, false, false, false ],
           "alignment": 'right',
   },
@@ -463,10 +459,12 @@ pdfDocument = {
 	
 			"text": [
 		
-				'',
-	  ],
+				
+			{"hidden":"{$item_hide_grid_field}","text":{$dem_profesion_pdfvalue}},
+				
+		  ],
   "border": [ false, false, false, false ],
-          "alignment": 'left',
+          "alignment": '{$dem_profesion_align}',
   },
 
 {END cellblock_grid_cell_field1}

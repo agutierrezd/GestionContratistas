@@ -9,11 +9,11 @@ $tdatatparam_fondopension[".OwnerID"] = "";
 $tdatatparam_fondopension[".OriginalTable"] = "tparam_fondopension";
 
 
-$tdatatparam_fondopension[".pagesByType"] = my_json_decode( "{\"list\":[\"list\"]}" );
+$tdatatparam_fondopension[".pagesByType"] = my_json_decode( "{\"list\":[\"list\"],\"search\":[\"search\"]}" );
 $tdatatparam_fondopension[".originalPagesByType"] = $tdatatparam_fondopension[".pagesByType"];
-$tdatatparam_fondopension[".pages"] = types2pages( my_json_decode( "{\"list\":[\"list\"]}" ) );
+$tdatatparam_fondopension[".pages"] = types2pages( my_json_decode( "{\"list\":[\"list\"],\"search\":[\"search\"]}" ) );
 $tdatatparam_fondopension[".originalPages"] = $tdatatparam_fondopension[".pages"];
-$tdatatparam_fondopension[".defaultPages"] = my_json_decode( "{\"list\":\"list\"}" );
+$tdatatparam_fondopension[".defaultPages"] = my_json_decode( "{\"list\":\"list\",\"search\":\"search\"}" );
 $tdatatparam_fondopension[".originalDefaultPages"] = $tdatatparam_fondopension[".defaultPages"];
 
 //	field labels

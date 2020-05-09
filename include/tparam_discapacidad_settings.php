@@ -9,11 +9,11 @@ $tdatatparam_discapacidad[".OwnerID"] = "";
 $tdatatparam_discapacidad[".OriginalTable"] = "tparam_discapacidad";
 
 
-$tdatatparam_discapacidad[".pagesByType"] = my_json_decode( "{}" );
+$tdatatparam_discapacidad[".pagesByType"] = my_json_decode( "{\"search\":[\"search\"]}" );
 $tdatatparam_discapacidad[".originalPagesByType"] = $tdatatparam_discapacidad[".pagesByType"];
-$tdatatparam_discapacidad[".pages"] = types2pages( my_json_decode( "{}" ) );
+$tdatatparam_discapacidad[".pages"] = types2pages( my_json_decode( "{\"search\":[\"search\"]}" ) );
 $tdatatparam_discapacidad[".originalPages"] = $tdatatparam_discapacidad[".pages"];
-$tdatatparam_discapacidad[".defaultPages"] = my_json_decode( "{}" );
+$tdatatparam_discapacidad[".defaultPages"] = my_json_decode( "{\"search\":\"search\"}" );
 $tdatatparam_discapacidad[".originalDefaultPages"] = $tdatatparam_discapacidad[".defaultPages"];
 
 //	field labels
