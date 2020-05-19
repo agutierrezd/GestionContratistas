@@ -203,12 +203,6 @@ function checkTableName($shortTName, $type=false)
 	if (!$shortTName)
 		return false;
 
-	if ("funcionario" == $shortTName && ($type===false || ($type!==false && $type == 0)))
-		return true;
-	if ("divipola" == $shortTName && ($type===false || ($type!==false && $type == 0)))
-		return true;
-	if ("global_users" == $shortTName && ($type===false || ($type!==false && $type == 0)))
-		return true;
 	if ("contractor_master" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
 	if ("admin_rights" == $shortTName && ($type===false || ($type!==false && $type == 1)))
@@ -218,8 +212,6 @@ function checkTableName($shortTName, $type=false)
 	if ("admin_users" == $shortTName && ($type===false || ($type!==false && $type == 1)))
 		return true;
 	if ("tipo_docidentidad" == $shortTName && ($type===false || ($type!==false && $type == 0)))
-		return true;
-	if ("q_divipola" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
 	if ("tipo_banco" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
@@ -240,6 +232,18 @@ function checkTableName($shortTName, $type=false)
 	if ("tparam_discapacidad" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
 	if ("tparam_sn" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("q_divipola" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("dependencia" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("dependencias_001" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("contrato" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("interventor_periodos" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("contractor_master_signature" == $shortTName && ($type===false || ($type!==false && $type == 1)))
 		return true;
 	return false;
 }
@@ -293,33 +297,6 @@ function GetTablesList($pdfMode = false)
 	$checkPermissions = Security::permissionsAvailable();
 	$tableAvailable = true;
 	if( $checkPermissions ) {
-		$strPerm = GetUserPermissions("funcionario");
-		$tableAvailable = ( strpos($strPerm, "P") !== false
-			|| $pdfMode && strpos($strPerm, "S") !== false );
-	}
-	if( $tableAvailable ) {
-		$arr[]="funcionario";
-	}
-	$tableAvailable = true;
-	if( $checkPermissions ) {
-		$strPerm = GetUserPermissions("divipola");
-		$tableAvailable = ( strpos($strPerm, "P") !== false
-			|| $pdfMode && strpos($strPerm, "S") !== false );
-	}
-	if( $tableAvailable ) {
-		$arr[]="divipola";
-	}
-	$tableAvailable = true;
-	if( $checkPermissions ) {
-		$strPerm = GetUserPermissions("global_users");
-		$tableAvailable = ( strpos($strPerm, "P") !== false
-			|| $pdfMode && strpos($strPerm, "S") !== false );
-	}
-	if( $tableAvailable ) {
-		$arr[]="global_users";
-	}
-	$tableAvailable = true;
-	if( $checkPermissions ) {
 		$strPerm = GetUserPermissions("contractor_master");
 		$tableAvailable = ( strpos($strPerm, "P") !== false
 			|| $pdfMode && strpos($strPerm, "S") !== false );
@@ -362,15 +339,6 @@ function GetTablesList($pdfMode = false)
 	}
 	if( $tableAvailable ) {
 		$arr[]="tipo_docidentidad";
-	}
-	$tableAvailable = true;
-	if( $checkPermissions ) {
-		$strPerm = GetUserPermissions("q_divipola");
-		$tableAvailable = ( strpos($strPerm, "P") !== false
-			|| $pdfMode && strpos($strPerm, "S") !== false );
-	}
-	if( $tableAvailable ) {
-		$arr[]="q_divipola";
 	}
 	$tableAvailable = true;
 	if( $checkPermissions ) {
@@ -462,6 +430,60 @@ function GetTablesList($pdfMode = false)
 	if( $tableAvailable ) {
 		$arr[]="tparam_sn";
 	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("q_divipola");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="q_divipola";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("dependencia");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="dependencia";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("dependencias_001");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="dependencias_001";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("contrato");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="contrato";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("interventor_periodos");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="interventor_periodos";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("contractor_master_signature");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="contractor_master_signature";
+	}
 	return $arr;
 }
 
@@ -471,15 +493,11 @@ function GetTablesList($pdfMode = false)
 function GetTablesListWithoutSecurity()
 {
 	$arr = array();
-	$arr[]="funcionario";
-	$arr[]="divipola";
-	$arr[]="global_users";
 	$arr[]="contractor_master";
 	$arr[]="admin_rights";
 	$arr[]="admin_members";
 	$arr[]="admin_users";
 	$arr[]="tipo_docidentidad";
-	$arr[]="q_divipola";
 	$arr[]="tipo_banco";
 	$arr[]="tipo_cta_banco";
 	$arr[]="tipo_regimen";
@@ -490,6 +508,12 @@ function GetTablesListWithoutSecurity()
 	$arr[]="tparam_genero";
 	$arr[]="tparam_discapacidad";
 	$arr[]="tparam_sn";
+	$arr[]="q_divipola";
+	$arr[]="dependencia";
+	$arr[]="dependencias_001";
+	$arr[]="contrato";
+	$arr[]="interventor_periodos";
+	$arr[]="contractor_master_signature";
 	return $arr;
 }
 
@@ -1251,99 +1275,130 @@ function GetUserPermissionsStatic( $table )
 
 	$extraPerm = $_SESSION["AccessLevel"] == ACCESS_LEVEL_ADMINGROUP ? 'M' : '';
 	$sUserGroup = @$_SESSION["GroupID"];
-	if( $table=="funcionario" )
-	{
-//	default permissions
-		return "ADESPI".$extraPerm;
-	}
-	if( $table=="divipola" )
-	{
-//	default permissions
-		return "ADESPI".$extraPerm;
-	}
-	if( $table=="global_users" )
-	{
-//	default permissions
-		return "ADESPI".$extraPerm;
-	}
 	if( $table=="contractor_master" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="admin_rights" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="admin_members" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="admin_users" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tipo_docidentidad" )
 	{
 //	default permissions
-		return "ADESPI".$extraPerm;
-	}
-	if( $table=="q_divipola" )
-	{
-//	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tipo_banco" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tipo_cta_banco" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tipo_regimen" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_fondosalud" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_fondopension" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_cajacomp" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_tipo_ct_arl" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_genero" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_discapacidad" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_sn" )
 	{
 //	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="q_divipola" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="dependencia" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="dependencias_001" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="contrato" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="interventor_periodos" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="contractor_master_signature" )
+	{
+//	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	// grant nothing by default
@@ -1466,6 +1521,8 @@ function SetAuthSessionData($pUsername, &$data, $password, &$pageObject = null, 
 
 		$_SESSION["OwnerID"] = $data["contractor_doc_id"];
 	$_SESSION["_contractor_master_OwnerID"] = $data["contractor_doc_id"];
+		$_SESSION["_contrato_OwnerID"] = $data["contractor_doc_id"];
+		$_SESSION["_contractor_master_signature_OwnerID"] = $data["contractor_doc_id"];
 
 	$_SESSION["UserData"] = $data;
 
@@ -1528,6 +1585,18 @@ function CheckSecurity($strValue, $strAction, $table = "")
 	if( strpos($strPerm, "M") === false )
 	{
 		if($table=="contractor_master")
+		{
+
+				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
+				return false;
+		}
+		if($table=="contrato")
+		{
+
+				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
+				return false;
+		}
+		if($table=="contractor_master_signature")
 		{
 
 				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
@@ -1604,6 +1673,14 @@ function SecuritySQL($strAction, $table, $strPerm="")
 	if(strpos($strPerm,"M")===false)
 	{
 		if($table=="contractor_master")
+		{
+				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
+		}
+		if($table=="contrato")
+		{
+				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
+		}
+		if($table=="contractor_master_signature")
 		{
 				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
 		}

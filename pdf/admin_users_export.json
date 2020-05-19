@@ -251,6 +251,18 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_export_field23}","text":{$dem_profesion_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_export_field26}","text":{$contractor_sup_jerarquico_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field30}","text":{$contractor_dependencia_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field31}","text":{$signature_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field36}","text":{$pin_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

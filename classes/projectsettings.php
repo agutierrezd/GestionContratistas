@@ -3099,12 +3099,6 @@ function fillProjectEntites()
 	global $projectEntities, $projectEntitiesReverse, $tablesByGoodName, $tablesByUpperCase, $tablesByUpperGoodname;
 	if( count( $projectEntities ) )
 		return;
-	$projectEntities[ "funcionario" ] = array( "url" => "funcionario", "type" => 0 );
-	$projectEntitiesReverse[ "funcionario" ] = "funcionario";
-	$projectEntities[ "divipola" ] = array( "url" => "divipola", "type" => 0 );
-	$projectEntitiesReverse[ "divipola" ] = "divipola";
-	$projectEntities[ "global_users" ] = array( "url" => "global_users", "type" => 0 );
-	$projectEntitiesReverse[ "global_users" ] = "global_users";
 	$projectEntities[ "contractor_master" ] = array( "url" => "contractor_master", "type" => 0 );
 	$projectEntitiesReverse[ "contractor_master" ] = "contractor_master";
 	$projectEntities[ "admin_rights" ] = array( "url" => "admin_rights", "type" => 1 );
@@ -3115,8 +3109,6 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "admin_users" ] = "admin_users";
 	$projectEntities[ "tipo_docidentidad" ] = array( "url" => "tipo_docidentidad", "type" => 0 );
 	$projectEntitiesReverse[ "tipo_docidentidad" ] = "tipo_docidentidad";
-	$projectEntities[ "q_divipola" ] = array( "url" => "q_divipola", "type" => 0 );
-	$projectEntitiesReverse[ "q_divipola" ] = "q_divipola";
 	$projectEntities[ "tipo_banco" ] = array( "url" => "tipo_banco", "type" => 0 );
 	$projectEntitiesReverse[ "tipo_banco" ] = "tipo_banco";
 	$projectEntities[ "tipo_cta_banco" ] = array( "url" => "tipo_cta_banco", "type" => 0 );
@@ -3137,6 +3129,18 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "tparam_discapacidad" ] = "tparam_discapacidad";
 	$projectEntities[ "tparam_sn" ] = array( "url" => "tparam_sn", "type" => 0 );
 	$projectEntitiesReverse[ "tparam_sn" ] = "tparam_sn";
+	$projectEntities[ "q_divipola" ] = array( "url" => "q_divipola", "type" => 0 );
+	$projectEntitiesReverse[ "q_divipola" ] = "q_divipola";
+	$projectEntities[ "dependencia" ] = array( "url" => "dependencia", "type" => 0 );
+	$projectEntitiesReverse[ "dependencia" ] = "dependencia";
+	$projectEntities[ "dependencias_001" ] = array( "url" => "dependencias_001", "type" => 0 );
+	$projectEntitiesReverse[ "dependencias_001" ] = "dependencias_001";
+	$projectEntities[ "contrato" ] = array( "url" => "contrato", "type" => 0 );
+	$projectEntitiesReverse[ "contrato" ] = "contrato";
+	$projectEntities[ "interventor_periodos" ] = array( "url" => "interventor_periodos", "type" => 0 );
+	$projectEntitiesReverse[ "interventor_periodos" ] = "interventor_periodos";
+	$projectEntities[ "contractor_master_signature" ] = array( "url" => "contractor_master_signature", "type" => 1 );
+	$projectEntitiesReverse[ "contractor_master_signature" ] = "contractor_master_signature";
 }
 
 function findTable( $table ) {

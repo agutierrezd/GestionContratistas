@@ -162,7 +162,7 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field54}","stack":[{"text":"{$jslabel contractor_master terms_acepta }","bold":true},{"text":{$terms_acepta_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field53}","stack":[{"text":"{$jslabel contractor_master terms_msj }","bold":true},{"text":{$terms_msj_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -192,7 +192,7 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field53}","stack":[{"text":"{$jslabel contractor_master terms_msj }","bold":true},{"text":{$terms_msj_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field54}","stack":[{"text":"{$jslabel contractor_master terms_acepta }","bold":true},{"text":{$terms_acepta_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -255,7 +255,10 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel contractor_master contractor_image }","bold":true},{"text":{$contractor_image_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field4}","text":{$contractor_image_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_edit_field_tooltip}","text":{$contractor_image_pdfvalue}},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -606,6 +609,60 @@ pdfDocument = {
 			},
 							],
 				{END row_section_6}
+								{BEGIN row_section_7}
+				[
+												{BEGIN cellblock_section_c13}
+{
+	cellId: 'c13',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":"<div class=\"alert alert-info\">\n  <a href=\"https://www.funcionpublica.gov.co/web/sigep/hojas-de-vida\" class=\"alert-link\" target=\"_blank\">Clic para ir a la página de función pública</a>\n</div>","hidden":"{$item_hide_text}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section_c13}
+																			{BEGIN cellblock_section_c14}
+{
+	cellId: 'c14',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section_c14}
+											],
+				{END row_section_7}
 									]
 					}
 				}]
@@ -753,6 +810,62 @@ pdfDocument = {
 				{END row_section1_1}
 								{BEGIN row_section1_2}
 				[
+												{BEGIN cellblock_section1_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel contractor_master contractor_sup_jerarquico }","bold":true},{"text":{$contractor_sup_jerarquico_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c8}
+																			{BEGIN cellblock_section1_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel contractor_master contractor_dependencia }","bold":true},{"text":{$contractor_dependencia_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c9}
+											],
+				{END row_section1_2}
+								{BEGIN row_section1_3}
+				[
 												{BEGIN cellblock_section1_c4}
 {
 	cellId: 'c4',
@@ -804,7 +917,7 @@ pdfDocument = {
 
 {END cellblock_section1_c5}
 											],
-				{END row_section1_2}
+				{END row_section1_3}
 									]
 					}
 				}]
@@ -1689,6 +1802,12 @@ pdfDocument = {
 		},
 		margin: [0,0,0,15],
 	},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field22}","stack":[{"text":"{$jslabel contractor_master signature }","bold":true},{"text":{$signature_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field25}","stack":[{"text":"{$jslabel contractor_master pin }","bold":true},{"text":{$pin_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],

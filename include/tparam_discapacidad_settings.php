@@ -550,7 +550,7 @@ $proto0["m_strFrom"] = "FROM tparam_discapacidad";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
 	
-								;
+						;
 			$proto0["cipherer"] = null;
 $proto2=array();
 $proto2["m_sql"] = "";
@@ -658,7 +658,7 @@ $queryData_tparam_discapacidad = createSqlQuery_tparam_discapacidad();
 
 
 	
-								;
+						;
 
 		
 

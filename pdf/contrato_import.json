@@ -1,0 +1,171 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel contrato import}","hidden":"{$item_hide_import_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_import_field5}","text":{$prenumero_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field6}","text":{$numregistro_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field7}","text":{$pre_contnumero_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field8}","text":{$contnumero_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field11}","text":{$cont_ano_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field12}","text":{$cont_codrubro_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field15}","text":{$cont_catalogo_presupuestal_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field19}","text":{$cont_fecha_inicio_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field20}","text":{$cont_fechafinal_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field24}","text":{$cont_periodicidad_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field29}","text":{$cont_valorinicial_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field30}","text":{$cont_valormensual_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field55}","text":{$cont_objeto_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field56}","text":{$cont_obligaciones_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field57}","text":{$cont_plazo_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field60}","text":{$cont_secop_proceso_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field61}","text":{$cont_secop_enlace_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+					]
+}
+  

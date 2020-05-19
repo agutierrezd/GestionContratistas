@@ -400,45 +400,40 @@ class DB
 		if( $dalTables[ $conn->connId ] )
 			return;
 		$dalTables[ $conn->connId ] = array();
-		if( "edl_at_localhost" == $conn->connId )
-		{
-			$dalTables[$conn->connId][] = array("name" => "cargo", "varname" => "edl_at_localhost__cargo", "altvarname" => "cargo", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
-			$dalTables[$conn->connId][] = array("name" => "contrato", "varname" => "edl_at_localhost__contrato", "altvarname" => "contrato", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
-			$dalTables[$conn->connId][] = array("name" => "dependencia", "varname" => "edl_at_localhost__dependencia", "altvarname" => "dependencia", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
-			$dalTables[$conn->connId][] = array("name" => "funcionario", "varname" => "edl_at_localhost__funcionario", "altvarname" => "funcionario", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
-			$dalTables[$conn->connId][] = array("name" => "gestioncontratistas_ver_103_audit", "varname" => "edl_at_localhost__gestioncontratistas_ver_103_audit", "altvarname" => "gestioncontratistas_ver_103_audit", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
-			$dalTables[$conn->connId][] = array("name" => "gestioncontratistas_ver_103_locking", "varname" => "edl_at_localhost__gestioncontratistas_ver_103_locking", "altvarname" => "gestioncontratistas_ver_103_locking", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
-			$dalTables[$conn->connId][] = array("name" => "nombramiento", "varname" => "edl_at_localhost__nombramiento", "altvarname" => "nombramiento", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
-			$dalTables[$conn->connId][] = array("name" => "tparam_estados", "varname" => "edl_at_localhost__tparam_estados", "altvarname" => "tparam_estados", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
-			$dalTables[$conn->connId][] = array("name" => "tparam_sn", "varname" => "edl_at_localhost__tparam_sn", "altvarname" => "tparam_sn", "connId" => "edl_at_localhost", "schema" => "", "connName" => "edl at localhost");
-		}
 		if( "dbct_at_localhost" == $conn->connId )
 		{
-			$dalTables[$conn->connId][] = array("name" => "contractor_master", "varname" => "dbct_at_localhost__contractor_master", "altvarname" => "contractor_master", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
-			$dalTables[$conn->connId][] = array("name" => "gestioncontratistas_ver_103_uggroups", "varname" => "dbct_at_localhost__gestioncontratistas_ver_103_uggroups", "altvarname" => "gestioncontratistas_ver_103_uggroups", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
-			$dalTables[$conn->connId][] = array("name" => "gestioncontratistas_ver_103_ugmembers", "varname" => "dbct_at_localhost__gestioncontratistas_ver_103_ugmembers", "altvarname" => "gestioncontratistas_ver_103_ugmembers", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
-			$dalTables[$conn->connId][] = array("name" => "gestioncontratistas_ver_103_ugrights", "varname" => "dbct_at_localhost__gestioncontratistas_ver_103_ugrights", "altvarname" => "gestioncontratistas_ver_103_ugrights", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
-			$dalTables[$conn->connId][] = array("name" => "tipo_banco", "varname" => "dbct_at_localhost__tipo_banco", "altvarname" => "tipo_banco", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
-			$dalTables[$conn->connId][] = array("name" => "tipo_cta_banco", "varname" => "dbct_at_localhost__tipo_cta_banco", "altvarname" => "tipo_cta_banco", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
-			$dalTables[$conn->connId][] = array("name" => "tipo_docidentidad", "varname" => "dbct_at_localhost__tipo_docidentidad", "altvarname" => "tipo_docidentidad", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
-			$dalTables[$conn->connId][] = array("name" => "tipo_regimen", "varname" => "dbct_at_localhost__tipo_regimen", "altvarname" => "tipo_regimen", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
-			$dalTables[$conn->connId][] = array("name" => "tparam_cajacomp", "varname" => "dbct_at_localhost__tparam_cajacomp", "altvarname" => "tparam_cajacomp", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
-			$dalTables[$conn->connId][] = array("name" => "tparam_discapacidad", "varname" => "dbct_at_localhost__tparam_discapacidad", "altvarname" => "tparam_discapacidad", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
-			$dalTables[$conn->connId][] = array("name" => "tparam_fondopension", "varname" => "dbct_at_localhost__tparam_fondopension", "altvarname" => "tparam_fondopension", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
-			$dalTables[$conn->connId][] = array("name" => "tparam_fondosalud", "varname" => "dbct_at_localhost__tparam_fondosalud", "altvarname" => "tparam_fondosalud", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
-			$dalTables[$conn->connId][] = array("name" => "tparam_genero", "varname" => "dbct_at_localhost__tparam_genero", "altvarname" => "tparam_genero", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
-			$dalTables[$conn->connId][] = array("name" => "tparam_tipo_ct_arl", "varname" => "dbct_at_localhost__tparam_tipo_ct_arl", "altvarname" => "tparam_tipo_ct_arl", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
+			$dalTables[$conn->connId][] = array("name" => "contractor_master", "varname" => "dbct_at_localhost__contractor_master", "altvarname" => "contractor_master", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "contrato", "varname" => "dbct_at_localhost__contrato", "altvarname" => "contrato", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "contrato_estados", "varname" => "dbct_at_localhost__contrato_estados", "altvarname" => "contrato_estados", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "contrato_forma_pago", "varname" => "dbct_at_localhost__contrato_forma_pago", "altvarname" => "contrato_forma_pago", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "contrato_tipo", "varname" => "dbct_at_localhost__contrato_tipo", "altvarname" => "contrato_tipo", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "gestioncontratistas_ver_103_audit", "varname" => "dbct_at_localhost__gestioncontratistas_ver_103_audit", "altvarname" => "gestioncontratistas_ver_103_audit", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "gestioncontratistas_ver_103_locking", "varname" => "dbct_at_localhost__gestioncontratistas_ver_103_locking", "altvarname" => "gestioncontratistas_ver_103_locking", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "gestioncontratistas_ver_103_uggroups", "varname" => "dbct_at_localhost__gestioncontratistas_ver_103_uggroups", "altvarname" => "gestioncontratistas_ver_103_uggroups", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "gestioncontratistas_ver_103_ugmembers", "varname" => "dbct_at_localhost__gestioncontratistas_ver_103_ugmembers", "altvarname" => "gestioncontratistas_ver_103_ugmembers", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "gestioncontratistas_ver_103_ugrights", "varname" => "dbct_at_localhost__gestioncontratistas_ver_103_ugrights", "altvarname" => "gestioncontratistas_ver_103_ugrights", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "interventor_periodos", "varname" => "dbct_at_localhost__interventor_periodos", "altvarname" => "interventor_periodos", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "tipo_banco", "varname" => "dbct_at_localhost__tipo_banco", "altvarname" => "tipo_banco", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "tipo_cta_banco", "varname" => "dbct_at_localhost__tipo_cta_banco", "altvarname" => "tipo_cta_banco", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "tipo_docidentidad", "varname" => "dbct_at_localhost__tipo_docidentidad", "altvarname" => "tipo_docidentidad", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "tipo_regimen", "varname" => "dbct_at_localhost__tipo_regimen", "altvarname" => "tipo_regimen", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "tparam_cajacomp", "varname" => "dbct_at_localhost__tparam_cajacomp", "altvarname" => "tparam_cajacomp", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "tparam_discapacidad", "varname" => "dbct_at_localhost__tparam_discapacidad", "altvarname" => "tparam_discapacidad", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "tparam_fondopension", "varname" => "dbct_at_localhost__tparam_fondopension", "altvarname" => "tparam_fondopension", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "tparam_fondosalud", "varname" => "dbct_at_localhost__tparam_fondosalud", "altvarname" => "tparam_fondosalud", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "tparam_genero", "varname" => "dbct_at_localhost__tparam_genero", "altvarname" => "tparam_genero", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "tparam_sn", "varname" => "dbct_at_localhost__tparam_sn", "altvarname" => "tparam_sn", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "tparam_tipo_ct_002", "varname" => "dbct_at_localhost__tparam_tipo_ct_002", "altvarname" => "tparam_tipo_ct_002", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "tparam_tipo_ct_arl", "varname" => "dbct_at_localhost__tparam_tipo_ct_arl", "altvarname" => "tparam_tipo_ct_arl", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
 		}
-		if( "dbusers_at_localhost" == $conn->connId )
+		if( "dbusers_at_127_0_0_1" == $conn->connId )
 		{
-			$dalTables[$conn->connId][] = array("name" => "divipola", "varname" => "dbusers_at_localhost__divipola", "altvarname" => "divipola", "connId" => "dbusers_at_localhost", "schema" => "", "connName" => "dbusers at localhost");
-			$dalTables[$conn->connId][] = array("name" => "global_rol_almacen", "varname" => "dbusers_at_localhost__global_rol_almacen", "altvarname" => "global_rol_almacen", "connId" => "dbusers_at_localhost", "schema" => "", "connName" => "dbusers at localhost");
-			$dalTables[$conn->connId][] = array("name" => "global_rol_c", "varname" => "dbusers_at_localhost__global_rol_c", "altvarname" => "global_rol_c", "connId" => "dbusers_at_localhost", "schema" => "", "connName" => "dbusers at localhost");
-			$dalTables[$conn->connId][] = array("name" => "global_users", "varname" => "dbusers_at_localhost__global_users", "altvarname" => "global_users", "connId" => "dbusers_at_localhost", "schema" => "", "connName" => "dbusers at localhost");
-			$dalTables[$conn->connId][] = array("name" => "q_divipola", "varname" => "dbusers_at_localhost__q_divipola", "altvarname" => "q_divipola", "connId" => "dbusers_at_localhost", "schema" => "", "connName" => "dbusers at localhost");
+			$dalTables[$conn->connId][] = array("name" => "q_divipola", "varname" => "dbusers_at_127_0_0_1__q_divipola", "altvarname" => "q_divipola", "connId" => "dbusers_at_127_0_0_1", "schema" => "", "connName" => "dbusers at 127.0.0.1");
 		}
-		if( "sep2_at_localhost" == $conn->connId )
+		if( "edl_at_127_0_0_1" == $conn->connId )
 		{
+			$dalTables[$conn->connId][] = array("name" => "dependencia", "varname" => "edl_at_127_0_0_1__dependencia", "altvarname" => "dependencia", "connId" => "edl_at_127_0_0_1", "schema" => "", "connName" => "edl at 127.0.0.1");
+			$dalTables[$conn->connId][] = array("name" => "dependencias_001", "varname" => "edl_at_127_0_0_1__dependencias_001", "altvarname" => "dependencias_001", "connId" => "edl_at_127_0_0_1", "schema" => "", "connName" => "edl at 127.0.0.1");
 		}
 	}
 

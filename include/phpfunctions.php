@@ -956,26 +956,6 @@ function GetDefaultValue($field, $ptype, $table="")
 	global $strTableName;
 	if(!$table)
 		$table=$strTableName;
-				if($table=="global_users" && $field=="sys_user")
-	{
-		return $_SESSION["UserID"];
-	}
-				if($table=="global_users" && $field=="sys_date")
-	{
-		return strftime("%Y-%m-%d");
-	}
-				if($table=="global_users" && $field=="sys_time")
-	{
-		return strftime("%H:%M:%S");
-	}
-				if($table=="global_users" && $field=="active")
-	{
-		return 1;
-	}
-				if($table=="global_users" && $field=="groupid")
-	{
-		return 1;
-	}
 				if($table=="contractor_master" && $field=="contractor_city")
 	{
 		return 11001;
@@ -1019,26 +999,6 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 	global $strTableName;
 	if(!$table)
 		$table=$strTableName;
-				if($table=="global_users" && $field=="sys_user")
-	{
-		return $_SESSION["UserID"];
-	}
-				if($table=="global_users" && $field=="sys_date")
-	{
-		return strftime("%Y-%m-%d");
-	}
-				if($table=="global_users" && $field=="sys_time")
-	{
-		return strftime("%H:%M:%S");
-	}
-				if($table=="global_users" && $field=="active")
-	{
-		return 1;
-	}
-				if($table=="global_users" && $field=="groupid")
-	{
-		return 1;
-	}
 				if($table=="contractor_master" && $field=="sys_update")
 	{
 		return 1;

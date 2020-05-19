@@ -553,7 +553,7 @@ $proto0["m_strFrom"] = "FROM tparam_tipo_ct_arl";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
 	
-								;
+						;
 			$proto0["cipherer"] = null;
 $proto2=array();
 $proto2["m_sql"] = "";
@@ -661,7 +661,7 @@ $queryData_tparam_tipo_ct_arl = createSqlQuery_tparam_tipo_ct_arl();
 
 
 	
-								;
+						;
 
 		
 

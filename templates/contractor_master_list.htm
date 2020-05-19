@@ -113,6 +113,58 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_dem_profesion}</span>
 						</div>
 		{END searchCtrlBlock_dem_profesion}
+																{BEGIN searchCtrlBlock_pin}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_pin}" {$filterRow_attrs_pin}>
+			<label>{$label contractor_master pin }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_pin}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_pin}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_pin}</span>
+						</div>
+		{END searchCtrlBlock_pin}
+																{BEGIN searchCtrlBlock_signature}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_signature}" {$filterRow_attrs_signature}>
+			<label>{$label contractor_master signature }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_signature}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_signature}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_signature}</span>
+						</div>
+		{END searchCtrlBlock_signature}
+																{BEGIN searchCtrlBlock_contractor_dependencia}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_dependencia}" {$filterRow_attrs_contractor_dependencia}>
+			<label>{$label contractor_master contractor_dependencia }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_dependencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_dependencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_dependencia}</span>
+						</div>
+		{END searchCtrlBlock_contractor_dependencia}
+																{BEGIN searchCtrlBlock_contractor_sup_jerarquico}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_sup_jerarquico}" {$filterRow_attrs_contractor_sup_jerarquico}>
+			<label>{$label contractor_master contractor_sup_jerarquico }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_sup_jerarquico}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_sup_jerarquico}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_sup_jerarquico}</span>
+						</div>
+		{END searchCtrlBlock_contractor_sup_jerarquico}
 																{BEGIN searchCtrlBlock_terms_acepta}
 
 
@@ -1073,6 +1125,7 @@
 									 
 									 
 									 
+									 
 											
 					</tbody>
 				</table>
@@ -1273,10 +1326,10 @@
 												
 						<tr class="{$rowclass}">
 						 
-							{BEGIN cellblock_grid_cell_field6}
+							{BEGIN cellblock_grid_cell_field10}
 	<td
 	
-	{$cell_grid_cell_field6}
+	{$cell_grid_cell_field10}
 	{$recordattrs}
 	class="
 		r-align-right r-ori-vert				{$contractor_name_class}
@@ -1284,7 +1337,7 @@
 
 			data-field="contractor_name"
 	
-	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1296,12 +1349,12 @@
 
 	
 	</td>
-	{END cellblock_grid_cell_field6}
+	{END cellblock_grid_cell_field10}
 						 
-							{BEGIN cellblock_grid_cell_field7}
+							{BEGIN cellblock_grid_cell_field11}
 	<td
 	
-	{$cell_grid_cell_field7}
+	{$cell_grid_cell_field11}
 	{$recordattrs}
 	class="
 		 r-ori-vert				{$contractor_name_class}
@@ -1309,7 +1362,7 @@
 
 			data-field="contractor_name"
 	
-	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1319,12 +1372,12 @@
 </span>
 {END contractor_name_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field7}
+	{END cellblock_grid_cell_field11}
 						 
-							{BEGIN cellblock_grid_cell_field8}
+							{BEGIN cellblock_grid_cell_field12}
 	<td
 	
-	{$cell_grid_cell_field8}
+	{$cell_grid_cell_field12}
 	{$recordattrs}
 	class="
 		r-align-right r-ori-vert				{$contractor_lname_class}
@@ -1332,7 +1385,7 @@
 
 			data-field="contractor_lname"
 	
-	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1344,12 +1397,12 @@
 
 	
 	</td>
-	{END cellblock_grid_cell_field8}
+	{END cellblock_grid_cell_field12}
 						 
-							{BEGIN cellblock_grid_cell_field9}
+							{BEGIN cellblock_grid_cell_field13}
 	<td
 	
-	{$cell_grid_cell_field9}
+	{$cell_grid_cell_field13}
 	{$recordattrs}
 	class="
 		 r-ori-vert				{$contractor_lname_class}
@@ -1357,7 +1410,7 @@
 
 			data-field="contractor_lname"
 	
-	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1366,6 +1419,106 @@
 {$contractor_lname_value}
 </span>
 {END contractor_lname_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$contractor_sup_jerarquico_class}
+			"
+
+			data-field="contractor_sup_jerarquico"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_sup_jerarquico_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label1" {$item_grid_field_label1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_sup_jerarquico">
+	{$label contractor_master contractor_sup_jerarquico }	</span>
+{END contractor_sup_jerarquico_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_field6}
+						 
+							{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contractor_sup_jerarquico_class}
+			"
+
+			data-field="contractor_sup_jerarquico"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_sup_jerarquico_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field1" {$item_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_sup_jerarquico" data-default-width >
+{$contractor_sup_jerarquico_value}
+</span>
+{END contractor_sup_jerarquico_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+						 
+							{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$contractor_dependencia_class}
+			"
+
+			data-field="contractor_dependencia"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_dependencia_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label2" {$item_grid_field_label2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_dependencia">
+	{$label contractor_master contractor_dependencia }	</span>
+{END contractor_dependencia_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_field8}
+						 
+							{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contractor_dependencia_class}
+			"
+
+			data-field="contractor_dependencia"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_dependencia_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field2" {$item_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_dependencia" data-default-width >
+{$contractor_dependencia_value}
+</span>
+{END contractor_dependencia_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field9}
 												</tr>

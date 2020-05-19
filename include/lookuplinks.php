@@ -40,69 +40,6 @@ function InitLookupLinks()
 
 	$lookupTableLinks = array();
 
-		if( !isset( $lookupTableLinks["cargo"] ) ) {
-			$lookupTableLinks["cargo"] = array();
-		}
-		if( !isset( $lookupTableLinks["cargo"]["funcionario.idCargo"] )) {
-			$lookupTableLinks["cargo"]["funcionario.idCargo"] = array();
-		}
-		$lookupTableLinks["cargo"]["funcionario.idCargo"]["edit"] = array("table" => "funcionario", "field" => "idCargo", "page" => "edit");
-		if( !isset( $lookupTableLinks["dependencia"] ) ) {
-			$lookupTableLinks["dependencia"] = array();
-		}
-		if( !isset( $lookupTableLinks["dependencia"]["funcionario.idDependencia"] )) {
-			$lookupTableLinks["dependencia"]["funcionario.idDependencia"] = array();
-		}
-		$lookupTableLinks["dependencia"]["funcionario.idDependencia"]["edit"] = array("table" => "funcionario", "field" => "idDependencia", "page" => "edit");
-		if( !isset( $lookupTableLinks["funcionario"] ) ) {
-			$lookupTableLinks["funcionario"] = array();
-		}
-		if( !isset( $lookupTableLinks["funcionario"]["funcionario.idEvaluador"] )) {
-			$lookupTableLinks["funcionario"]["funcionario.idEvaluador"] = array();
-		}
-		$lookupTableLinks["funcionario"]["funcionario.idEvaluador"]["edit"] = array("table" => "funcionario", "field" => "idEvaluador", "page" => "edit");
-		if( !isset( $lookupTableLinks["contrato"] ) ) {
-			$lookupTableLinks["contrato"] = array();
-		}
-		if( !isset( $lookupTableLinks["contrato"]["funcionario.idContrato"] )) {
-			$lookupTableLinks["contrato"]["funcionario.idContrato"] = array();
-		}
-		$lookupTableLinks["contrato"]["funcionario.idContrato"]["edit"] = array("table" => "funcionario", "field" => "idContrato", "page" => "edit");
-		if( !isset( $lookupTableLinks["nombramiento"] ) ) {
-			$lookupTableLinks["nombramiento"] = array();
-		}
-		if( !isset( $lookupTableLinks["nombramiento"]["funcionario.idNombramiento"] )) {
-			$lookupTableLinks["nombramiento"]["funcionario.idNombramiento"] = array();
-		}
-		$lookupTableLinks["nombramiento"]["funcionario.idNombramiento"]["edit"] = array("table" => "funcionario", "field" => "idNombramiento", "page" => "edit");
-		if( !isset( $lookupTableLinks["tparam_estados"] ) ) {
-			$lookupTableLinks["tparam_estados"] = array();
-		}
-		if( !isset( $lookupTableLinks["tparam_estados"]["funcionario.estado_funcionario"] )) {
-			$lookupTableLinks["tparam_estados"]["funcionario.estado_funcionario"] = array();
-		}
-		$lookupTableLinks["tparam_estados"]["funcionario.estado_funcionario"]["edit"] = array("table" => "funcionario", "field" => "estado_funcionario", "page" => "edit");
-		if( !isset( $lookupTableLinks["funcionario"] ) ) {
-			$lookupTableLinks["funcionario"] = array();
-		}
-		if( !isset( $lookupTableLinks["funcionario"]["global_users.id_fk"] )) {
-			$lookupTableLinks["funcionario"]["global_users.id_fk"] = array();
-		}
-		$lookupTableLinks["funcionario"]["global_users.id_fk"]["edit"] = array("table" => "global_users", "field" => "id_fk", "page" => "edit");
-		if( !isset( $lookupTableLinks["global_rol_almacen"] ) ) {
-			$lookupTableLinks["global_rol_almacen"] = array();
-		}
-		if( !isset( $lookupTableLinks["global_rol_almacen"]["global_users.global_rol_almacen"] )) {
-			$lookupTableLinks["global_rol_almacen"]["global_users.global_rol_almacen"] = array();
-		}
-		$lookupTableLinks["global_rol_almacen"]["global_users.global_rol_almacen"]["edit"] = array("table" => "global_users", "field" => "global_rol_almacen", "page" => "edit");
-		if( !isset( $lookupTableLinks["global_rol_c"] ) ) {
-			$lookupTableLinks["global_rol_c"] = array();
-		}
-		if( !isset( $lookupTableLinks["global_rol_c"]["global_users.global_rol_contratos"] )) {
-			$lookupTableLinks["global_rol_c"]["global_users.global_rol_contratos"] = array();
-		}
-		$lookupTableLinks["global_rol_c"]["global_users.global_rol_contratos"]["edit"] = array("table" => "global_users", "field" => "global_rol_contratos", "page" => "edit");
 		if( !isset( $lookupTableLinks["tipo_docidentidad"] ) ) {
 			$lookupTableLinks["tipo_docidentidad"] = array();
 		}
@@ -117,6 +54,20 @@ function InitLookupLinks()
 			$lookupTableLinks["q_divipola"]["contractor_master.contractor_city"] = array();
 		}
 		$lookupTableLinks["q_divipola"]["contractor_master.contractor_city"]["edit"] = array("table" => "contractor_master", "field" => "contractor_city", "page" => "edit");
+		if( !isset( $lookupTableLinks["dependencias_001"] ) ) {
+			$lookupTableLinks["dependencias_001"] = array();
+		}
+		if( !isset( $lookupTableLinks["dependencias_001"]["contractor_master.contractor_sup_jerarquico"] )) {
+			$lookupTableLinks["dependencias_001"]["contractor_master.contractor_sup_jerarquico"] = array();
+		}
+		$lookupTableLinks["dependencias_001"]["contractor_master.contractor_sup_jerarquico"]["edit"] = array("table" => "contractor_master", "field" => "contractor_sup_jerarquico", "page" => "edit");
+		if( !isset( $lookupTableLinks["dependencia"] ) ) {
+			$lookupTableLinks["dependencia"] = array();
+		}
+		if( !isset( $lookupTableLinks["dependencia"]["contractor_master.contractor_dependencia"] )) {
+			$lookupTableLinks["dependencia"]["contractor_master.contractor_dependencia"] = array();
+		}
+		$lookupTableLinks["dependencia"]["contractor_master.contractor_dependencia"]["edit"] = array("table" => "contractor_master", "field" => "contractor_dependencia", "page" => "edit");
 		if( !isset( $lookupTableLinks["tipo_banco"] ) ) {
 			$lookupTableLinks["tipo_banco"] = array();
 		}
@@ -187,6 +138,41 @@ function InitLookupLinks()
 			$lookupTableLinks["tparam_sn"]["contractor_master.terms_acepta"] = array();
 		}
 		$lookupTableLinks["tparam_sn"]["contractor_master.terms_acepta"]["edit"] = array("table" => "contractor_master", "field" => "terms_acepta", "page" => "edit");
+		if( !isset( $lookupTableLinks["contrato_estados"] ) ) {
+			$lookupTableLinks["contrato_estados"] = array();
+		}
+		if( !isset( $lookupTableLinks["contrato_estados"]["contrato.cont_estado"] )) {
+			$lookupTableLinks["contrato_estados"]["contrato.cont_estado"] = array();
+		}
+		$lookupTableLinks["contrato_estados"]["contrato.cont_estado"]["edit"] = array("table" => "contrato", "field" => "cont_estado", "page" => "edit");
+		if( !isset( $lookupTableLinks["contrato_tipo"] ) ) {
+			$lookupTableLinks["contrato_tipo"] = array();
+		}
+		if( !isset( $lookupTableLinks["contrato_tipo"]["contrato.cont_tipo"] )) {
+			$lookupTableLinks["contrato_tipo"]["contrato.cont_tipo"] = array();
+		}
+		$lookupTableLinks["contrato_tipo"]["contrato.cont_tipo"]["edit"] = array("table" => "contrato", "field" => "cont_tipo", "page" => "edit");
+		if( !isset( $lookupTableLinks["interventor_periodos"] ) ) {
+			$lookupTableLinks["interventor_periodos"] = array();
+		}
+		if( !isset( $lookupTableLinks["interventor_periodos"]["contrato.cont_periodicidad"] )) {
+			$lookupTableLinks["interventor_periodos"]["contrato.cont_periodicidad"] = array();
+		}
+		$lookupTableLinks["interventor_periodos"]["contrato.cont_periodicidad"]["edit"] = array("table" => "contrato", "field" => "cont_periodicidad", "page" => "edit");
+		if( !isset( $lookupTableLinks["contrato_forma_pago"] ) ) {
+			$lookupTableLinks["contrato_forma_pago"] = array();
+		}
+		if( !isset( $lookupTableLinks["contrato_forma_pago"]["contrato.cont_formapago"] )) {
+			$lookupTableLinks["contrato_forma_pago"]["contrato.cont_formapago"] = array();
+		}
+		$lookupTableLinks["contrato_forma_pago"]["contrato.cont_formapago"]["edit"] = array("table" => "contrato", "field" => "cont_formapago", "page" => "edit");
+		if( !isset( $lookupTableLinks["tparam_tipo_ct_002"] ) ) {
+			$lookupTableLinks["tparam_tipo_ct_002"] = array();
+		}
+		if( !isset( $lookupTableLinks["tparam_tipo_ct_002"]["contrato.cont_causalc"] )) {
+			$lookupTableLinks["tparam_tipo_ct_002"]["contrato.cont_causalc"] = array();
+		}
+		$lookupTableLinks["tparam_tipo_ct_002"]["contrato.cont_causalc"]["edit"] = array("table" => "contrato", "field" => "cont_causalc", "page" => "edit");
 }
 
 ?>

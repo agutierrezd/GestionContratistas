@@ -28,12 +28,12 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldToolTipstparam_sn["Spanish"] = array();
 	$placeHolderstparam_sn["Spanish"] = array();
 	$pageTitlestparam_sn["Spanish"] = array();
-	$fieldLabelstparam_sn["Spanish"]["estadosn_id"] = "Estadosn Id";
-	$fieldToolTipstparam_sn["Spanish"]["estadosn_id"] = "";
-	$placeHolderstparam_sn["Spanish"]["estadosn_id"] = "";
-	$fieldLabelstparam_sn["Spanish"]["estadosn_name"] = "Estadosn Name";
-	$fieldToolTipstparam_sn["Spanish"]["estadosn_name"] = "";
-	$placeHolderstparam_sn["Spanish"]["estadosn_name"] = "";
+	$fieldLabelstparam_sn["Spanish"]["sn_id"] = "Sn Id";
+	$fieldToolTipstparam_sn["Spanish"]["sn_id"] = "";
+	$placeHolderstparam_sn["Spanish"]["sn_id"] = "";
+	$fieldLabelstparam_sn["Spanish"]["sn"] = "Sn";
+	$fieldToolTipstparam_sn["Spanish"]["sn"] = "";
+	$placeHolderstparam_sn["Spanish"]["sn"] = "";
 	if (count($fieldToolTipstparam_sn["Spanish"]))
 		$tdatatparam_sn[".isUseToolTips"] = true;
 }
@@ -148,7 +148,7 @@ $tdatatparam_sn[".addPageEvents"] = false;
 $tdatatparam_sn[".isUseTimeForSearch"] = false;
 
 
-$tdatatparam_sn[".badgeColor"] = "4682B4";
+$tdatatparam_sn[".badgeColor"] = "CD853F";
 
 
 $tdatatparam_sn[".allSearchFields"] = array();
@@ -156,8 +156,8 @@ $tdatatparam_sn[".filterFields"] = array();
 $tdatatparam_sn[".requiredSearchFields"] = array();
 
 $tdatatparam_sn[".googleLikeFields"] = array();
-$tdatatparam_sn[".googleLikeFields"][] = "estadosn_id";
-$tdatatparam_sn[".googleLikeFields"][] = "estadosn_name";
+$tdatatparam_sn[".googleLikeFields"][] = "sn_id";
+$tdatatparam_sn[".googleLikeFields"][] = "sn";
 
 
 
@@ -192,7 +192,7 @@ $tdatatparam_sn[".strOrderBy"] = $tstrOrderBy;
 
 $tdatatparam_sn[".orderindexes"] = array();
 
-$tdatatparam_sn[".sqlHead"] = "SELECT estadosn_id,  	estadosn_name";
+$tdatatparam_sn[".sqlHead"] = "SELECT sn_id,  	sn";
 $tdatatparam_sn[".sqlFrom"] = "FROM tparam_sn";
 $tdatatparam_sn[".sqlWhereExpr"] = "";
 $tdatatparam_sn[".sqlTail"] = "";
@@ -231,7 +231,7 @@ $tdatatparam_sn[".arrGroupsPerPage"] = $arrGPP;
 $tdatatparam_sn[".highlightSearchResults"] = true;
 
 $tableKeystparam_sn = array();
-$tableKeystparam_sn[] = "estadosn_id";
+$tableKeystparam_sn[] = "sn_id";
 $tdatatparam_sn[".Keys"] = $tableKeystparam_sn;
 
 
@@ -240,25 +240,26 @@ $tdatatparam_sn[".hideMobileList"] = array();
 
 
 
-//	estadosn_id
+//	sn_id
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 1;
-	$fdata["strName"] = "estadosn_id";
-	$fdata["GoodName"] = "estadosn_id";
+	$fdata["strName"] = "sn_id";
+	$fdata["GoodName"] = "sn_id";
 	$fdata["ownerTable"] = "tparam_sn";
-	$fdata["Label"] = GetFieldLabel("tparam_sn","estadosn_id");
+	$fdata["Label"] = GetFieldLabel("tparam_sn","sn_id");
 	$fdata["FieldType"] = 16;
 
 	
-	
+		$fdata["AutoInc"] = true;
+
 	
 			
 
-		$fdata["strField"] = "estadosn_id";
+		$fdata["strField"] = "sn_id";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "estadosn_id";
+	$fdata["FullName"] = "sn_id";
 
 	
 	
@@ -375,16 +376,16 @@ $tdatatparam_sn[".hideMobileList"] = array();
 //end of Filters settings
 
 
-	$tdatatparam_sn["estadosn_id"] = $fdata;
-		$tdatatparam_sn[".searchableFields"][] = "estadosn_id";
-//	estadosn_name
+	$tdatatparam_sn["sn_id"] = $fdata;
+		$tdatatparam_sn[".searchableFields"][] = "sn_id";
+//	sn
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 2;
-	$fdata["strName"] = "estadosn_name";
-	$fdata["GoodName"] = "estadosn_name";
+	$fdata["strName"] = "sn";
+	$fdata["GoodName"] = "sn";
 	$fdata["ownerTable"] = "tparam_sn";
-	$fdata["Label"] = GetFieldLabel("tparam_sn","estadosn_name");
+	$fdata["Label"] = GetFieldLabel("tparam_sn","sn");
 	$fdata["FieldType"] = 200;
 
 	
@@ -392,10 +393,10 @@ $tdatatparam_sn[".hideMobileList"] = array();
 	
 			
 
-		$fdata["strField"] = "estadosn_name";
+		$fdata["strField"] = "sn";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "estadosn_name";
+	$fdata["FullName"] = "sn";
 
 	
 	
@@ -458,7 +459,7 @@ $tdatatparam_sn[".hideMobileList"] = array();
 			$edata["HTML5InuptType"] = "text";
 
 		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=30";
+			$edata["EditParams"].= " maxlength=10";
 
 		$edata["controlWidth"] = 200;
 
@@ -510,8 +511,8 @@ $tdatatparam_sn[".hideMobileList"] = array();
 //end of Filters settings
 
 
-	$tdatatparam_sn["estadosn_name"] = $fdata;
-		$tdatatparam_sn[".searchableFields"][] = "estadosn_name";
+	$tdatatparam_sn["sn"] = $fdata;
+		$tdatatparam_sn[".searchableFields"][] = "sn";
 
 
 $tables_data["tparam_sn"]=&$tdatatparam_sn;
@@ -547,12 +548,12 @@ function createSqlQuery_tparam_sn()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "estadosn_id,  	estadosn_name";
+$proto0["m_strFieldList"] = "sn_id,  	sn";
 $proto0["m_strFrom"] = "FROM tparam_sn";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
 	
-								;
+						;
 			$proto0["cipherer"] = null;
 $proto2=array();
 $proto2["m_sql"] = "";
@@ -589,12 +590,12 @@ $proto0["m_having"] = $obj;
 $proto0["m_fieldlist"] = array();
 						$proto6=array();
 			$obj = new SQLField(array(
-	"m_strName" => "estadosn_id",
+	"m_strName" => "sn_id",
 	"m_strTable" => "tparam_sn",
 	"m_srcTableName" => "tparam_sn"
 ));
 
-$proto6["m_sql"] = "estadosn_id";
+$proto6["m_sql"] = "sn_id";
 $proto6["m_srcTableName"] = "tparam_sn";
 $proto6["m_expr"]=$obj;
 $proto6["m_alias"] = "";
@@ -603,12 +604,12 @@ $obj = new SQLFieldListItem($proto6);
 $proto0["m_fieldlist"][]=$obj;
 						$proto8=array();
 			$obj = new SQLField(array(
-	"m_strName" => "estadosn_name",
+	"m_strName" => "sn",
 	"m_strTable" => "tparam_sn",
 	"m_srcTableName" => "tparam_sn"
 ));
 
-$proto8["m_sql"] = "estadosn_name";
+$proto8["m_sql"] = "sn";
 $proto8["m_srcTableName"] = "tparam_sn";
 $proto8["m_expr"]=$obj;
 $proto8["m_alias"] = "";
@@ -622,8 +623,8 @@ $proto10["m_link"] = "SQLL_MAIN";
 $proto11["m_strName"] = "tparam_sn";
 $proto11["m_srcTableName"] = "tparam_sn";
 $proto11["m_columns"] = array();
-$proto11["m_columns"][] = "estadosn_id";
-$proto11["m_columns"][] = "estadosn_name";
+$proto11["m_columns"][] = "sn_id";
+$proto11["m_columns"][] = "sn";
 $obj = new SQLTable($proto11);
 
 $proto10["m_table"] = $obj;
@@ -660,7 +661,7 @@ $queryData_tparam_sn = createSqlQuery_tparam_sn();
 
 
 	
-								;
+						;
 
 		
 

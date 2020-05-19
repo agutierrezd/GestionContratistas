@@ -263,6 +263,18 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_search_field23}","text":{$dem_profesion_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_integrated_search_field26}","text":{$contractor_sup_jerarquico_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field30}","text":{$contractor_dependencia_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field31}","text":{$signature_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field36}","text":{$pin_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

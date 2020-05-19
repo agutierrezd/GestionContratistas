@@ -36,6 +36,16 @@
 		<div class="row">
 			 
 				<div 
+	data-cellId="top_c" data-pageid="{$pageid}"	{$cell_top_c}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<img src="{$file_url images/logo_institucional.png}" data-itemtype="image" data-itemid="image" {$item_image} data-pageid="{$pageid}" />
+	</div>					</div>
+	 
+		<div class="row">
+			 
+				<div 
 	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
 	class=" r-ori-vert			col-md-12
 	">
@@ -964,6 +974,91 @@
 	
 								</td>
 			{END cellblock_section1_c7}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section1_c8}
+<td
+	{$cell_section1_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c8" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN contractor_sup_jerarquico_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_sup_jerarquico}  r-vertical-field" 
+	data-fieldname="contractor_sup_jerarquico" 
+	data-signal-error-for="contractor_sup_jerarquico{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="contractor_sup_jerarquico" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_sup_jerarquico}">
+		{BEGIN contractor_sup_jerarquico_label}{$label contractor_master contractor_sup_jerarquico }{END contractor_sup_jerarquico_label}
+	</label>
+	<div class="r-edit-field">
+		{$contractor_sup_jerarquico_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_sup_jerarquico">
+		<div class="text-muted" >
+		{$tooltip contractor_master contractor_sup_jerarquico }		</div>
+	</div>
+</div>
+
+
+{END contractor_sup_jerarquico_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c8}
+			 
+																
+
+{BEGIN cellblock_section1_c9}
+<td
+	{$cell_section1_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c9" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN contractor_dependencia_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_dependencia}  r-vertical-field" 
+	data-fieldname="contractor_dependencia" 
+	data-signal-error-for="contractor_dependencia{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="contractor_dependencia" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contractor_dependencia}">
+		{BEGIN contractor_dependencia_label}{$label contractor_master contractor_dependencia }{END contractor_dependencia_label}
+	</label>
+	<div class="r-edit-field">
+		{$contractor_dependencia_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contractor_dependencia">
+		<div class="text-muted" >
+		{$tooltip contractor_master contractor_dependencia }		</div>
+	</div>
+</div>
+
+
+{END contractor_dependencia_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c9}
 								</tr>
 	 
 	 

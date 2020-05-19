@@ -178,6 +178,18 @@ pdfDocument = {
 										{BEGIN col_grid_39}
 					"%",
 					{END col_grid_39}
+										{BEGIN col_grid_40}
+					"%",
+					{END col_grid_40}
+										{BEGIN col_grid_41}
+					"%",
+					{END col_grid_41}
+										{BEGIN col_grid_42}
+					"%",
+					{END col_grid_42}
+										{BEGIN col_grid_43}
+					"%",
+					{END col_grid_43}
 															],
 							heights: [ // first height for header part
 					"%",
@@ -321,7 +333,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field4}","text":"{$jslabel contractor_master contractor_id }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field27}","text":"{$jslabel contractor_master contractor_id }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -347,7 +359,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field8}","text":"{$jslabel contractor_master contractor_type }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field30}","text":"{$jslabel contractor_master contractor_type }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -373,7 +385,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field23}","text":"{$jslabel contractor_master contractor_doc_id }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field31}","text":"{$jslabel contractor_master contractor_doc_id }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -399,7 +411,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field26}","text":"{$jslabel contractor_master contractor_image }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field34}","text":"{$jslabel contractor_master contractor_image }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -425,7 +437,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field27}","text":"{$jslabel contractor_master contractor_name }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field36}","text":"{$jslabel contractor_master contractor_name }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -451,7 +463,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field30}","text":"{$jslabel contractor_master contractor_lname }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field37}","text":"{$jslabel contractor_master contractor_lname }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -477,7 +489,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field31}","text":"{$jslabel contractor_master enlace_sigep }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field42}","text":"{$jslabel contractor_master enlace_sigep }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -503,7 +515,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field34}","text":"{$jslabel contractor_master contractor_email }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field45}","text":"{$jslabel contractor_master contractor_email }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -529,7 +541,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field36}","text":"{$jslabel contractor_master contractor_email_mincit }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field48}","text":"{$jslabel contractor_master contractor_email_mincit }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -555,7 +567,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field37}","text":"{$jslabel contractor_master contractor_address }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field49}","text":"{$jslabel contractor_master contractor_address }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -581,7 +593,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field42}","text":"{$jslabel contractor_master contractor_phone }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field50}","text":"{$jslabel contractor_master contractor_phone }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -607,7 +619,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field45}","text":"{$jslabel contractor_master contractor_mobile }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field53}","text":"{$jslabel contractor_master contractor_mobile }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -633,7 +645,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field48}","text":"{$jslabel contractor_master contractor_city }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field56}","text":"{$jslabel contractor_master contractor_city }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -659,7 +671,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field49}","text":"{$jslabel contractor_master bank_name }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field57}","text":"{$jslabel contractor_master bank_name }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -685,7 +697,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field50}","text":"{$jslabel contractor_master bank_cta_type }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field58}","text":"{$jslabel contractor_master bank_cta_type }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -711,7 +723,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field53}","text":"{$jslabel contractor_master bank_cta_number }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field59}","text":"{$jslabel contractor_master bank_cta_number }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -737,7 +749,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field56}","text":"{$jslabel contractor_master iva_regimen }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field60}","text":"{$jslabel contractor_master iva_regimen }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -763,7 +775,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field57}","text":"{$jslabel contractor_master sys_update }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field61}","text":"{$jslabel contractor_master sys_update }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -789,7 +801,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field58}","text":"{$jslabel contractor_master sys_user }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field62}","text":"{$jslabel contractor_master sys_user }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -815,7 +827,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field59}","text":"{$jslabel contractor_master sys_date }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field63}","text":"{$jslabel contractor_master sys_date }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -841,7 +853,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field60}","text":"{$jslabel contractor_master sys_level }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field64}","text":"{$jslabel contractor_master sys_level }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -867,7 +879,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field61}","text":"{$jslabel contractor_master sys_status }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field65}","text":"{$jslabel contractor_master sys_status }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -893,7 +905,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field62}","text":"{$jslabel contractor_master groupid }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field66}","text":"{$jslabel contractor_master groupid }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -919,7 +931,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field63}","text":"{$jslabel contractor_master active }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field67}","text":"{$jslabel contractor_master active }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -945,7 +957,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field64}","text":"{$jslabel contractor_master contractor_dependientes }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field68}","text":"{$jslabel contractor_master contractor_dependientes }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -971,7 +983,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field65}","text":"{$jslabel contractor_master contractor_medicinapre_file }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field69}","text":"{$jslabel contractor_master contractor_medicinapre_file }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -997,7 +1009,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field66}","text":"{$jslabel contractor_master contractor_decljur }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field70}","text":"{$jslabel contractor_master contractor_decljur }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1023,7 +1035,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field67}","text":"{$jslabel contractor_master contractor_eps }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field71}","text":"{$jslabel contractor_master contractor_eps }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1049,7 +1061,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field68}","text":"{$jslabel contractor_master contractor_fondopensiones }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field72}","text":"{$jslabel contractor_master contractor_fondopensiones }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1075,7 +1087,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field69}","text":"{$jslabel contractor_master contractor_cajacompensacion }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field73}","text":"{$jslabel contractor_master contractor_cajacompensacion }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1101,7 +1113,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field70}","text":"{$jslabel contractor_master contractor_arl }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field74}","text":"{$jslabel contractor_master contractor_arl }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1127,7 +1139,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field71}","text":"{$jslabel contractor_master ubica_extension }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field75}","text":"{$jslabel contractor_master ubica_extension }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1153,7 +1165,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field72}","text":"{$jslabel contractor_master dem_genero }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field76}","text":"{$jslabel contractor_master dem_genero }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1179,7 +1191,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field73}","text":"{$jslabel contractor_master ct_fecha_nacimiento }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field77}","text":"{$jslabel contractor_master ct_fecha_nacimiento }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1205,7 +1217,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field74}","text":"{$jslabel contractor_master ct_nacionalidad }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field78}","text":"{$jslabel contractor_master ct_nacionalidad }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1231,7 +1243,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field75}","text":"{$jslabel contractor_master dem_discapacidad }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field79}","text":"{$jslabel contractor_master dem_discapacidad }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1257,7 +1269,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field76}","text":"{$jslabel contractor_master emergencia }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field80}","text":"{$jslabel contractor_master emergencia }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1283,7 +1295,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field77}","text":"{$jslabel contractor_master terms_msj }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field81}","text":"{$jslabel contractor_master terms_msj }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1309,7 +1321,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field78}","text":"{$jslabel contractor_master terms_acepta }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field82}","text":"{$jslabel contractor_master terms_acepta }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1335,7 +1347,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field79}","text":"{$jslabel contractor_master dem_profesion }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field83}","text":"{$jslabel contractor_master dem_profesion }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1343,6 +1355,110 @@ pdfDocument = {
   },
 
 {END cellblock_grid_headcell_field39}
+																			{BEGIN cellblock_grid_headcell_field40}
+{
+	cellId: 'headcell_field40',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field84}","text":"{$jslabel contractor_master contractor_sup_jerarquico }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$contractor_sup_jerarquico_align}',
+  },
+
+{END cellblock_grid_headcell_field40}
+																			{BEGIN cellblock_grid_headcell_field41}
+{
+	cellId: 'headcell_field41',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field85}","text":"{$jslabel contractor_master contractor_dependencia }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$contractor_dependencia_align}',
+  },
+
+{END cellblock_grid_headcell_field41}
+																			{BEGIN cellblock_grid_headcell_field42}
+{
+	cellId: 'headcell_field42',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field86}","text":"{$jslabel contractor_master signature }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$signature_align}',
+  },
+
+{END cellblock_grid_headcell_field42}
+																			{BEGIN cellblock_grid_headcell_field43}
+{
+	cellId: 'headcell_field43',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field87}","text":"{$jslabel contractor_master pin }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$pin_align}',
+  },
+
+{END cellblock_grid_headcell_field43}
 											],
 				{END row_grid_0}
 								
@@ -2391,6 +2507,110 @@ pdfDocument = {
   },
 
 {END cellblock_grid_cell_field39}
+																			{BEGIN cellblock_grid_cell_field40}
+{
+	cellId: 'cell_field40',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field4}","text":{$contractor_sup_jerarquico_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$contractor_sup_jerarquico_align}',
+  },
+
+{END cellblock_grid_cell_field40}
+																			{BEGIN cellblock_grid_cell_field41}
+{
+	cellId: 'cell_field41',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field8}","text":{$contractor_dependencia_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$contractor_dependencia_align}',
+  },
+
+{END cellblock_grid_cell_field41}
+																			{BEGIN cellblock_grid_cell_field42}
+{
+	cellId: 'cell_field42',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field23}","text":{$signature_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$signature_align}',
+  },
+
+{END cellblock_grid_cell_field42}
+																			{BEGIN cellblock_grid_cell_field43}
+{
+	cellId: 'cell_field43',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field26}","text":{$pin_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$pin_align}',
+  },
+
+{END cellblock_grid_cell_field43}
 											],
 				{END row_grid_1}
 						{END grid_record}
@@ -3359,6 +3579,102 @@ pdfDocument = {
   },
 
 {END cellblock_grid_footcell_field39}
+																			{BEGIN cellblock_grid_footcell_field40}
+{
+	cellId: 'footcell_field40',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field40}
+																			{BEGIN cellblock_grid_footcell_field41}
+{
+	cellId: 'footcell_field41',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field41}
+																			{BEGIN cellblock_grid_footcell_field42}
+{
+	cellId: 'footcell_field42',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field42}
+																			{BEGIN cellblock_grid_footcell_field43}
+{
+	cellId: 'footcell_field43',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field43}
 											],
 				{END row_grid_2}
 							

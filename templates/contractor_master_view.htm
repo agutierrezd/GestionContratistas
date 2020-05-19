@@ -28,8 +28,8 @@
 		>
 							{BEGIN top_block}
 <div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
-		data-v-width="2"
-	data-v-margin="0"
+		data-v-width="4"
+	data-v-margin="1"
 	
 >		
 	 
@@ -46,8 +46,8 @@
 {END top_block}
 									{BEGIN above-grid_block}
 <div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
-		data-v-width="2"
-	data-v-margin="0"
+		data-v-width="4"
+	data-v-margin="1"
 	
 >		
 	</div>		
@@ -128,24 +128,24 @@
 >
 	<div edit-form-cell class="clearfix">
 				
-{BEGIN terms_acepta_fieldblock}
+{BEGIN terms_msj_fieldblock}
 
 
-<div class="r-integrated-field form-group clearfix {$fielddispclass_terms_acepta}  r-vertical-field" data-fieldname="terms_acepta" data-signal-error-for="terms_acepta{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field54" {$item_integrated_edit_field54} data-pageid="{$pageid}" data-field="terms_acepta" >
+<div class="r-integrated-field form-group clearfix {$fielddispclass_terms_msj}  r-vertical-field" data-fieldname="terms_msj" data-signal-error-for="terms_msj{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field53" {$item_integrated_edit_field53} data-pageid="{$pageid}" data-field="terms_msj" >
 
 	
-	<label class="col-md-offset-3 col-md-6" for="{$labelfor_terms_acepta}">
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_terms_msj}">
 		
-		{BEGIN terms_acepta_label}{$label contractor_master terms_acepta }{END terms_acepta_label}
+		{BEGIN terms_msj_label}{$label contractor_master terms_msj }{END terms_msj_label}
 	</label>
 	<div class="col-md-offset-3 col-md-6" >
-		{$terms_acepta_value}	</div>
+		{$terms_msj_value}	</div>
 
 		
 </div>
 
 
-{END terms_acepta_fieldblock}
+{END terms_msj_fieldblock}
 	
 								</td>
 			{END cellblock_section4_c}
@@ -169,24 +169,24 @@
 >
 	<div edit-form-cell class="clearfix">
 				
-{BEGIN terms_msj_fieldblock}
+{BEGIN terms_acepta_fieldblock}
 
 
-<div class="r-integrated-field form-group clearfix {$fielddispclass_terms_msj}  r-vertical-field" data-fieldname="terms_msj" data-signal-error-for="terms_msj{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field53" {$item_integrated_edit_field53} data-pageid="{$pageid}" data-field="terms_msj" >
+<div class="r-integrated-field form-group clearfix {$fielddispclass_terms_acepta}  r-vertical-field" data-fieldname="terms_acepta" data-signal-error-for="terms_acepta{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field54" {$item_integrated_edit_field54} data-pageid="{$pageid}" data-field="terms_acepta" >
 
 	
-	<label class="col-md-offset-3 col-md-6" for="{$labelfor_terms_msj}">
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_terms_acepta}">
 		
-		{BEGIN terms_msj_label}{$label contractor_master terms_msj }{END terms_msj_label}
+		{BEGIN terms_acepta_label}{$label contractor_master terms_acepta }{END terms_acepta_label}
 	</label>
 	<div class="col-md-offset-3 col-md-6" >
-		{$terms_msj_value}	</div>
+		{$terms_acepta_value}	</div>
 
 		
 </div>
 
 
-{END terms_msj_fieldblock}
+{END terms_acepta_fieldblock}
 	
 								</td>
 			{END cellblock_section4_c1}
@@ -220,33 +220,22 @@
 	{$cell_section_c6}
 	class=" r-ori-vert"
 	
-			data-single
 			
 			data-cellId="section_c6" data-pageid="{$pageid}"
 		data-v-cell="2"
 		
 >
 	<div edit-form-cell class="clearfix">
-				
-{BEGIN contractor_image_fieldblock}
-
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_image}  r-vertical-field" data-fieldname="contractor_image" data-signal-error-for="contractor_image{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="contractor_image" >
-
-		<div class="col-md-12">
-	
-	<label class="" for="{$labelfor_contractor_image}">
-		
-		{BEGIN contractor_image_label}{$label contractor_master contractor_image }{END contractor_image_label}
-	</label>
-	<div class="" >
+				{BEGIN contractor_image_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="contractor_image" data-before-same-field >
 		{$contractor_image_value}	</div>
-
+{END contractor_image_fieldblock}
+											{BEGIN contractor_image_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="contractor_image{$id}" data-itemtype="edit_field_tooltip" data-itemid="edit_field_tooltip" {$item_edit_field_tooltip} data-pageid="{$pageid}" data-field="contractor_image" >
+		<div data-helpfor="contractor_image">
+			<div class="text-muted">{$tooltip contractor_master contractor_image }</div>
 		</div>
-		
-</div>
-
-
+	</div>
 {END contractor_image_fieldblock}
 	
 								</td>
@@ -696,6 +685,49 @@
 								</td>
 			{END cellblock_section_c8}
 								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c13}
+<td
+	{$cell_section_c13}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c13" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text" {$item_text} data-pageid="{$pageid}" data-small > 
+	<div class="alert alert-info">
+  <a href="https://www.funcionpublica.gov.co/web/sigep/hojas-de-vida" class="alert-link" target="_blank">Clic para ir a la página de función pública</a>
+</div></span>
+	
+								</td>
+			{END cellblock_section_c13}
+			 
+		
+							
+
+{BEGIN cellblock_section_c14}
+<td
+	{$cell_section_c14}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c14" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section_c14}
+								</tr>
 			</tbody></table>
 {END section_block}
 						</div>
@@ -876,6 +908,87 @@
 	
 								</td>
 			{END cellblock_section1_c7}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section1_c8}
+<td
+	{$cell_section1_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c8" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN contractor_sup_jerarquico_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_sup_jerarquico}  r-vertical-field" data-fieldname="contractor_sup_jerarquico" data-signal-error-for="contractor_sup_jerarquico{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="contractor_sup_jerarquico" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_contractor_sup_jerarquico}">
+		
+		{BEGIN contractor_sup_jerarquico_label}{$label contractor_master contractor_sup_jerarquico }{END contractor_sup_jerarquico_label}
+	</label>
+	<div class="" >
+		{$contractor_sup_jerarquico_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END contractor_sup_jerarquico_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c8}
+			 
+																
+
+{BEGIN cellblock_section1_c9}
+<td
+	{$cell_section1_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c9" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN contractor_dependencia_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_dependencia}  r-vertical-field" data-fieldname="contractor_dependencia" data-signal-error-for="contractor_dependencia{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="contractor_dependencia" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_contractor_dependencia}">
+		
+		{BEGIN contractor_dependencia_label}{$label contractor_master contractor_dependencia }{END contractor_dependencia_label}
+	</label>
+	<div class="" >
+		{$contractor_dependencia_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END contractor_dependencia_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c9}
 								</tr>
 	 
 	 
@@ -2002,20 +2115,76 @@
 						</div>
 				</div>
 	</div>
-</div>  	
-				 
-	 
-		
-					<table 
+</div>  											<table 
 	data-body-align="center"
 	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
 	class="r-edit-form" cellpadding="0" cellspacing="0" 
 	{$grid_hiddenattr} 
 		data-form-width="1"
 		
-		data-v-width="2"
+		data-v-width="4"
 	>
 	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN signature_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_signature}  r-vertical-field" data-fieldname="signature" data-signal-error-for="signature{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="signature" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_signature}">
+		
+		{BEGIN signature_label}{$label contractor_master signature }{END signature_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$signature_value}	</div>
+
+		
+</div>
+
+
+{END signature_fieldblock}
+											
+{BEGIN pin_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pin}  r-vertical-field" data-fieldname="pin" data-signal-error-for="pin{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="pin" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_pin}">
+		
+		{BEGIN pin_label}{$label contractor_master pin }{END pin_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$pin_value}	</div>
+
+		
+</div>
+
+
+{END pin_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c}
+								</tr>
+	 
+	 
+		
 						<tr>
 						
 
@@ -2028,7 +2197,7 @@
 				data-fullwidth
 		
 			data-cellId="grid_c3" data-pageid="{$pageid}"
-		data-v-cell="2"
+		data-v-cell="4"
 		
 >
 	<div edit-form-cell class="clearfix">
@@ -2039,8 +2208,8 @@
 {END grid_block}
 									{BEGIN below-grid_block}
 <div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
-		data-v-width="2"
-	data-v-margin="0"
+		data-v-width="4"
+	data-v-margin="1"
 	
 >		
 	 

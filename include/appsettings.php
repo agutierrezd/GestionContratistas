@@ -532,10 +532,10 @@ $globalSettings["isDynamicPerm"] = true;
 
 
 $globalSettings["LandingPageType"] = 1;
-$globalSettings["LandingTable"] = "";
-$globalSettings["LandingPage"] = "login";
-$globalSettings["LandingURL"] = "dashboard_dashboard.php";
-$globalSettings["LandingPageId"] = "login";
+$globalSettings["LandingTable"] = "contractor_master";
+$globalSettings["LandingPage"] = "list";
+$globalSettings["LandingURL"] = "contractor_master_list.php?page=list";
+$globalSettings["LandingPageId"] = "list";
 
 $globalSettings["ProjectLogo"] = array();
 $globalSettings["ProjectLogo"]["Spanish"] = "<DIV style=\"position: relative; top: -1px; white-space: nowrap;\">
@@ -548,7 +548,7 @@ $globalSettings["useCookieBanner"] = 1 != 0;
 
 
 $globalSettings["createLoginPage"] = true;
-$globalSettings["userGroupCount"] = 1;
+$globalSettings["userGroupCount"] = 0;
 
 
 $globalSettings["apiGoogleMapsCode"] = "";
@@ -634,7 +634,7 @@ $arrCustomPages = array();
 																					$cUserNameFieldType	= 200;
 																					$cPasswordFieldType	= 200;
 																																																									$cEmailFieldType = 200;
-																																																																																																																																																																																																																																																																																																																																																						
+																																																																																																																																																																																																																																																																																																																																																																																										
 $gPermissionsRefreshTime = 0;
 $gPermissionsRead = false;
 
@@ -644,9 +644,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "219_1589028096";
+$projectBuildKey = "261_1589855724";
 $wizardBuildKey = "34656";
-$projectBuildNumber = "219";
+$projectBuildNumber = "261";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -667,15 +667,11 @@ $menuTreelikeFlags["main"] = 1;
 $tableCaptions = array();
 $tableCaptions["Spanish"] = array();
 $tableCaptions["Spanish"][""] = "";
-$tableCaptions["Spanish"]["funcionario"] = "Funcionario";
-$tableCaptions["Spanish"]["divipola"] = "Divipola";
-$tableCaptions["Spanish"]["global_users"] = "Global Users";
 $tableCaptions["Spanish"]["contractor_master"] = "Contractor Master";
 $tableCaptions["Spanish"]["admin_rights"] = "Admin Rights";
 $tableCaptions["Spanish"]["admin_members"] = "Admin Members";
 $tableCaptions["Spanish"]["admin_users"] = "Add/Edit users";
 $tableCaptions["Spanish"]["tipo_docidentidad"] = "Tipo Docidentidad";
-$tableCaptions["Spanish"]["q_divipola"] = "Q Divipola";
 $tableCaptions["Spanish"]["tipo_banco"] = "Tipo Banco";
 $tableCaptions["Spanish"]["tipo_cta_banco"] = "Tipo Cta Banco";
 $tableCaptions["Spanish"]["tipo_regimen"] = "Tipo Regimen";
@@ -686,6 +682,12 @@ $tableCaptions["Spanish"]["tparam_tipo_ct_arl"] = "Tparam Tipo Ct Arl";
 $tableCaptions["Spanish"]["tparam_genero"] = "Tparam Genero";
 $tableCaptions["Spanish"]["tparam_discapacidad"] = "Tparam Discapacidad";
 $tableCaptions["Spanish"]["tparam_sn"] = "Tparam Sn";
+$tableCaptions["Spanish"]["q_divipola"] = "Q Divipola";
+$tableCaptions["Spanish"]["dependencia"] = "Dependencia";
+$tableCaptions["Spanish"]["dependencias_001"] = "Dependencias 001";
+$tableCaptions["Spanish"]["contrato"] = "Contrato";
+$tableCaptions["Spanish"]["interventor_periodos"] = "Interventor Periodos";
+$tableCaptions["Spanish"]["contractor_master_signature"] = "Contractor Master Signature";
 
 
 $globalEvents = new class_GlobalEvents;

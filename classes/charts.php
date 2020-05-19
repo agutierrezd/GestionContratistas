@@ -490,12 +490,6 @@ class Chart
 		if( !$this->webchart )
 			return true;
 			
-		if("funcionario" == $this->chrt_array['tables'][0])
-			return true;
-		if("divipola" == $this->chrt_array['tables'][0])
-			return true;
-		if("global_users" == $this->chrt_array['tables'][0])
-			return true;
 		if("contractor_master" == $this->chrt_array['tables'][0])
 			return true;
 		if("gestioncontratistas_ver_103_ugrights" == $this->chrt_array['tables'][0])
@@ -505,8 +499,6 @@ class Chart
 		if("contractor_master" == $this->chrt_array['tables'][0])
 			return true;
 		if("tipo_docidentidad" == $this->chrt_array['tables'][0])
-			return true;
-		if("q_divipola" == $this->chrt_array['tables'][0])
 			return true;
 		if("tipo_banco" == $this->chrt_array['tables'][0])
 			return true;
@@ -527,6 +519,18 @@ class Chart
 		if("tparam_discapacidad" == $this->chrt_array['tables'][0])
 			return true;
 		if("tparam_sn" == $this->chrt_array['tables'][0])
+			return true;
+		if("q_divipola" == $this->chrt_array['tables'][0])
+			return true;
+		if("dependencia" == $this->chrt_array['tables'][0])
+			return true;
+		if("dependencias_001" == $this->chrt_array['tables'][0])
+			return true;
+		if("contrato" == $this->chrt_array['tables'][0])
+			return true;
+		if("interventor_periodos" == $this->chrt_array['tables'][0])
+			return true;
+		if("contractor_master" == $this->chrt_array['tables'][0])
 			return true;
 		return false;
 	}

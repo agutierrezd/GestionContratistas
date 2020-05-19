@@ -300,6 +300,18 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_edit_field22}","stack":[{"text":"{$jslabel admin_users dem_profesion }","bold":true},{"text":{$dem_profesion_pdfvalue}}],"margin":[0,0,0,15]},
 				
+				
+			{"hidden":"{$item_hide_integrated_edit_field25}","stack":[{"text":"{$jslabel admin_users contractor_sup_jerarquico }","bold":true},{"text":{$contractor_sup_jerarquico_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field29}","stack":[{"text":"{$jslabel admin_users contractor_dependencia }","bold":true},{"text":{$contractor_dependencia_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field30}","stack":[{"text":"{$jslabel admin_users signature }","bold":true},{"text":{$signature_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field35}","stack":[{"text":"{$jslabel admin_users pin }","bold":true},{"text":{$pin_pdfvalue}}],"margin":[0,0,0,15]},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

@@ -94,7 +94,7 @@
 {END item1_menulink}
 
 {BEGIN item6_menulink}
-<tr id="item6" view="topitem" class="runner-b-vmenu runner-vmenu tree Leaf{BEGIN item6_current} current{END item6_current}">
+<tr id="item6" view="topitem" class="runner-b-vmenu runner-vmenu tree Group{BEGIN item6_current} current{END item6_current}">
 	<td class="runner-cl"></td>
 	<td class="runner-cc">
 		{BEGIN item6_groupimage}
@@ -107,10 +107,9 @@
 	</td>
 	<td class="runner-cr"></td>
 </tr>
-{END item6_menulink}
 
 {BEGIN item7_menulink}
-<tr id="item7" view="topitem" class="runner-b-vmenu runner-vmenu tree Leaf{BEGIN item7_current} current{END item7_current}">
+<tr id="item7" topparent="item6" parent="item6" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf{BEGIN item7_current} current{END item7_current}">
 	<td class="runner-cl"></td>
 	<td class="runner-cc">
 		{BEGIN item7_groupimage}
@@ -126,7 +125,7 @@
 {END item7_menulink}
 
 {BEGIN item8_menulink}
-<tr id="item8" view="topitem" class="runner-b-vmenu runner-vmenu tree Leaf{BEGIN item8_current} current{END item8_current}">
+<tr id="item8" topparent="item6" parent="item6" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf{BEGIN item8_current} current{END item8_current}">
 	<td class="runner-cl"></td>
 	<td class="runner-cc">
 		{BEGIN item8_groupimage}
@@ -140,9 +139,10 @@
 	<td class="runner-cr"></td>
 </tr>
 {END item8_menulink}
+{END item6_menulink}
 
 {BEGIN item9_menulink}
-<tr id="item9" view="topitem" class="runner-b-vmenu runner-vmenu tree Leaf{BEGIN item9_current} current{END item9_current}">
+<tr id="item9" view="topitem" class="runner-b-vmenu runner-vmenu tree Group{BEGIN item9_current} current{END item9_current}">
 	<td class="runner-cl"></td>
 	<td class="runner-cc">
 		{BEGIN item9_groupimage}
@@ -155,10 +155,9 @@
 	</td>
 	<td class="runner-cr"></td>
 </tr>
-{END item9_menulink}
 
 {BEGIN item10_menulink}
-<tr id="item10" view="topitem" class="runner-b-vmenu runner-vmenu tree Leaf{BEGIN item10_current} current{END item10_current}">
+<tr id="item10" topparent="item9" parent="item9" class="runner-b-vmenu runner-vmenu tree subitem level1 Leaf{BEGIN item10_current} current{END item10_current}">
 	<td class="runner-cl"></td>
 	<td class="runner-cc">
 		{BEGIN item10_groupimage}
@@ -172,6 +171,7 @@
 	<td class="runner-cr"></td>
 </tr>
 {END item10_menulink}
+{END item9_menulink}
 		{BEGIN adminarea_link}
 	<tr id="itemAAS" view="topitem" class="runner-b-vmenu runner-vmenu tree Separator">
 	<td class="runner-cl"></td>	
@@ -258,7 +258,7 @@
 {END item1_menulink}
 
 {BEGIN item6_menulink}
-<tr class="runner-b-vmenu runner-vmenu simple Leaf{BEGIN item6_current} current{END item6_current}">
+<tr class="runner-b-vmenu runner-vmenu simple Group{BEGIN item6_current} current{END item6_current}">
 	<td class="runner-cl"></td>
 	<td class="runner-cc">
 		{BEGIN item6_groupimage}
@@ -268,45 +268,39 @@
 
 
 
-	</td>
-	<td class="runner-cr"></td>
-</tr>
-{END item6_menulink}
-
-{BEGIN item7_menulink}
-<tr class="runner-b-vmenu runner-vmenu simple Leaf{BEGIN item7_current} current{END item7_current}">
-	<td class="runner-cl"></td>
-	<td class="runner-cc">
-		{BEGIN item7_groupimage}
+				<ul>
+		
+			{BEGIN item7_menulink}
+			<li parent="group6" class="Leaf{BEGIN item7_current} current{END item7_current}">
+				{BEGIN item7_groupimage}
 <span><img alt="*" src="images/plus.gif" class="groupImg"></span>
 {END item7_groupimage}
 <a {$item7_menulink_attrs} {BEGIN item7_current}class="curlink"{END item7_current}>{$item7_title}</a>
 
 
 
-	</td>
-	<td class="runner-cr"></td>
-</tr>
-{END item7_menulink}
-
-{BEGIN item8_menulink}
-<tr class="runner-b-vmenu runner-vmenu simple Leaf{BEGIN item8_current} current{END item8_current}">
-	<td class="runner-cl"></td>
-	<td class="runner-cc">
-		{BEGIN item8_groupimage}
+			</li>
+			{END item7_menulink}
+						
+			{BEGIN item8_menulink}
+			<li parent="group6" class="Leaf{BEGIN item8_current} current{END item8_current}">
+				{BEGIN item8_groupimage}
 <span><img alt="*" src="images/plus.gif" class="groupImg"></span>
 {END item8_groupimage}
 <a {$item8_menulink_attrs} {BEGIN item8_current}class="curlink"{END item8_current}>{$item8_title}</a>
 
 
 
+			</li>
+			{END item8_menulink}
+				</ul>
 	</td>
 	<td class="runner-cr"></td>
 </tr>
-{END item8_menulink}
+{END item6_menulink}
 
 {BEGIN item9_menulink}
-<tr class="runner-b-vmenu runner-vmenu simple Leaf{BEGIN item9_current} current{END item9_current}">
+<tr class="runner-b-vmenu runner-vmenu simple Group{BEGIN item9_current} current{END item9_current}">
 	<td class="runner-cl"></td>
 	<td class="runner-cc">
 		{BEGIN item9_groupimage}
@@ -316,26 +310,24 @@
 
 
 
-	</td>
-	<td class="runner-cr"></td>
-</tr>
-{END item9_menulink}
-
-{BEGIN item10_menulink}
-<tr class="runner-b-vmenu runner-vmenu simple Leaf{BEGIN item10_current} current{END item10_current}">
-	<td class="runner-cl"></td>
-	<td class="runner-cc">
-		{BEGIN item10_groupimage}
+				<ul>
+		
+			{BEGIN item10_menulink}
+			<li parent="group9" class="Leaf{BEGIN item10_current} current{END item10_current}">
+				{BEGIN item10_groupimage}
 <span><img alt="*" src="images/plus.gif" class="groupImg"></span>
 {END item10_groupimage}
 <a {$item10_menulink_attrs} {BEGIN item10_current}class="curlink"{END item10_current}>{$item10_title}</a>
 
 
 
+			</li>
+			{END item10_menulink}
+				</ul>
 	</td>
 	<td class="runner-cr"></td>
 </tr>
-{END item10_menulink}
+{END item9_menulink}
 		{BEGIN adminarea_link}
 	<tr id="itemAAS" view="topitem" class="runner-b-vmenu runner-vmenu tree Separator">
 	<td class="runner-cl"></td>	

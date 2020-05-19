@@ -41,6 +41,30 @@ pdfDocument = {
 				
 					[
 												{
+	cellId: 'c',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":{$pdf_image images/logo_institucional.png 0 0},"hidden":"{$item_hide_image}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+								[
+												{
 	cellId: 'c1',
 	col:0,
 	row:0,
@@ -850,6 +874,62 @@ pdfDocument = {
 				{END row_section1_1}
 								{BEGIN row_section1_2}
 				[
+												{BEGIN cellblock_section1_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel contractor_master contractor_sup_jerarquico }","bold":true},{"text":{$contractor_sup_jerarquico_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c8}
+																			{BEGIN cellblock_section1_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel contractor_master contractor_dependencia }","bold":true},{"text":{$contractor_dependencia_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c9}
+											],
+				{END row_section1_2}
+								{BEGIN row_section1_3}
+				[
 												{BEGIN cellblock_section1_c4}
 {
 	cellId: 'c4',
@@ -901,7 +981,7 @@ pdfDocument = {
 
 {END cellblock_section1_c5}
 											],
-				{END row_section1_2}
+				{END row_section1_3}
 									]
 					}
 				}]

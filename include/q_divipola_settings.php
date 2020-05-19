@@ -163,7 +163,7 @@ $tdataq_divipola[".addPageEvents"] = false;
 $tdataq_divipola[".isUseTimeForSearch"] = false;
 
 
-$tdataq_divipola[".badgeColor"] = "DC143C";
+$tdataq_divipola[".badgeColor"] = "8FBC8B";
 
 
 $tdataq_divipola[".allSearchFields"] = array();
@@ -1244,7 +1244,7 @@ $proto0["m_strFrom"] = "FROM q_divipola";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
 	
-								;
+						;
 			$proto0["cipherer"] = null;
 $proto2=array();
 $proto2["m_sql"] = "";
@@ -1427,7 +1427,7 @@ $queryData_q_divipola = createSqlQuery_q_divipola();
 
 
 	
-								;
+						;
 
 							
 

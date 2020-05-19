@@ -64,51 +64,64 @@
 {END item1_menulink}
 
 {BEGIN item6_menulink}
-<div id="item6" class="rnr-b-hmenu {$menustyle} Leaf {$item6_current}">
+<div id="item6" class="rnr-b-hmenu {$menustyle} Group {$item6_current}">
 	<span class="rnr-hseparator"></span><div>
 <a {$item6_menulink_attrs}>{$item6_title}</a></div>
 
 
 
+		<ul>
+		
+		{BEGIN item7_menulink}
+		<li parent="group6" class="Leaf {$item7_current} menuLeaf">
+			<div>
+<div>
+<a {$item7_menulink_attrs}>{$item7_title}</a>
+</div>
+</div>
+
+
+
+		</li>
+		{END item7_menulink}
+				
+		{BEGIN item8_menulink}
+		<li parent="group6" class="Leaf {$item8_current} menuLeaf">
+			<div>
+<div>
+<a {$item8_menulink_attrs}>{$item8_title}</a>
+</div>
+</div>
+
+
+
+		</li>
+		{END item8_menulink}
+		</ul>
 </div>
 {END item6_menulink}
 
-{BEGIN item7_menulink}
-<div id="item7" class="rnr-b-hmenu {$menustyle} Leaf {$item7_current}">
-	<span class="rnr-hseparator"></span><div>
-<a {$item7_menulink_attrs}>{$item7_title}</a></div>
-
-
-
-</div>
-{END item7_menulink}
-
-{BEGIN item8_menulink}
-<div id="item8" class="rnr-b-hmenu {$menustyle} Leaf {$item8_current}">
-	<span class="rnr-hseparator"></span><div>
-<a {$item8_menulink_attrs}>{$item8_title}</a></div>
-
-
-
-</div>
-{END item8_menulink}
-
 {BEGIN item9_menulink}
-<div id="item9" class="rnr-b-hmenu {$menustyle} Leaf {$item9_current}">
+<div id="item9" class="rnr-b-hmenu {$menustyle} Group {$item9_current}">
 	<span class="rnr-hseparator"></span><div>
 <a {$item9_menulink_attrs}>{$item9_title}</a></div>
 
 
 
+		<ul>
+		
+		{BEGIN item10_menulink}
+		<li parent="group9" class="Leaf {$item10_current} menuLeaf">
+			<div>
+<div>
+<a {$item10_menulink_attrs}>{$item10_title}</a>
+</div>
+</div>
+
+
+
+		</li>
+		{END item10_menulink}
+		</ul>
 </div>
 {END item9_menulink}
-
-{BEGIN item10_menulink}
-<div id="item10" class="rnr-b-hmenu {$menustyle} Leaf {$item10_current}">
-	<span class="rnr-hseparator"></span><div>
-<a {$item10_menulink_attrs}>{$item10_title}</a></div>
-
-
-
-</div>
-{END item10_menulink}

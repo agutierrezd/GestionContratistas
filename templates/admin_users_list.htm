@@ -113,6 +113,58 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_active}</span>
 						</div>
 		{END searchCtrlBlock_active}
+																{BEGIN searchCtrlBlock_pin}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_pin}" {$filterRow_attrs_pin}>
+			<label>{$label admin_users pin }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_pin}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_pin}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_pin}</span>
+						</div>
+		{END searchCtrlBlock_pin}
+																{BEGIN searchCtrlBlock_signature}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_signature}" {$filterRow_attrs_signature}>
+			<label>{$label admin_users signature }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_signature}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_signature}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_signature}</span>
+						</div>
+		{END searchCtrlBlock_signature}
+																{BEGIN searchCtrlBlock_contractor_dependencia}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_dependencia}" {$filterRow_attrs_contractor_dependencia}>
+			<label>{$label admin_users contractor_dependencia }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_dependencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_dependencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_dependencia}</span>
+						</div>
+		{END searchCtrlBlock_contractor_dependencia}
+																{BEGIN searchCtrlBlock_contractor_sup_jerarquico}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contractor_sup_jerarquico}" {$filterRow_attrs_contractor_sup_jerarquico}>
+			<label>{$label admin_users contractor_sup_jerarquico }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contractor_sup_jerarquico}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contractor_sup_jerarquico}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_sup_jerarquico}</span>
+						</div>
+		{END searchCtrlBlock_contractor_sup_jerarquico}
 																{BEGIN searchCtrlBlock_dem_profesion}
 
 
@@ -1088,6 +1140,12 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_city"]:before {
 		content: "{$label admin_users contractor_city}";
 	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_sup_jerarquico"]:before {
+		content: "{$label admin_users contractor_sup_jerarquico}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contractor_dependencia"]:before {
+		content: "{$label admin_users contractor_dependencia}";
+	}
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="bank_name"]:before {
 		content: "{$label admin_users bank_name}";
 	}
@@ -1187,6 +1245,12 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="terms_acepta"]:before {
 		content: "{$label admin_users terms_acepta}";
 	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="signature"]:before {
+		content: "{$label admin_users signature}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="pin"]:before {
+		content: "{$label admin_users pin}";
+	}
 	}
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  r-flexgrid rnr-b-grid rnr-gridtable" 
@@ -1260,7 +1324,7 @@
 	 
 		{BEGIN contractor_id_fieldheadercolumn}
 	{BEGIN contractor_id_fieldheader}
-	<SPAN {$contractor_id_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_id">
+	<SPAN {$contractor_id_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field37" {$item_simple_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_id">
 	{$label admin_users contractor_id }	{$arrow_icon_contractor_id}
 	</SPAN>
 	{END contractor_id_fieldheader}
@@ -1287,7 +1351,7 @@
 	 
 		{BEGIN contractor_type_fieldheadercolumn}
 	{BEGIN contractor_type_fieldheader}
-	<SPAN {$contractor_type_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_type">
+	<SPAN {$contractor_type_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field48" {$item_simple_grid_field48} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_type">
 	{$label admin_users contractor_type }	{$arrow_icon_contractor_type}
 	</SPAN>
 	{END contractor_type_fieldheader}
@@ -1314,7 +1378,7 @@
 	 
 		{BEGIN contractor_doc_id_fieldheadercolumn}
 	{BEGIN contractor_doc_id_fieldheader}
-	<SPAN {$contractor_doc_id_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_doc_id">
+	<SPAN {$contractor_doc_id_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field53" {$item_simple_grid_field53} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_doc_id">
 	{$label admin_users contractor_doc_id }	{$arrow_icon_contractor_doc_id}
 	</SPAN>
 	{END contractor_doc_id_fieldheader}
@@ -1341,7 +1405,7 @@
 	 
 		{BEGIN contractor_doc_dv_fieldheadercolumn}
 	{BEGIN contractor_doc_dv_fieldheader}
-	<SPAN {$contractor_doc_dv_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_doc_dv">
+	<SPAN {$contractor_doc_dv_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field56" {$item_simple_grid_field56} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_doc_dv">
 	{$label admin_users contractor_doc_dv }	{$arrow_icon_contractor_doc_dv}
 	</SPAN>
 	{END contractor_doc_dv_fieldheader}
@@ -1368,7 +1432,7 @@
 	 
 		{BEGIN contractor_pwd_fieldheadercolumn}
 	{BEGIN contractor_pwd_fieldheader}
-	<SPAN {$contractor_pwd_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field37" {$item_simple_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_pwd">
+	<SPAN {$contractor_pwd_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field57" {$item_simple_grid_field57} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_pwd">
 	{$label admin_users contractor_pwd }	{$arrow_icon_contractor_pwd}
 	</SPAN>
 	{END contractor_pwd_fieldheader}
@@ -1395,7 +1459,7 @@
 	 
 		{BEGIN contractor_image_fieldheadercolumn}
 	{BEGIN contractor_image_fieldheader}
-	<SPAN {$contractor_image_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field48" {$item_simple_grid_field48} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_image">
+	<SPAN {$contractor_image_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field58" {$item_simple_grid_field58} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_image">
 	{$label admin_users contractor_image }	{$arrow_icon_contractor_image}
 	</SPAN>
 	{END contractor_image_fieldheader}
@@ -1422,7 +1486,7 @@
 	 
 		{BEGIN contractor_name_fieldheadercolumn}
 	{BEGIN contractor_name_fieldheader}
-	<SPAN {$contractor_name_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field53" {$item_simple_grid_field53} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_name">
+	<SPAN {$contractor_name_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field59" {$item_simple_grid_field59} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_name">
 	{$label admin_users contractor_name }	{$arrow_icon_contractor_name}
 	</SPAN>
 	{END contractor_name_fieldheader}
@@ -1449,7 +1513,7 @@
 	 
 		{BEGIN contractor_lname_fieldheadercolumn}
 	{BEGIN contractor_lname_fieldheader}
-	<SPAN {$contractor_lname_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field56" {$item_simple_grid_field56} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_lname">
+	<SPAN {$contractor_lname_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field60" {$item_simple_grid_field60} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_lname">
 	{$label admin_users contractor_lname }	{$arrow_icon_contractor_lname}
 	</SPAN>
 	{END contractor_lname_fieldheader}
@@ -1476,7 +1540,7 @@
 	 
 		{BEGIN contractor_nombresfull_fieldheadercolumn}
 	{BEGIN contractor_nombresfull_fieldheader}
-	<SPAN {$contractor_nombresfull_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field57" {$item_simple_grid_field57} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_nombresfull">
+	<SPAN {$contractor_nombresfull_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field61" {$item_simple_grid_field61} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_nombresfull">
 	{$label admin_users contractor_nombresfull }	{$arrow_icon_contractor_nombresfull}
 	</SPAN>
 	{END contractor_nombresfull_fieldheader}
@@ -1503,7 +1567,7 @@
 	 
 		{BEGIN enlace_sigep_fieldheadercolumn}
 	{BEGIN enlace_sigep_fieldheader}
-	<SPAN {$enlace_sigep_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field58" {$item_simple_grid_field58} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="enlace_sigep">
+	<SPAN {$enlace_sigep_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field62" {$item_simple_grid_field62} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="enlace_sigep">
 	{$label admin_users enlace_sigep }	{$arrow_icon_enlace_sigep}
 	</SPAN>
 	{END enlace_sigep_fieldheader}
@@ -1530,7 +1594,7 @@
 	 
 		{BEGIN contractor_email_fieldheadercolumn}
 	{BEGIN contractor_email_fieldheader}
-	<SPAN {$contractor_email_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field59" {$item_simple_grid_field59} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_email">
+	<SPAN {$contractor_email_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field63" {$item_simple_grid_field63} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_email">
 	{$label admin_users contractor_email }	{$arrow_icon_contractor_email}
 	</SPAN>
 	{END contractor_email_fieldheader}
@@ -1557,7 +1621,7 @@
 	 
 		{BEGIN contractor_email_mincit_fieldheadercolumn}
 	{BEGIN contractor_email_mincit_fieldheader}
-	<SPAN {$contractor_email_mincit_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field60" {$item_simple_grid_field60} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_email_mincit">
+	<SPAN {$contractor_email_mincit_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field64" {$item_simple_grid_field64} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_email_mincit">
 	{$label admin_users contractor_email_mincit }	{$arrow_icon_contractor_email_mincit}
 	</SPAN>
 	{END contractor_email_mincit_fieldheader}
@@ -1584,7 +1648,7 @@
 	 
 		{BEGIN contractor_address_fieldheadercolumn}
 	{BEGIN contractor_address_fieldheader}
-	<SPAN {$contractor_address_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field61" {$item_simple_grid_field61} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_address">
+	<SPAN {$contractor_address_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field65" {$item_simple_grid_field65} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_address">
 	{$label admin_users contractor_address }	{$arrow_icon_contractor_address}
 	</SPAN>
 	{END contractor_address_fieldheader}
@@ -1611,7 +1675,7 @@
 	 
 		{BEGIN contractor_phone_fieldheadercolumn}
 	{BEGIN contractor_phone_fieldheader}
-	<SPAN {$contractor_phone_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field62" {$item_simple_grid_field62} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_phone">
+	<SPAN {$contractor_phone_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field66" {$item_simple_grid_field66} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_phone">
 	{$label admin_users contractor_phone }	{$arrow_icon_contractor_phone}
 	</SPAN>
 	{END contractor_phone_fieldheader}
@@ -1638,7 +1702,7 @@
 	 
 		{BEGIN contractor_mobile_fieldheadercolumn}
 	{BEGIN contractor_mobile_fieldheader}
-	<SPAN {$contractor_mobile_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field63" {$item_simple_grid_field63} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_mobile">
+	<SPAN {$contractor_mobile_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field67" {$item_simple_grid_field67} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_mobile">
 	{$label admin_users contractor_mobile }	{$arrow_icon_contractor_mobile}
 	</SPAN>
 	{END contractor_mobile_fieldheader}
@@ -1665,7 +1729,7 @@
 	 
 		{BEGIN contractor_city_fieldheadercolumn}
 	{BEGIN contractor_city_fieldheader}
-	<SPAN {$contractor_city_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field64" {$item_simple_grid_field64} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_city">
+	<SPAN {$contractor_city_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field68" {$item_simple_grid_field68} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_city">
 	{$label admin_users contractor_city }	{$arrow_icon_contractor_city}
 	</SPAN>
 	{END contractor_city_fieldheader}
@@ -1692,7 +1756,7 @@
 	 
 		{BEGIN bank_name_fieldheadercolumn}
 	{BEGIN bank_name_fieldheader}
-	<SPAN {$bank_name_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field65" {$item_simple_grid_field65} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="bank_name">
+	<SPAN {$bank_name_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field69" {$item_simple_grid_field69} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="bank_name">
 	{$label admin_users bank_name }	{$arrow_icon_bank_name}
 	</SPAN>
 	{END bank_name_fieldheader}
@@ -1719,7 +1783,7 @@
 	 
 		{BEGIN bank_cta_type_fieldheadercolumn}
 	{BEGIN bank_cta_type_fieldheader}
-	<SPAN {$bank_cta_type_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field66" {$item_simple_grid_field66} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="bank_cta_type">
+	<SPAN {$bank_cta_type_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field70" {$item_simple_grid_field70} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="bank_cta_type">
 	{$label admin_users bank_cta_type }	{$arrow_icon_bank_cta_type}
 	</SPAN>
 	{END bank_cta_type_fieldheader}
@@ -1746,7 +1810,7 @@
 	 
 		{BEGIN bank_cta_number_fieldheadercolumn}
 	{BEGIN bank_cta_number_fieldheader}
-	<SPAN {$bank_cta_number_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field67" {$item_simple_grid_field67} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="bank_cta_number">
+	<SPAN {$bank_cta_number_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field71" {$item_simple_grid_field71} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="bank_cta_number">
 	{$label admin_users bank_cta_number }	{$arrow_icon_bank_cta_number}
 	</SPAN>
 	{END bank_cta_number_fieldheader}
@@ -1773,7 +1837,7 @@
 	 
 		{BEGIN iva_regimen_fieldheadercolumn}
 	{BEGIN iva_regimen_fieldheader}
-	<SPAN {$iva_regimen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field68" {$item_simple_grid_field68} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="iva_regimen">
+	<SPAN {$iva_regimen_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field72" {$item_simple_grid_field72} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="iva_regimen">
 	{$label admin_users iva_regimen }	{$arrow_icon_iva_regimen}
 	</SPAN>
 	{END iva_regimen_fieldheader}
@@ -1800,7 +1864,7 @@
 	 
 		{BEGIN sys_update_fieldheadercolumn}
 	{BEGIN sys_update_fieldheader}
-	<SPAN {$sys_update_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field69" {$item_simple_grid_field69} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_update">
+	<SPAN {$sys_update_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field73" {$item_simple_grid_field73} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_update">
 	{$label admin_users sys_update }	{$arrow_icon_sys_update}
 	</SPAN>
 	{END sys_update_fieldheader}
@@ -1827,7 +1891,7 @@
 	 
 		{BEGIN sys_user_fieldheadercolumn}
 	{BEGIN sys_user_fieldheader}
-	<SPAN {$sys_user_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field70" {$item_simple_grid_field70} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_user">
+	<SPAN {$sys_user_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field74" {$item_simple_grid_field74} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_user">
 	{$label admin_users sys_user }	{$arrow_icon_sys_user}
 	</SPAN>
 	{END sys_user_fieldheader}
@@ -1854,7 +1918,7 @@
 	 
 		{BEGIN sys_date_fieldheadercolumn}
 	{BEGIN sys_date_fieldheader}
-	<SPAN {$sys_date_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field71" {$item_simple_grid_field71} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_date">
+	<SPAN {$sys_date_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field75" {$item_simple_grid_field75} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_date">
 	{$label admin_users sys_date }	{$arrow_icon_sys_date}
 	</SPAN>
 	{END sys_date_fieldheader}
@@ -1881,7 +1945,7 @@
 	 
 		{BEGIN sys_level_fieldheadercolumn}
 	{BEGIN sys_level_fieldheader}
-	<SPAN {$sys_level_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field72" {$item_simple_grid_field72} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_level">
+	<SPAN {$sys_level_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field76" {$item_simple_grid_field76} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_level">
 	{$label admin_users sys_level }	{$arrow_icon_sys_level}
 	</SPAN>
 	{END sys_level_fieldheader}
@@ -1908,7 +1972,7 @@
 	 
 		{BEGIN sys_status_fieldheadercolumn}
 	{BEGIN sys_status_fieldheader}
-	<SPAN {$sys_status_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field73" {$item_simple_grid_field73} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_status">
+	<SPAN {$sys_status_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field77" {$item_simple_grid_field77} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_status">
 	{$label admin_users sys_status }	{$arrow_icon_sys_status}
 	</SPAN>
 	{END sys_status_fieldheader}
@@ -1935,7 +1999,7 @@
 	 
 		{BEGIN sys_last_upd_fieldheadercolumn}
 	{BEGIN sys_last_upd_fieldheader}
-	<SPAN {$sys_last_upd_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field74" {$item_simple_grid_field74} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_last_upd">
+	<SPAN {$sys_last_upd_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field78" {$item_simple_grid_field78} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_last_upd">
 	{$label admin_users sys_last_upd }	{$arrow_icon_sys_last_upd}
 	</SPAN>
 	{END sys_last_upd_fieldheader}
@@ -1962,7 +2026,7 @@
 	 
 		{BEGIN groupid_fieldheadercolumn}
 	{BEGIN groupid_fieldheader}
-	<SPAN {$groupid_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field75" {$item_simple_grid_field75} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="groupid">
+	<SPAN {$groupid_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field79" {$item_simple_grid_field79} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="groupid">
 	{$label admin_users groupid }	{$arrow_icon_groupid}
 	</SPAN>
 	{END groupid_fieldheader}
@@ -1989,7 +2053,7 @@
 	 
 		{BEGIN active_fieldheadercolumn}
 	{BEGIN active_fieldheader}
-	<SPAN {$active_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field76" {$item_simple_grid_field76} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="active">
+	<SPAN {$active_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field80" {$item_simple_grid_field80} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="active">
 	{$label admin_users active }	{$arrow_icon_active}
 	</SPAN>
 	{END active_fieldheader}
@@ -2016,7 +2080,7 @@
 	 
 		{BEGIN contractor_dependientes_fieldheadercolumn}
 	{BEGIN contractor_dependientes_fieldheader}
-	<SPAN {$contractor_dependientes_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field77" {$item_simple_grid_field77} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_dependientes">
+	<SPAN {$contractor_dependientes_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field81" {$item_simple_grid_field81} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_dependientes">
 	{$label admin_users contractor_dependientes }	{$arrow_icon_contractor_dependientes}
 	</SPAN>
 	{END contractor_dependientes_fieldheader}
@@ -2043,7 +2107,7 @@
 	 
 		{BEGIN contractor_medicinapre_file_fieldheadercolumn}
 	{BEGIN contractor_medicinapre_file_fieldheader}
-	<SPAN {$contractor_medicinapre_file_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field78" {$item_simple_grid_field78} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_medicinapre_file">
+	<SPAN {$contractor_medicinapre_file_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field82" {$item_simple_grid_field82} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_medicinapre_file">
 	{$label admin_users contractor_medicinapre_file }	{$arrow_icon_contractor_medicinapre_file}
 	</SPAN>
 	{END contractor_medicinapre_file_fieldheader}
@@ -2070,7 +2134,7 @@
 	 
 		{BEGIN contractor_picmonetaria_file_fieldheadercolumn}
 	{BEGIN contractor_picmonetaria_file_fieldheader}
-	<SPAN {$contractor_picmonetaria_file_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field79" {$item_simple_grid_field79} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_picmonetaria_file">
+	<SPAN {$contractor_picmonetaria_file_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field83" {$item_simple_grid_field83} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_picmonetaria_file">
 	{$label admin_users contractor_picmonetaria_file }	{$arrow_icon_contractor_picmonetaria_file}
 	</SPAN>
 	{END contractor_picmonetaria_file_fieldheader}
@@ -2097,7 +2161,7 @@
 	 
 		{BEGIN contractor_decljur_fieldheadercolumn}
 	{BEGIN contractor_decljur_fieldheader}
-	<SPAN {$contractor_decljur_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field80" {$item_simple_grid_field80} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_decljur">
+	<SPAN {$contractor_decljur_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field84" {$item_simple_grid_field84} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_decljur">
 	{$label admin_users contractor_decljur }	{$arrow_icon_contractor_decljur}
 	</SPAN>
 	{END contractor_decljur_fieldheader}
@@ -2124,7 +2188,7 @@
 	 
 		{BEGIN contractor_eps_fieldheadercolumn}
 	{BEGIN contractor_eps_fieldheader}
-	<SPAN {$contractor_eps_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field81" {$item_simple_grid_field81} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_eps">
+	<SPAN {$contractor_eps_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field85" {$item_simple_grid_field85} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_eps">
 	{$label admin_users contractor_eps }	{$arrow_icon_contractor_eps}
 	</SPAN>
 	{END contractor_eps_fieldheader}
@@ -2151,7 +2215,7 @@
 	 
 		{BEGIN contractor_fondopensiones_fieldheadercolumn}
 	{BEGIN contractor_fondopensiones_fieldheader}
-	<SPAN {$contractor_fondopensiones_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field82" {$item_simple_grid_field82} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_fondopensiones">
+	<SPAN {$contractor_fondopensiones_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field86" {$item_simple_grid_field86} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_fondopensiones">
 	{$label admin_users contractor_fondopensiones }	{$arrow_icon_contractor_fondopensiones}
 	</SPAN>
 	{END contractor_fondopensiones_fieldheader}
@@ -2178,7 +2242,7 @@
 	 
 		{BEGIN contractor_cajacompensacion_fieldheadercolumn}
 	{BEGIN contractor_cajacompensacion_fieldheader}
-	<SPAN {$contractor_cajacompensacion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field83" {$item_simple_grid_field83} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_cajacompensacion">
+	<SPAN {$contractor_cajacompensacion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field87" {$item_simple_grid_field87} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_cajacompensacion">
 	{$label admin_users contractor_cajacompensacion }	{$arrow_icon_contractor_cajacompensacion}
 	</SPAN>
 	{END contractor_cajacompensacion_fieldheader}
@@ -2205,7 +2269,7 @@
 	 
 		{BEGIN contractor_arl_fieldheadercolumn}
 	{BEGIN contractor_arl_fieldheader}
-	<SPAN {$contractor_arl_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field84" {$item_simple_grid_field84} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_arl">
+	<SPAN {$contractor_arl_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field88" {$item_simple_grid_field88} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_arl">
 	{$label admin_users contractor_arl }	{$arrow_icon_contractor_arl}
 	</SPAN>
 	{END contractor_arl_fieldheader}
@@ -2232,7 +2296,7 @@
 	 
 		{BEGIN ubica_dep_fieldheadercolumn}
 	{BEGIN ubica_dep_fieldheader}
-	<SPAN {$ubica_dep_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field85" {$item_simple_grid_field85} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ubica_dep">
+	<SPAN {$ubica_dep_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field89" {$item_simple_grid_field89} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ubica_dep">
 	{$label admin_users ubica_dep }	{$arrow_icon_ubica_dep}
 	</SPAN>
 	{END ubica_dep_fieldheader}
@@ -2259,7 +2323,7 @@
 	 
 		{BEGIN ubica_extension_fieldheadercolumn}
 	{BEGIN ubica_extension_fieldheader}
-	<SPAN {$ubica_extension_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field86" {$item_simple_grid_field86} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ubica_extension">
+	<SPAN {$ubica_extension_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field90" {$item_simple_grid_field90} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ubica_extension">
 	{$label admin_users ubica_extension }	{$arrow_icon_ubica_extension}
 	</SPAN>
 	{END ubica_extension_fieldheader}
@@ -2286,7 +2350,7 @@
 	 
 		{BEGIN dem_genero_fieldheadercolumn}
 	{BEGIN dem_genero_fieldheader}
-	<SPAN {$dem_genero_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field87" {$item_simple_grid_field87} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_genero">
+	<SPAN {$dem_genero_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field91" {$item_simple_grid_field91} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_genero">
 	{$label admin_users dem_genero }	{$arrow_icon_dem_genero}
 	</SPAN>
 	{END dem_genero_fieldheader}
@@ -2313,7 +2377,7 @@
 	 
 		{BEGIN dem_ocupacion_fieldheadercolumn}
 	{BEGIN dem_ocupacion_fieldheader}
-	<SPAN {$dem_ocupacion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field88" {$item_simple_grid_field88} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_ocupacion">
+	<SPAN {$dem_ocupacion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field92" {$item_simple_grid_field92} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_ocupacion">
 	{$label admin_users dem_ocupacion }	{$arrow_icon_dem_ocupacion}
 	</SPAN>
 	{END dem_ocupacion_fieldheader}
@@ -2340,7 +2404,7 @@
 	 
 		{BEGIN ct_fecha_nacimiento_fieldheadercolumn}
 	{BEGIN ct_fecha_nacimiento_fieldheader}
-	<SPAN {$ct_fecha_nacimiento_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field89" {$item_simple_grid_field89} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ct_fecha_nacimiento">
+	<SPAN {$ct_fecha_nacimiento_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field93" {$item_simple_grid_field93} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ct_fecha_nacimiento">
 	{$label admin_users ct_fecha_nacimiento }	{$arrow_icon_ct_fecha_nacimiento}
 	</SPAN>
 	{END ct_fecha_nacimiento_fieldheader}
@@ -2367,7 +2431,7 @@
 	 
 		{BEGIN ct_nacionalidad_fieldheadercolumn}
 	{BEGIN ct_nacionalidad_fieldheader}
-	<SPAN {$ct_nacionalidad_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field90" {$item_simple_grid_field90} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ct_nacionalidad">
+	<SPAN {$ct_nacionalidad_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field94" {$item_simple_grid_field94} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ct_nacionalidad">
 	{$label admin_users ct_nacionalidad }	{$arrow_icon_ct_nacionalidad}
 	</SPAN>
 	{END ct_nacionalidad_fieldheader}
@@ -2394,7 +2458,7 @@
 	 
 		{BEGIN dem_edad_fieldheadercolumn}
 	{BEGIN dem_edad_fieldheader}
-	<SPAN {$dem_edad_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field91" {$item_simple_grid_field91} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_edad">
+	<SPAN {$dem_edad_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field95" {$item_simple_grid_field95} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_edad">
 	{$label admin_users dem_edad }	{$arrow_icon_dem_edad}
 	</SPAN>
 	{END dem_edad_fieldheader}
@@ -2421,7 +2485,7 @@
 	 
 		{BEGIN dem_educacion_fieldheadercolumn}
 	{BEGIN dem_educacion_fieldheader}
-	<SPAN {$dem_educacion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field92" {$item_simple_grid_field92} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_educacion">
+	<SPAN {$dem_educacion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field96" {$item_simple_grid_field96} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_educacion">
 	{$label admin_users dem_educacion }	{$arrow_icon_dem_educacion}
 	</SPAN>
 	{END dem_educacion_fieldheader}
@@ -2448,7 +2512,7 @@
 	 
 		{BEGIN dem_discapacidad_fieldheadercolumn}
 	{BEGIN dem_discapacidad_fieldheader}
-	<SPAN {$dem_discapacidad_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field93" {$item_simple_grid_field93} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_discapacidad">
+	<SPAN {$dem_discapacidad_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field97" {$item_simple_grid_field97} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_discapacidad">
 	{$label admin_users dem_discapacidad }	{$arrow_icon_dem_discapacidad}
 	</SPAN>
 	{END dem_discapacidad_fieldheader}
@@ -2475,7 +2539,7 @@
 	 
 		{BEGIN emergencia_fieldheadercolumn}
 	{BEGIN emergencia_fieldheader}
-	<SPAN {$emergencia_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field94" {$item_simple_grid_field94} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="emergencia">
+	<SPAN {$emergencia_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field98" {$item_simple_grid_field98} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="emergencia">
 	{$label admin_users emergencia }	{$arrow_icon_emergencia}
 	</SPAN>
 	{END emergencia_fieldheader}
@@ -2502,7 +2566,7 @@
 	 
 		{BEGIN terms_msj_fieldheadercolumn}
 	{BEGIN terms_msj_fieldheader}
-	<SPAN {$terms_msj_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field95" {$item_simple_grid_field95} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="terms_msj">
+	<SPAN {$terms_msj_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field99" {$item_simple_grid_field99} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="terms_msj">
 	{$label admin_users terms_msj }	{$arrow_icon_terms_msj}
 	</SPAN>
 	{END terms_msj_fieldheader}
@@ -2529,7 +2593,7 @@
 	 
 		{BEGIN terms_acepta_fieldheadercolumn}
 	{BEGIN terms_acepta_fieldheader}
-	<SPAN {$terms_acepta_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field96" {$item_simple_grid_field96} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="terms_acepta">
+	<SPAN {$terms_acepta_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field100" {$item_simple_grid_field100} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="terms_acepta">
 	{$label admin_users terms_acepta }	{$arrow_icon_terms_acepta}
 	</SPAN>
 	{END terms_acepta_fieldheader}
@@ -2556,7 +2620,7 @@
 	 
 		{BEGIN dem_profesion_fieldheadercolumn}
 	{BEGIN dem_profesion_fieldheader}
-	<SPAN {$dem_profesion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field97" {$item_simple_grid_field97} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_profesion">
+	<SPAN {$dem_profesion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field101" {$item_simple_grid_field101} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dem_profesion">
 	{$label admin_users dem_profesion }	{$arrow_icon_dem_profesion}
 	</SPAN>
 	{END dem_profesion_fieldheader}
@@ -2565,6 +2629,114 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field48}
+				 
+					{BEGIN cellblock_grid_headcell_field49}
+	<th
+	
+	{$cell_grid_headcell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contractor_sup_jerarquico_class}
+			"
+
+			data-field="contractor_sup_jerarquico"
+	
+	data-cellId="grid_headcell_field49" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_sup_jerarquico_fieldheadercolumn}
+	{BEGIN contractor_sup_jerarquico_fieldheader}
+	<SPAN {$contractor_sup_jerarquico_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field102" {$item_simple_grid_field102} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_sup_jerarquico">
+	{$label admin_users contractor_sup_jerarquico }	{$arrow_icon_contractor_sup_jerarquico}
+	</SPAN>
+	{END contractor_sup_jerarquico_fieldheader}
+{END contractor_sup_jerarquico_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field49}
+				 
+					{BEGIN cellblock_grid_headcell_field50}
+	<th
+	
+	{$cell_grid_headcell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contractor_dependencia_class}
+			"
+
+			data-field="contractor_dependencia"
+	
+	data-cellId="grid_headcell_field50" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_dependencia_fieldheadercolumn}
+	{BEGIN contractor_dependencia_fieldheader}
+	<SPAN {$contractor_dependencia_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field103" {$item_simple_grid_field103} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_dependencia">
+	{$label admin_users contractor_dependencia }	{$arrow_icon_contractor_dependencia}
+	</SPAN>
+	{END contractor_dependencia_fieldheader}
+{END contractor_dependencia_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field50}
+				 
+					{BEGIN cellblock_grid_headcell_field51}
+	<th
+	
+	{$cell_grid_headcell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$signature_class}
+			"
+
+			data-field="signature"
+	
+	data-cellId="grid_headcell_field51" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN signature_fieldheadercolumn}
+	{BEGIN signature_fieldheader}
+	<SPAN {$signature_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field104" {$item_simple_grid_field104} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="signature">
+	{$label admin_users signature }	{$arrow_icon_signature}
+	</SPAN>
+	{END signature_fieldheader}
+{END signature_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field51}
+				 
+					{BEGIN cellblock_grid_headcell_field52}
+	<th
+	
+	{$cell_grid_headcell_field52}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pin_class}
+			"
+
+			data-field="pin"
+	
+	data-cellId="grid_headcell_field52" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pin_fieldheadercolumn}
+	{BEGIN pin_fieldheader}
+	<SPAN {$pin_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field105" {$item_simple_grid_field105} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pin">
+	{$label admin_users pin }	{$arrow_icon_pin}
+	</SPAN>
+	{END pin_fieldheader}
+{END pin_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field52}
 							</tr>
 					 
 					 
@@ -3759,6 +3931,98 @@
 {END dem_profesion_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field48}
+				 
+					{BEGIN cellblock_grid_cell_field49}
+	<td
+	
+	{$cell_grid_cell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contractor_sup_jerarquico_class}
+			"
+
+			data-field="contractor_sup_jerarquico"
+	
+	data-cellId="grid_cell_field49" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_sup_jerarquico_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_sup_jerarquico" data-default-width >
+{$contractor_sup_jerarquico_value}
+</span>
+{END contractor_sup_jerarquico_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field49}
+				 
+					{BEGIN cellblock_grid_cell_field50}
+	<td
+	
+	{$cell_grid_cell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contractor_dependencia_class}
+			"
+
+			data-field="contractor_dependencia"
+	
+	data-cellId="grid_cell_field50" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contractor_dependencia_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_dependencia" data-default-width >
+{$contractor_dependencia_value}
+</span>
+{END contractor_dependencia_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field50}
+				 
+					{BEGIN cellblock_grid_cell_field51}
+	<td
+	
+	{$cell_grid_cell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$signature_class}
+			"
+
+			data-field="signature"
+	
+	data-cellId="grid_cell_field51" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN signature_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="signature" data-default-width >
+{$signature_value}
+</span>
+{END signature_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field51}
+				 
+					{BEGIN cellblock_grid_cell_field52}
+	<td
+	
+	{$cell_grid_cell_field52}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pin_class}
+			"
+
+			data-field="pin"
+	
+	data-cellId="grid_cell_field52" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pin_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pin" data-default-width >
+{$pin_value}
+</span>
+{END pin_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field52}
 							</tr>
 					 
 					
@@ -4590,6 +4854,70 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field48}
+				 
+					{BEGIN cellblock_grid_footcell_field49}
+	<td
+	
+	{$cell_grid_footcell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field49" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field49}
+				 
+					{BEGIN cellblock_grid_footcell_field50}
+	<td
+	
+	{$cell_grid_footcell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field50" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field50}
+				 
+					{BEGIN cellblock_grid_footcell_field51}
+	<td
+	
+	{$cell_grid_footcell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field51" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field51}
+				 
+					{BEGIN cellblock_grid_footcell_field52}
+	<td
+	
+	{$cell_grid_footcell_field52}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field52" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="admin_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field52}
 							</tr>
 					
 					</tfoot>

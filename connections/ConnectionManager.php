@@ -92,7 +92,7 @@ class ConnectionManager
 	 */
 	public function getDefault()
 	{
-		return $this->byId( "edl_at_localhost" );
+		return $this->byId( "dbct_at_localhost" );
 	}
 
 	/**
@@ -110,7 +110,7 @@ class ConnectionManager
 	 */	
 	public function getForAudit()
 	{
-		return $this->byId( "edl_at_localhost" );
+		return $this->byId( "dbct_at_localhost" );
 	}
 	
 	/**
@@ -119,7 +119,7 @@ class ConnectionManager
 	 */		
 	public function getForLocking()
 	{
-		return $this->byId( "edl_at_localhost" );
+		return $this->byId( "dbct_at_localhost" );
 	}	
 	
 	/**
@@ -275,45 +275,12 @@ class ConnectionManager
 		
 		$data = array();
 		$data["dbType"] = 0;
-		$data["connId"] = "edl_at_localhost";
-		$data["connName"] = "edl at localhost";
-		$data["connStringType"] = "mysql";
-		$data["connectionString"] = "mysql;localhost;root;1qaz2wsx;;edl;;1"; //currently unused
-
-		$this->_connectionsIdByName["edl at localhost"] = "edl_at_localhost";
-		
-		$data["connInfo"] = array();
-		$data["ODBCUID"] = "root";
-		$data["ODBCPWD"] = "1qaz2wsx";
-		$data["leftWrap"] = "`";
-		$data["rightWrap"] = "`";
-		
-		$data["DBPath"] = "db"; //currently unused	
-		$data["useServerMapPath"] = 1; //currently unused
-		
-		$data["connInfo"][0] = "localhost";
-		$data["connInfo"][1] = "root";
-		$data["connInfo"][2] = "1qaz2wsx";
-		$data["connInfo"][3] = "";
-		$data["connInfo"][4] = "edl";
-		$data["connInfo"][5] = ""; //currently unused
-		$data["connInfo"][6] = "1"; //currently unused
-		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=edl;OPTION=3";
-		// encription set
-		$data["EncryptInfo"] = array();
-		$data["EncryptInfo"]["mode"] = 0;
-		$data["EncryptInfo"]["alg"]  = 128;
-		$data["EncryptInfo"]["key"]  = "";
-
-		$connectionsData["edl_at_localhost"] = $data;
-		$data = array();
-		$data["dbType"] = 0;
 		$data["connId"] = "dbct_at_localhost";
-		$data["connName"] = "dbct at localhost";
+		$data["connName"] = "dbct at 127.0.0.1";
 		$data["connStringType"] = "mysql";
-		$data["connectionString"] = "mysql;localhost;root;1qaz2wsx;;dbct;;1"; //currently unused
+		$data["connectionString"] = "mysql;127.0.0.1;root;1qaz2wsx;;dbct;;1"; //currently unused
 
-		$this->_connectionsIdByName["dbct at localhost"] = "dbct_at_localhost";
+		$this->_connectionsIdByName["dbct at 127.0.0.1"] = "dbct_at_localhost";
 		
 		$data["connInfo"] = array();
 		$data["ODBCUID"] = "root";
@@ -324,14 +291,14 @@ class ConnectionManager
 		$data["DBPath"] = "db"; //currently unused	
 		$data["useServerMapPath"] = 1; //currently unused
 		
-		$data["connInfo"][0] = "localhost";
+		$data["connInfo"][0] = "127.0.0.1";
 		$data["connInfo"][1] = "root";
 		$data["connInfo"][2] = "1qaz2wsx";
 		$data["connInfo"][3] = "";
 		$data["connInfo"][4] = "dbct";
 		$data["connInfo"][5] = ""; //currently unused
 		$data["connInfo"][6] = "1"; //currently unused
-		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=dbct;OPTION=3";
+		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=127.0.0.1;Uid=root;Pwd=1qaz2wsx;Database=dbct;OPTION=3";
 		// encription set
 		$data["EncryptInfo"] = array();
 		$data["EncryptInfo"]["mode"] = 0;
@@ -341,12 +308,12 @@ class ConnectionManager
 		$connectionsData["dbct_at_localhost"] = $data;
 		$data = array();
 		$data["dbType"] = 0;
-		$data["connId"] = "dbusers_at_localhost";
-		$data["connName"] = "dbusers at localhost";
+		$data["connId"] = "dbusers_at_127_0_0_1";
+		$data["connName"] = "dbusers at 127.0.0.1";
 		$data["connStringType"] = "mysql";
-		$data["connectionString"] = "mysql;localhost;root;1qaz2wsx;;dbusers;;1"; //currently unused
+		$data["connectionString"] = "mysql;127.0.0.1;root;1qaz2wsx;;dbusers;;1"; //currently unused
 
-		$this->_connectionsIdByName["dbusers at localhost"] = "dbusers_at_localhost";
+		$this->_connectionsIdByName["dbusers at 127.0.0.1"] = "dbusers_at_127_0_0_1";
 		
 		$data["connInfo"] = array();
 		$data["ODBCUID"] = "root";
@@ -357,29 +324,29 @@ class ConnectionManager
 		$data["DBPath"] = "db"; //currently unused	
 		$data["useServerMapPath"] = 1; //currently unused
 		
-		$data["connInfo"][0] = "localhost";
+		$data["connInfo"][0] = "127.0.0.1";
 		$data["connInfo"][1] = "root";
 		$data["connInfo"][2] = "1qaz2wsx";
 		$data["connInfo"][3] = "";
 		$data["connInfo"][4] = "dbusers";
 		$data["connInfo"][5] = ""; //currently unused
 		$data["connInfo"][6] = "1"; //currently unused
-		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=dbusers;OPTION=3";
+		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=127.0.0.1;Uid=root;Pwd=1qaz2wsx;Database=dbusers;OPTION=3";
 		// encription set
 		$data["EncryptInfo"] = array();
 		$data["EncryptInfo"]["mode"] = 0;
 		$data["EncryptInfo"]["alg"]  = 128;
 		$data["EncryptInfo"]["key"]  = "";
 
-		$connectionsData["dbusers_at_localhost"] = $data;
+		$connectionsData["dbusers_at_127_0_0_1"] = $data;
 		$data = array();
 		$data["dbType"] = 0;
-		$data["connId"] = "sep2_at_localhost";
-		$data["connName"] = "sep2 at localhost";
+		$data["connId"] = "edl_at_127_0_0_1";
+		$data["connName"] = "edl at 127.0.0.1";
 		$data["connStringType"] = "mysql";
-		$data["connectionString"] = "mysql;localhost;root;1qaz2wsx;;sep2;;1"; //currently unused
+		$data["connectionString"] = "mysql;127.0.0.1;root;1qaz2wsx;;edl;;1"; //currently unused
 
-		$this->_connectionsIdByName["sep2 at localhost"] = "sep2_at_localhost";
+		$this->_connectionsIdByName["edl at 127.0.0.1"] = "edl_at_127_0_0_1";
 		
 		$data["connInfo"] = array();
 		$data["ODBCUID"] = "root";
@@ -390,21 +357,21 @@ class ConnectionManager
 		$data["DBPath"] = "db"; //currently unused	
 		$data["useServerMapPath"] = 1; //currently unused
 		
-		$data["connInfo"][0] = "localhost";
+		$data["connInfo"][0] = "127.0.0.1";
 		$data["connInfo"][1] = "root";
 		$data["connInfo"][2] = "1qaz2wsx";
 		$data["connInfo"][3] = "";
-		$data["connInfo"][4] = "sep2";
+		$data["connInfo"][4] = "edl";
 		$data["connInfo"][5] = ""; //currently unused
 		$data["connInfo"][6] = "1"; //currently unused
-		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=sep2;OPTION=3";
+		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=127.0.0.1;Uid=root;Pwd=1qaz2wsx;Database=edl;OPTION=3";
 		// encription set
 		$data["EncryptInfo"] = array();
 		$data["EncryptInfo"]["mode"] = 0;
 		$data["EncryptInfo"]["alg"]  = 128;
 		$data["EncryptInfo"]["key"]  = "";
 
-		$connectionsData["sep2_at_localhost"] = $data;
+		$connectionsData["edl_at_127_0_0_1"] = $data;
 		$this->_connectionsData = $connectionsData;
 	}
 	
@@ -415,15 +382,11 @@ class ConnectionManager
 	protected function _setTablesConnectionIds()
 	{
 		$connectionsIds = array();
-		$connectionsIds["funcionario"] = "edl_at_localhost";
-		$connectionsIds["divipola"] = "dbusers_at_localhost";
-		$connectionsIds["global_users"] = "dbusers_at_localhost";
 		$connectionsIds["contractor_master"] = "dbct_at_localhost";
 		$connectionsIds["admin_rights"] = "dbct_at_localhost";
 		$connectionsIds["admin_members"] = "dbct_at_localhost";
 		$connectionsIds["admin_users"] = "dbct_at_localhost";
 		$connectionsIds["tipo_docidentidad"] = "dbct_at_localhost";
-		$connectionsIds["q_divipola"] = "dbusers_at_localhost";
 		$connectionsIds["tipo_banco"] = "dbct_at_localhost";
 		$connectionsIds["tipo_cta_banco"] = "dbct_at_localhost";
 		$connectionsIds["tipo_regimen"] = "dbct_at_localhost";
@@ -433,7 +396,13 @@ class ConnectionManager
 		$connectionsIds["tparam_tipo_ct_arl"] = "dbct_at_localhost";
 		$connectionsIds["tparam_genero"] = "dbct_at_localhost";
 		$connectionsIds["tparam_discapacidad"] = "dbct_at_localhost";
-		$connectionsIds["tparam_sn"] = "edl_at_localhost";
+		$connectionsIds["tparam_sn"] = "dbct_at_localhost";
+		$connectionsIds["q_divipola"] = "dbusers_at_127_0_0_1";
+		$connectionsIds["dependencia"] = "edl_at_127_0_0_1";
+		$connectionsIds["dependencias_001"] = "edl_at_127_0_0_1";
+		$connectionsIds["contrato"] = "dbct_at_localhost";
+		$connectionsIds["interventor_periodos"] = "dbct_at_localhost";
+		$connectionsIds["contractor_master_signature"] = "dbct_at_localhost";
 		$this->_tablesConnectionIds = $connectionsIds;
 	}
 	

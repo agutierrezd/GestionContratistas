@@ -15,12 +15,8 @@ if(!IsAdmin())
 	return;
 }
 $nonAdminTablesArr = array();
-$nonAdminTablesArr[] = "funcionario";
-$nonAdminTablesArr[] = "divipola";
-$nonAdminTablesArr[] = "global_users";
 $nonAdminTablesArr[] = "contractor_master";
 $nonAdminTablesArr[] = "tipo_docidentidad";
-$nonAdminTablesArr[] = "q_divipola";
 $nonAdminTablesArr[] = "tipo_banco";
 $nonAdminTablesArr[] = "tipo_cta_banco";
 $nonAdminTablesArr[] = "tipo_regimen";
@@ -31,6 +27,12 @@ $nonAdminTablesArr[] = "tparam_tipo_ct_arl";
 $nonAdminTablesArr[] = "tparam_genero";
 $nonAdminTablesArr[] = "tparam_discapacidad";
 $nonAdminTablesArr[] = "tparam_sn";
+$nonAdminTablesArr[] = "q_divipola";
+$nonAdminTablesArr[] = "dependencia";
+$nonAdminTablesArr[] = "dependencias_001";
+$nonAdminTablesArr[] = "contrato";
+$nonAdminTablesArr[] = "interventor_periodos";
+$nonAdminTablesArr[] = "contractor_master_signature";
 
 $ug_connection = $cman->getForUserGroups();
 

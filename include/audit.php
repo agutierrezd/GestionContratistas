@@ -355,18 +355,6 @@ class AuditTrailTable
 	
 	function logValueEnable($table)
 	{
-		if($table=="funcionario")
-		{
-			return true;
-		}
-		if($table=="divipola")
-		{
-			return true;
-		}
-		if($table=="global_users")
-		{
-			return true;
-		}
 		if($table=="contractor_master")
 		{
 			return true;
@@ -384,10 +372,6 @@ class AuditTrailTable
 			return false;
 		}
 		if($table=="tipo_docidentidad")
-		{
-			return false;
-		}
-		if($table=="q_divipola")
 		{
 			return false;
 		}
@@ -430,6 +414,30 @@ class AuditTrailTable
 		if($table=="tparam_sn")
 		{
 			return false;
+		}
+		if($table=="q_divipola")
+		{
+			return false;
+		}
+		if($table=="dependencia")
+		{
+			return false;
+		}
+		if($table=="dependencias_001")
+		{
+			return false;
+		}
+		if($table=="contrato")
+		{
+			return false;
+		}
+		if($table=="interventor_periodos")
+		{
+			return false;
+		}
+		if($table=="contractor_master_signature")
+		{
+			return true;
 		}
 	}
 	
@@ -792,18 +800,6 @@ class AuditTrailFile
 	
 	function logValueEnable($table)
 	{
-		if($table=="funcionario")
-		{
-			return true;
-		}
-		if($table=="divipola")
-		{
-			return true;
-		}
-		if($table=="global_users")
-		{
-			return true;
-		}
 		if($table=="contractor_master")
 		{
 			return true;
@@ -821,10 +817,6 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="tipo_docidentidad")
-		{
-			return false;
-		}
-		if($table=="q_divipola")
 		{
 			return false;
 		}
@@ -867,6 +859,30 @@ class AuditTrailFile
 		if($table=="tparam_sn")
 		{
 			return false;
+		}
+		if($table=="q_divipola")
+		{
+			return false;
+		}
+		if($table=="dependencia")
+		{
+			return false;
+		}
+		if($table=="dependencias_001")
+		{
+			return false;
+		}
+		if($table=="contrato")
+		{
+			return false;
+		}
+		if($table=="interventor_periodos")
+		{
+			return false;
+		}
+		if($table=="contractor_master_signature")
+		{
+			return true;
 		}
 	}
 	

@@ -16,6 +16,8 @@ $dalTablecontractor_master["contractor_address"] = array("type"=>200,"varname"=>
 $dalTablecontractor_master["contractor_phone"] = array("type"=>200,"varname"=>"contractor_phone", "name" => "contractor_phone");
 $dalTablecontractor_master["contractor_mobile"] = array("type"=>200,"varname"=>"contractor_mobile", "name" => "contractor_mobile");
 $dalTablecontractor_master["contractor_city"] = array("type"=>200,"varname"=>"contractor_city", "name" => "contractor_city");
+$dalTablecontractor_master["contractor_sup_jerarquico"] = array("type"=>3,"varname"=>"contractor_sup_jerarquico", "name" => "contractor_sup_jerarquico");
+$dalTablecontractor_master["contractor_dependencia"] = array("type"=>3,"varname"=>"contractor_dependencia", "name" => "contractor_dependencia");
 $dalTablecontractor_master["bank_name"] = array("type"=>3,"varname"=>"bank_name", "name" => "bank_name");
 $dalTablecontractor_master["bank_cta_type"] = array("type"=>3,"varname"=>"bank_cta_type", "name" => "bank_cta_type");
 $dalTablecontractor_master["bank_cta_number"] = array("type"=>200,"varname"=>"bank_cta_number", "name" => "bank_cta_number");
@@ -49,6 +51,8 @@ $dalTablecontractor_master["dem_discapacidad"] = array("type"=>200,"varname"=>"d
 $dalTablecontractor_master["emergencia"] = array("type"=>200,"varname"=>"emergencia", "name" => "emergencia");
 $dalTablecontractor_master["terms_msj"] = array("type"=>201,"varname"=>"terms_msj", "name" => "terms_msj");
 $dalTablecontractor_master["terms_acepta"] = array("type"=>16,"varname"=>"terms_acepta", "name" => "terms_acepta");
+$dalTablecontractor_master["signature"] = array("type"=>200,"varname"=>"signature", "name" => "signature");
+$dalTablecontractor_master["pin"] = array("type"=>200,"varname"=>"pin", "name" => "pin");
 	$dalTablecontractor_master["contractor_id"]["key"]=true;
 	$dalTablecontractor_master["contractor_doc_id"]["key"]=true;
 
