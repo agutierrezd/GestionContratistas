@@ -125,6 +125,21 @@ class XTempl_Base
 		
 		if( !$hideAddedCharts ) //#9607 1. Temporary fix
 		{
+			$this->assign_function("contractor_master_chart_genero_chart","xt_showchart",
+			array(
+				"chartName"=>"contractor_master_chart_genero",
+				"table"=>"contractor_master_Chart_genero",
+				"ctype"=>"2DPie"));
+			$this->assign_function("contractor_master_chart_eps_chart","xt_showchart",
+			array(
+				"chartName"=>"contractor_master_chart_eps",
+				"table"=>"contractor_master_chart_eps",
+				"ctype"=>"2DColumn"));
+			$this->assign_function("contractor_master_chart_fondopension_chart","xt_showchart",
+			array(
+				"chartName"=>"contractor_master_chart_fondopension",
+				"table"=>"contractor_master_chart_fondopension",
+				"ctype"=>"2DColumn"));
 		}
 		
 

@@ -1269,10 +1269,14 @@ pdfDocument = {
 	
 	
 	
-			"text": [
+			"stack": [
 		
-				'',
-	  ],
+				
+			 {BEGIN details_informe_intersup}
+			{$displayDetailTable_informe_intersup }
+		{END details_informe_intersup},
+				
+		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
   },

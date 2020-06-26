@@ -245,6 +245,20 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("contractor_master_signature" == $shortTName && ($type===false || ($type!==false && $type == 1)))
 		return true;
+	if ("informe_intersup" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("informe_intersup_estado" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("contractor_master_chart_genero" == $shortTName && ($type===false || ($type!==false && $type == 3)))
+		return true;
+	if ("contractor_master_view" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("contractor_master_chart_eps" == $shortTName && ($type===false || ($type!==false && $type == 3)))
+		return true;
+	if ("contractor_master_chart_fondopension" == $shortTName && ($type===false || ($type!==false && $type == 3)))
+		return true;
+	if ("dashboard" == $shortTName && ($type===false || ($type!==false && $type == 4)))
+		return true;
 	return false;
 }
 
@@ -484,6 +498,69 @@ function GetTablesList($pdfMode = false)
 	if( $tableAvailable ) {
 		$arr[]="contractor_master_signature";
 	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("informe_intersup");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="informe_intersup";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("informe_intersup_estado");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="informe_intersup_estado";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("contractor_master_Chart_genero");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="contractor_master_Chart_genero";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("contractor_master_view");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="contractor_master_view";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("contractor_master_chart_eps");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="contractor_master_chart_eps";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("contractor_master_chart_fondopension");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="contractor_master_chart_fondopension";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("Dashboard");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="Dashboard";
+	}
 	return $arr;
 }
 
@@ -514,6 +591,13 @@ function GetTablesListWithoutSecurity()
 	$arr[]="contrato";
 	$arr[]="interventor_periodos";
 	$arr[]="contractor_master_signature";
+	$arr[]="informe_intersup";
+	$arr[]="informe_intersup_estado";
+	$arr[]="contractor_master_Chart_genero";
+	$arr[]="contractor_master_view";
+	$arr[]="contractor_master_chart_eps";
+	$arr[]="contractor_master_chart_fondopension";
+	$arr[]="Dashboard";
 	return $arr;
 }
 
@@ -557,6 +641,12 @@ function GetFullFieldName($field, $table = "", $addAs = true, $connection = null
  */
 function GetChartType($shorttable)
 {
+	if($shorttable=="contractor_master_chart_genero")
+		return "2DPie";
+	if($shorttable=="contractor_master_chart_eps")
+		return "2DColumn";
+	if($shorttable=="contractor_master_chart_fondopension")
+		return "2DColumn";
 	return "";
 }
 
@@ -1278,127 +1368,141 @@ function GetUserPermissionsStatic( $table )
 	if( $table=="contractor_master" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="admin_rights" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="admin_members" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="admin_users" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tipo_docidentidad" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tipo_banco" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tipo_cta_banco" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tipo_regimen" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_fondosalud" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_fondopension" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_cajacomp" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_tipo_ct_arl" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_genero" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_discapacidad" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_sn" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="q_divipola" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="dependencia" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="dependencias_001" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="contrato" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="interventor_periodos" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="contractor_master_signature" )
 	{
 //	default permissions
-		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="informe_intersup" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="informe_intersup_estado" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="contractor_master_Chart_genero" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="contractor_master_view" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="contractor_master_chart_eps" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="contractor_master_chart_fondopension" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="Dashboard" )
+	{
+//	default permissions
 		return "ADESPI".$extraPerm;
 	}
 	// grant nothing by default
@@ -1523,6 +1627,7 @@ function SetAuthSessionData($pUsername, &$data, $password, &$pageObject = null, 
 	$_SESSION["_contractor_master_OwnerID"] = $data["contractor_doc_id"];
 		$_SESSION["_contrato_OwnerID"] = $data["contractor_doc_id"];
 		$_SESSION["_contractor_master_signature_OwnerID"] = $data["contractor_doc_id"];
+		$_SESSION["_contractor_master_view_OwnerID"] = $data["contractor_doc_id"];
 
 	$_SESSION["UserData"] = $data;
 

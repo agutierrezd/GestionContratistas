@@ -32,19 +32,7 @@
 	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="topbar" {$form_supertop} data-pageid="{$pageid}" >
 			 
 							 
-				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left navbar-header" data-itemid="logo" {$item_logo}>
-				{BEGIN logo_block}
-	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
-		{$logo}
-	</A>
-{END logo_block}
-				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
-					<span class="sr-only">Toggle navigation</span>	
-					<span class="icon-bar"></span>					
-				</button>				
-			</span>
-		 
-				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left r-ori-vert navbar-header" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
 				{$menu main horizontal}			</span>
 							 
 							 

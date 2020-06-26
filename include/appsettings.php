@@ -548,7 +548,7 @@ $globalSettings["useCookieBanner"] = 1 != 0;
 
 
 $globalSettings["createLoginPage"] = true;
-$globalSettings["userGroupCount"] = 0;
+$globalSettings["userGroupCount"] = 1;
 
 
 $globalSettings["apiGoogleMapsCode"] = "";
@@ -644,9 +644,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "263_1589855724";
+$projectBuildKey = "312_1589855724";
 $wizardBuildKey = "34656";
-$projectBuildNumber = "263";
+$projectBuildNumber = "312";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -688,6 +688,13 @@ $tableCaptions["Spanish"]["dependencias_001"] = "Dependencias 001";
 $tableCaptions["Spanish"]["contrato"] = "Contrato";
 $tableCaptions["Spanish"]["interventor_periodos"] = "Interventor Periodos";
 $tableCaptions["Spanish"]["contractor_master_signature"] = "Contractor Master Signature";
+$tableCaptions["Spanish"]["informe_intersup"] = "Informes supervisión";
+$tableCaptions["Spanish"]["informe_intersup_estado"] = "Informe Intersup Estado";
+$tableCaptions["Spanish"]["contractor_master_Chart_genero"] = "Caracterización por género";
+$tableCaptions["Spanish"]["contractor_master_view"] = "Búsqueda por datos identificacores";
+$tableCaptions["Spanish"]["contractor_master_chart_eps"] = "Caracterización por EPS";
+$tableCaptions["Spanish"]["contractor_master_chart_fondopension"] = "Caracterización por FONDO PENSIÓN";
+$tableCaptions["Spanish"]["Dashboard"] = "Tablero";
 
 
 $globalEvents = new class_GlobalEvents;

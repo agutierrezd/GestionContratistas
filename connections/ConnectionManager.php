@@ -298,7 +298,7 @@ class ConnectionManager
 		$data["connInfo"][4] = "dbct";
 		$data["connInfo"][5] = ""; //currently unused
 		$data["connInfo"][6] = "1"; //currently unused
-		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=127.0.0.1;Uid=root;Pwd=1qaz2wsx;Database=dbct;OPTION=3";
+		$data["ODBCString"] = "DRIVER={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Uid=root;Pwd=1qaz2wsx;Database=dbct;OPTION=3";
 		// encription set
 		$data["EncryptInfo"] = array();
 		$data["EncryptInfo"]["mode"] = 0;
@@ -331,7 +331,7 @@ class ConnectionManager
 		$data["connInfo"][4] = "dbusers";
 		$data["connInfo"][5] = ""; //currently unused
 		$data["connInfo"][6] = "1"; //currently unused
-		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=127.0.0.1;Uid=root;Pwd=1qaz2wsx;Database=dbusers;OPTION=3";
+		$data["ODBCString"] = "DRIVER={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Uid=root;Pwd=1qaz2wsx;Database=dbusers;OPTION=3";
 		// encription set
 		$data["EncryptInfo"] = array();
 		$data["EncryptInfo"]["mode"] = 0;
@@ -364,7 +364,7 @@ class ConnectionManager
 		$data["connInfo"][4] = "edl";
 		$data["connInfo"][5] = ""; //currently unused
 		$data["connInfo"][6] = "1"; //currently unused
-		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=127.0.0.1;Uid=root;Pwd=1qaz2wsx;Database=edl;OPTION=3";
+		$data["ODBCString"] = "DRIVER={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Uid=root;Pwd=1qaz2wsx;Database=edl;OPTION=3";
 		// encription set
 		$data["EncryptInfo"] = array();
 		$data["EncryptInfo"]["mode"] = 0;
@@ -403,6 +403,12 @@ class ConnectionManager
 		$connectionsIds["contrato"] = "dbct_at_localhost";
 		$connectionsIds["interventor_periodos"] = "dbct_at_localhost";
 		$connectionsIds["contractor_master_signature"] = "dbct_at_localhost";
+		$connectionsIds["informe_intersup"] = "dbct_at_localhost";
+		$connectionsIds["informe_intersup_estado"] = "dbct_at_localhost";
+		$connectionsIds["contractor_master_Chart_genero"] = "dbct_at_localhost";
+		$connectionsIds["contractor_master_view"] = "dbct_at_localhost";
+		$connectionsIds["contractor_master_chart_eps"] = "dbct_at_localhost";
+		$connectionsIds["contractor_master_chart_fondopension"] = "dbct_at_localhost";
 		$this->_tablesConnectionIds = $connectionsIds;
 	}
 	

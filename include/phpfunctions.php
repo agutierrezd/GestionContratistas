@@ -932,6 +932,16 @@ function fileCustomExpression($file, $data, $field, $ptype, $table )
 		;
 		return $value;
 	}
+				if($table=="contractor_master_view" && $field=="contractor_medicinapre_file")
+	{
+		;
+		return $value;
+	}
+				if($table=="contractor_master_view" && $field=="contractor_decljur")
+	{
+		;
+		return $value;
+	}
 	return $value;
 }
 
@@ -988,6 +998,38 @@ function GetDefaultValue($field, $ptype, $table="")
 	{
 		return 1;
 	}
+				if($table=="contractor_master_view" && $field=="contractor_city")
+	{
+		return 11001;
+	}
+				if($table=="contractor_master_view" && $field=="sys_update")
+	{
+		return 1;
+	}
+				if($table=="contractor_master_view" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="contractor_master_view" && $field=="sys_date")
+	{
+		return strftime("%Y-%m-%d");
+	}
+				if($table=="contractor_master_view" && $field=="sys_level")
+	{
+		return 1;
+	}
+				if($table=="contractor_master_view" && $field=="sys_status")
+	{
+		return 1;
+	}
+				if($table=="contractor_master_view" && $field=="groupid")
+	{
+		return 1;
+	}
+				if($table=="contractor_master_view" && $field=="active")
+	{
+		return 1;
+	}
 	return "";
 }
 
@@ -1024,6 +1066,34 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 		return 1;
 	}
 				if($table=="contractor_master" && $field=="active")
+	{
+		return 1;
+	}
+				if($table=="contractor_master_view" && $field=="sys_update")
+	{
+		return 1;
+	}
+				if($table=="contractor_master_view" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="contractor_master_view" && $field=="sys_date")
+	{
+		return strftime("%Y-%m-%d");
+	}
+				if($table=="contractor_master_view" && $field=="sys_level")
+	{
+		return 1;
+	}
+				if($table=="contractor_master_view" && $field=="sys_status")
+	{
+		return 1;
+	}
+				if($table=="contractor_master_view" && $field=="groupid")
+	{
+		return 1;
+	}
+				if($table=="contractor_master_view" && $field=="active")
 	{
 		return 1;
 	}

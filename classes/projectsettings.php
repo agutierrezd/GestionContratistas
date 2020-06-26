@@ -3141,6 +3141,20 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "interventor_periodos" ] = "interventor_periodos";
 	$projectEntities[ "contractor_master_signature" ] = array( "url" => "contractor_master_signature", "type" => 1 );
 	$projectEntitiesReverse[ "contractor_master_signature" ] = "contractor_master_signature";
+	$projectEntities[ "informe_intersup" ] = array( "url" => "informe_intersup", "type" => 0 );
+	$projectEntitiesReverse[ "informe_intersup" ] = "informe_intersup";
+	$projectEntities[ "informe_intersup_estado" ] = array( "url" => "informe_intersup_estado", "type" => 0 );
+	$projectEntitiesReverse[ "informe_intersup_estado" ] = "informe_intersup_estado";
+	$projectEntities[ "contractor_master_Chart_genero" ] = array( "url" => "contractor_master_chart_genero", "type" => 3 );
+	$projectEntitiesReverse[ "contractor_master_chart_genero" ] = "contractor_master_Chart_genero";
+	$projectEntities[ "contractor_master_view" ] = array( "url" => "contractor_master_view", "type" => 1 );
+	$projectEntitiesReverse[ "contractor_master_view" ] = "contractor_master_view";
+	$projectEntities[ "contractor_master_chart_eps" ] = array( "url" => "contractor_master_chart_eps", "type" => 3 );
+	$projectEntitiesReverse[ "contractor_master_chart_eps" ] = "contractor_master_chart_eps";
+	$projectEntities[ "contractor_master_chart_fondopension" ] = array( "url" => "contractor_master_chart_fondopension", "type" => 3 );
+	$projectEntitiesReverse[ "contractor_master_chart_fondopension" ] = "contractor_master_chart_fondopension";
+	$projectEntities[ "Dashboard" ] = array( "url" => "dashboard", "type" => 4 );
+	$projectEntitiesReverse[ "dashboard" ] = "Dashboard";
 }
 
 function findTable( $table ) {

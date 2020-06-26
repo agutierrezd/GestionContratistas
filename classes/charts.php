@@ -532,6 +532,20 @@ class Chart
 			return true;
 		if("contractor_master" == $this->chrt_array['tables'][0])
 			return true;
+		if("informe_intersup" == $this->chrt_array['tables'][0])
+			return true;
+		if("informe_intersup_estado" == $this->chrt_array['tables'][0])
+			return true;
+		if("contractor_master" == $this->chrt_array['tables'][0])
+			return true;
+		if("contractor_master" == $this->chrt_array['tables'][0])
+			return true;
+		if("contractor_master" == $this->chrt_array['tables'][0])
+			return true;
+		if("contractor_master" == $this->chrt_array['tables'][0])
+			return true;
+		if("" == $this->chrt_array['tables'][0])
+			return true;
 		return false;
 	}
 	

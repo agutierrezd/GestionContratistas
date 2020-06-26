@@ -439,6 +439,34 @@ class AuditTrailTable
 		{
 			return true;
 		}
+		if($table=="informe_intersup")
+		{
+			return true;
+		}
+		if($table=="informe_intersup_estado")
+		{
+			return true;
+		}
+		if($table=="contractor_master_Chart_genero")
+		{
+			return false;
+		}
+		if($table=="contractor_master_view")
+		{
+			return true;
+		}
+		if($table=="contractor_master_chart_eps")
+		{
+			return false;
+		}
+		if($table=="contractor_master_chart_fondopension")
+		{
+			return false;
+		}
+		if($table=="Dashboard")
+		{
+			return false;
+		}
 	}
 	
 	protected function insert($datetime, $ip, $user, $table, $action, $description)
@@ -883,6 +911,34 @@ class AuditTrailFile
 		if($table=="contractor_master_signature")
 		{
 			return true;
+		}
+		if($table=="informe_intersup")
+		{
+			return true;
+		}
+		if($table=="informe_intersup_estado")
+		{
+			return true;
+		}
+		if($table=="contractor_master_Chart_genero")
+		{
+			return false;
+		}
+		if($table=="contractor_master_view")
+		{
+			return true;
+		}
+		if($table=="contractor_master_chart_eps")
+		{
+			return false;
+		}
+		if($table=="contractor_master_chart_fondopension")
+		{
+			return false;
+		}
+		if($table=="Dashboard")
+		{
+			return false;
 		}
 	}
 	

@@ -57,6 +57,8 @@ class tDAL
 	var $tbldbct_at_localhost__gestioncontratistas_ver_103_uggroups;
 	var $tbldbct_at_localhost__gestioncontratistas_ver_103_ugmembers;
 	var $tbldbct_at_localhost__gestioncontratistas_ver_103_ugrights;
+	var $tbldbct_at_localhost__informe_intersup;
+	var $tbldbct_at_localhost__informe_intersup_estado;
 	var $tbldbct_at_localhost__interventor_periodos;
 	var $tbldbct_at_localhost__tipo_banco;
 	var $tbldbct_at_localhost__tipo_cta_banco;
@@ -90,6 +92,8 @@ class tDAL
 		$this->lstTables[] = array("name" => "gestioncontratistas_ver_103_uggroups", "varname" => "dbct_at_localhost__gestioncontratistas_ver_103_uggroups", "altvarname" => "gestioncontratistas_ver_103_uggroups", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
 		$this->lstTables[] = array("name" => "gestioncontratistas_ver_103_ugmembers", "varname" => "dbct_at_localhost__gestioncontratistas_ver_103_ugmembers", "altvarname" => "gestioncontratistas_ver_103_ugmembers", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
 		$this->lstTables[] = array("name" => "gestioncontratistas_ver_103_ugrights", "varname" => "dbct_at_localhost__gestioncontratistas_ver_103_ugrights", "altvarname" => "gestioncontratistas_ver_103_ugrights", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+		$this->lstTables[] = array("name" => "informe_intersup", "varname" => "dbct_at_localhost__informe_intersup", "altvarname" => "informe_intersup", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+		$this->lstTables[] = array("name" => "informe_intersup_estado", "varname" => "dbct_at_localhost__informe_intersup_estado", "altvarname" => "informe_intersup_estado", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
 		$this->lstTables[] = array("name" => "interventor_periodos", "varname" => "dbct_at_localhost__interventor_periodos", "altvarname" => "interventor_periodos", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
 		$this->lstTables[] = array("name" => "tipo_banco", "varname" => "dbct_at_localhost__tipo_banco", "altvarname" => "tipo_banco", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
 		$this->lstTables[] = array("name" => "tipo_cta_banco", "varname" => "dbct_at_localhost__tipo_cta_banco", "altvarname" => "tipo_cta_banco", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");

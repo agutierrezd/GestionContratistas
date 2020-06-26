@@ -9,11 +9,11 @@ $tdatacontrato[".OwnerID"] = "cont_nit_contra_ta";
 $tdatacontrato[".OriginalTable"] = "contrato";
 
 
-$tdatacontrato[".pagesByType"] = my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" );
+$tdatacontrato[".pagesByType"] = my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" );
 $tdatacontrato[".originalPagesByType"] = $tdatacontrato[".pagesByType"];
-$tdatacontrato[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" ) );
+$tdatacontrato[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" ) );
 $tdatacontrato[".originalPages"] = $tdatacontrato[".pages"];
-$tdatacontrato[".defaultPages"] = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"export\":\"export\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\",\"view\":\"view\"}" );
+$tdatacontrato[".defaultPages"] = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"export\":\"export\",\"list\":\"list\",\"masterlist\":\"masterlist\",\"masterprint\":\"masterprint\",\"print\":\"print\",\"search\":\"search\",\"view\":\"view\"}" );
 $tdatacontrato[".originalDefaultPages"] = $tdatacontrato[".defaultPages"];
 
 //	field labels
@@ -9987,6 +9987,35 @@ $page_titles["contrato"] = &$pageTitlescontrato;
 // -----------------start  prepare master-details data arrays ------------------------------//
 // tables which are detail tables for current table (master)
 $detailsTablesData["contrato"] = array();
+//	informe_intersup
+	
+	
+
+		$dIndex = 0;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="informe_intersup";
+		$detailsParam["dOriginalTable"] = "informe_intersup";
+
+
+
+				$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "informe_intersup";
+	$detailsParam["dCaptionTable"] = GetTableCaption("informe_intersup");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["contrato"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["contrato"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["contrato"][$dIndex]["masterKeys"][]="id_cont";
+
+				$detailsTablesData["contrato"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["contrato"][$dIndex]["detailKeys"][]="id_cont_fk";
 
 // tables which are master tables for current table (detail)
 $masterTablesData["contrato"] = array();

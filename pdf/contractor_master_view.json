@@ -127,95 +127,6 @@ pdfDocument = {
 		
 		table: {
 			tableForm: true,
-			location: 'section4',
-			widths: ['*'],
-			body: [
-				[{text: 'Protección de datos', style: 'tableHeader'}],
-				[{
-					table: {
-						tableForm: true,
-						widths: [
-							 
-								{BEGIN col_section4_0}
-								'*', 
-								{END col_section4_0}
-													],
-						body: [
-								
-					{BEGIN row_section4_0}
-				[
-												{BEGIN cellblock_section4_c}
-{
-	cellId: 'c',
-	col:0,
-	row:0,
-			style: 'cell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"stack": [
-		
-				
-			{"hidden":"{$item_hide_integrated_edit_field53}","stack":[{"text":"{$jslabel contractor_master terms_msj }","bold":true},{"text":{$terms_msj_pdfvalue}}],"margin":[0,0,0,15]},
-				
-		  ],
-  "border": [ false, false, false, false ],
-          "alignment": 'left',
-  },
-
-{END cellblock_section4_c}
-											],
-				{END row_section4_0}
-								{BEGIN row_section4_1}
-				[
-												{BEGIN cellblock_section4_c1}
-{
-	cellId: 'c1',
-	col:0,
-	row:0,
-			style: 'cell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"stack": [
-		
-				
-			{"hidden":"{$item_hide_integrated_edit_field54}","stack":[{"text":"{$jslabel contractor_master terms_acepta }","bold":true},{"text":{$terms_acepta_pdfvalue}}],"margin":[0,0,0,15]},
-				
-		  ],
-  "border": [ false, false, false, false ],
-          "alignment": 'left',
-  },
-
-{END cellblock_section4_c1}
-											],
-				{END row_section4_1}
-									]
-					}
-				}]
-
-			]
-		},
-		margin: [0,0,0,15],
-	},
- 
-		{
-		layout: 'panel',
-		
-		table: {
-			tableForm: true,
 			location: 'section',
 			widths: ['*'],
 			body: [
@@ -1802,12 +1713,6 @@ pdfDocument = {
 		},
 		margin: [0,0,0,15],
 	},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field22}","stack":[{"text":"{$jslabel contractor_master signature }","bold":true},{"text":{$signature_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field25}","stack":[{"text":"{$jslabel contractor_master pin }","bold":true},{"text":{$pin_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],

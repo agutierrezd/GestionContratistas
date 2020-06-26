@@ -33,6 +33,13 @@ $nonAdminTablesArr[] = "dependencias_001";
 $nonAdminTablesArr[] = "contrato";
 $nonAdminTablesArr[] = "interventor_periodos";
 $nonAdminTablesArr[] = "contractor_master_signature";
+$nonAdminTablesArr[] = "informe_intersup";
+$nonAdminTablesArr[] = "informe_intersup_estado";
+$nonAdminTablesArr[] = "contractor_master_Chart_genero";
+$nonAdminTablesArr[] = "contractor_master_view";
+$nonAdminTablesArr[] = "contractor_master_chart_eps";
+$nonAdminTablesArr[] = "contractor_master_chart_fondopension";
+$nonAdminTablesArr[] = "Dashboard";
 
 $ug_connection = $cman->getForUserGroups();
 
