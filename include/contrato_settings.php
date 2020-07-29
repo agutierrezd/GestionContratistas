@@ -11124,6 +11124,7 @@ $proto145["m_columns"][] = "vf_fecha";
 $proto145["m_columns"][] = "vf_valor";
 $proto145["m_columns"][] = "cont_fechasistema";
 $proto145["m_columns"][] = "cont_cesion";
+$proto145["m_columns"][] = "cont_fase";
 $obj = new SQLTable($proto145);
 
 $proto144["m_table"] = $obj;

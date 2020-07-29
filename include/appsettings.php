@@ -619,7 +619,7 @@ $cEmailField = "contractor_email";
 $globalSettings["usersTableInProject"] = true;
 $globalSettings["usersDatasourceTable"] = "contractor_master";
 
-$globalSettings["jwtSecret"] = "8OirhmZH0VTJ1YzHKfnX";
+$globalSettings["jwtSecret"] = "8nddnelSrGf3aupZ1HRP";
 
 if( $cDisplayNameField == '' )
 	$cDisplayNameField = $cUserNameField;
@@ -644,9 +644,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "314_1589855724";
+$projectBuildKey = "316_1596024980";
 $wizardBuildKey = "34656";
-$projectBuildNumber = "314";
+$projectBuildNumber = "316";
 
 $mlang_messages = array();
 $mlang_charsets = array();
