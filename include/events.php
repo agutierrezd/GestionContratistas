@@ -27,6 +27,7 @@ class class_GlobalEvents extends eventsBase
 //	onscreen events
 
 
+		$this->events["IsRecordEditable"]["informe_intersup_oe_contratista"] = true;
 
 		}
 
@@ -61,5 +62,23 @@ class class_GlobalEvents extends eventsBase
 
 
 
+	function IsRecordEditable($values, $isEditable, $table = "")
+	{
+		global $strTableName;
+		if($table == "")
+			$table = $strTableName;
+		if($table == "informe_intersup_oe_contratista")
+		{
+			if ($values['sup_aprueba'] == 1) {
+		$isEditable = false;
+}
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+
+return $isEditable;;
+		}
+		return $isEditable;
+	}
 }
 ?>

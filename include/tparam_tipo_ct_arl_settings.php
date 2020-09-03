@@ -70,9 +70,9 @@ $tdatatparam_tipo_ct_arl[".listAjax"] = false;
 //	temporary
 $tdatatparam_tipo_ct_arl[".listAjax"] = false;
 
-	$tdatatparam_tipo_ct_arl[".audit"] = false;
+	$tdatatparam_tipo_ct_arl[".audit"] = true;
 
-	$tdatatparam_tipo_ct_arl[".locking"] = false;
+	$tdatatparam_tipo_ct_arl[".locking"] = true;
 
 
 $pages = $tdatatparam_tipo_ct_arl[".defaultPages"];

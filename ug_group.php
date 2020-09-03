@@ -33,13 +33,17 @@ $nonAdminTablesArr[] = "dependencias_001";
 $nonAdminTablesArr[] = "contrato";
 $nonAdminTablesArr[] = "interventor_periodos";
 $nonAdminTablesArr[] = "contractor_master_signature";
-$nonAdminTablesArr[] = "informe_intersup";
 $nonAdminTablesArr[] = "informe_intersup_estado";
 $nonAdminTablesArr[] = "contractor_master_Chart_genero";
 $nonAdminTablesArr[] = "contractor_master_view";
 $nonAdminTablesArr[] = "contractor_master_chart_eps";
 $nonAdminTablesArr[] = "contractor_master_chart_fondopension";
 $nonAdminTablesArr[] = "Dashboard";
+$nonAdminTablesArr[] = "informe_intersup_contratista";
+$nonAdminTablesArr[] = "informe_intersup_oe_contratista";
+$nonAdminTablesArr[] = "tparam_sn_oe";
+$nonAdminTablesArr[] = "informe_intersup_anexos_contratista";
+$nonAdminTablesArr[] = "informe_intersup_anexos_tipo";
 
 $ug_connection = $cman->getForUserGroups();
 

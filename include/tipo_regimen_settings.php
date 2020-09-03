@@ -70,9 +70,9 @@ $tdatatipo_regimen[".listAjax"] = false;
 //	temporary
 $tdatatipo_regimen[".listAjax"] = false;
 
-	$tdatatipo_regimen[".audit"] = false;
+	$tdatatipo_regimen[".audit"] = true;
 
-	$tdatatipo_regimen[".locking"] = false;
+	$tdatatipo_regimen[".locking"] = true;
 
 
 $pages = $tdatatipo_regimen[".defaultPages"];

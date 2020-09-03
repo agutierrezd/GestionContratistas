@@ -532,8 +532,6 @@ class Chart
 			return true;
 		if("contractor_master" == $this->chrt_array['tables'][0])
 			return true;
-		if("informe_intersup" == $this->chrt_array['tables'][0])
-			return true;
 		if("informe_intersup_estado" == $this->chrt_array['tables'][0])
 			return true;
 		if("contractor_master" == $this->chrt_array['tables'][0])
@@ -545,6 +543,16 @@ class Chart
 		if("contractor_master" == $this->chrt_array['tables'][0])
 			return true;
 		if("" == $this->chrt_array['tables'][0])
+			return true;
+		if("informe_intersup" == $this->chrt_array['tables'][0])
+			return true;
+		if("informe_intersup_oe" == $this->chrt_array['tables'][0])
+			return true;
+		if("tparam_sn_oe" == $this->chrt_array['tables'][0])
+			return true;
+		if("informe_intersup_anexos" == $this->chrt_array['tables'][0])
+			return true;
+		if("informe_intersup_anexos_tipo" == $this->chrt_array['tables'][0])
 			return true;
 		return false;
 	}

@@ -173,20 +173,6 @@ function InitLookupLinks()
 			$lookupTableLinks["tparam_tipo_ct_002"]["contrato.cont_causalc"] = array();
 		}
 		$lookupTableLinks["tparam_tipo_ct_002"]["contrato.cont_causalc"]["edit"] = array("table" => "contrato", "field" => "cont_causalc", "page" => "edit");
-		if( !isset( $lookupTableLinks["contrato"] ) ) {
-			$lookupTableLinks["contrato"] = array();
-		}
-		if( !isset( $lookupTableLinks["contrato"]["informe_intersup.id_cont_fk"] )) {
-			$lookupTableLinks["contrato"]["informe_intersup.id_cont_fk"] = array();
-		}
-		$lookupTableLinks["contrato"]["informe_intersup.id_cont_fk"]["edit"] = array("table" => "informe_intersup", "field" => "id_cont_fk", "page" => "edit");
-		if( !isset( $lookupTableLinks["informe_intersup_estado"] ) ) {
-			$lookupTableLinks["informe_intersup_estado"] = array();
-		}
-		if( !isset( $lookupTableLinks["informe_intersup_estado"]["informe_intersup.inf_estado"] )) {
-			$lookupTableLinks["informe_intersup_estado"]["informe_intersup.inf_estado"] = array();
-		}
-		$lookupTableLinks["informe_intersup_estado"]["informe_intersup.inf_estado"]["edit"] = array("table" => "informe_intersup", "field" => "inf_estado", "page" => "edit");
 		if( !isset( $lookupTableLinks["tparam_genero"] ) ) {
 			$lookupTableLinks["tparam_genero"] = array();
 		}
@@ -306,6 +292,27 @@ function InitLookupLinks()
 			$lookupTableLinks["tparam_fondopension"]["contractor_master_chart_fondopension.contractor_fondopensiones"] = array();
 		}
 		$lookupTableLinks["tparam_fondopension"]["contractor_master_chart_fondopension.contractor_fondopensiones"]["search"] = array("table" => "contractor_master_chart_fondopension", "field" => "contractor_fondopensiones", "page" => "search");
+		if( !isset( $lookupTableLinks["informe_intersup_estado"] ) ) {
+			$lookupTableLinks["informe_intersup_estado"] = array();
+		}
+		if( !isset( $lookupTableLinks["informe_intersup_estado"]["informe_intersup_contratista.inf_estado"] )) {
+			$lookupTableLinks["informe_intersup_estado"]["informe_intersup_contratista.inf_estado"] = array();
+		}
+		$lookupTableLinks["informe_intersup_estado"]["informe_intersup_contratista.inf_estado"]["edit"] = array("table" => "informe_intersup_contratista", "field" => "inf_estado", "page" => "edit");
+		if( !isset( $lookupTableLinks["tparam_sn_oe"] ) ) {
+			$lookupTableLinks["tparam_sn_oe"] = array();
+		}
+		if( !isset( $lookupTableLinks["tparam_sn_oe"]["informe_intersup_oe_contratista.sup_aprueba"] )) {
+			$lookupTableLinks["tparam_sn_oe"]["informe_intersup_oe_contratista.sup_aprueba"] = array();
+		}
+		$lookupTableLinks["tparam_sn_oe"]["informe_intersup_oe_contratista.sup_aprueba"]["edit"] = array("table" => "informe_intersup_oe_contratista", "field" => "sup_aprueba", "page" => "edit");
+		if( !isset( $lookupTableLinks["informe_intersup_anexos_tipo"] ) ) {
+			$lookupTableLinks["informe_intersup_anexos_tipo"] = array();
+		}
+		if( !isset( $lookupTableLinks["informe_intersup_anexos_tipo"]["informe_intersup_anexos_contratista.anexo_titulo"] )) {
+			$lookupTableLinks["informe_intersup_anexos_tipo"]["informe_intersup_anexos_contratista.anexo_titulo"] = array();
+		}
+		$lookupTableLinks["informe_intersup_anexos_tipo"]["informe_intersup_anexos_contratista.anexo_titulo"]["edit"] = array("table" => "informe_intersup_anexos_contratista", "field" => "anexo_titulo", "page" => "edit");
 }
 
 ?>

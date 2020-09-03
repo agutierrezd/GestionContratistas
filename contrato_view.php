@@ -18,10 +18,6 @@ if( !ViewPage::processEditPageSecurity( $strTableName ) )
 
 
 
-	
-			
-
-
 
 $pageMode = ViewPage::readViewModeFromRequest();
 

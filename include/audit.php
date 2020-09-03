@@ -361,85 +361,81 @@ class AuditTrailTable
 		}
 		if($table=="admin_rights")
 		{
-			return false;
+			return true;
 		}
 		if($table=="admin_members")
 		{
-			return false;
+			return true;
 		}
 		if($table=="admin_users")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tipo_docidentidad")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tipo_banco")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tipo_cta_banco")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tipo_regimen")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_fondosalud")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_fondopension")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_cajacomp")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_tipo_ct_arl")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_genero")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_discapacidad")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_sn")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_divipola")
 		{
-			return false;
+			return true;
 		}
 		if($table=="dependencia")
 		{
-			return false;
+			return true;
 		}
 		if($table=="dependencias_001")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato")
 		{
-			return false;
+			return true;
 		}
 		if($table=="interventor_periodos")
 		{
-			return false;
-		}
-		if($table=="contractor_master_signature")
-		{
 			return true;
 		}
-		if($table=="informe_intersup")
+		if($table=="contractor_master_signature")
 		{
 			return true;
 		}
@@ -464,6 +460,26 @@ class AuditTrailTable
 			return false;
 		}
 		if($table=="Dashboard")
+		{
+			return false;
+		}
+		if($table=="informe_intersup_contratista")
+		{
+			return true;
+		}
+		if($table=="informe_intersup_oe_contratista")
+		{
+			return true;
+		}
+		if($table=="tparam_sn_oe")
+		{
+			return true;
+		}
+		if($table=="informe_intersup_anexos_contratista")
+		{
+			return false;
+		}
+		if($table=="informe_intersup_anexos_tipo")
 		{
 			return false;
 		}
@@ -834,85 +850,81 @@ class AuditTrailFile
 		}
 		if($table=="admin_rights")
 		{
-			return false;
+			return true;
 		}
 		if($table=="admin_members")
 		{
-			return false;
+			return true;
 		}
 		if($table=="admin_users")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tipo_docidentidad")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tipo_banco")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tipo_cta_banco")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tipo_regimen")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_fondosalud")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_fondopension")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_cajacomp")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_tipo_ct_arl")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_genero")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_discapacidad")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_sn")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_divipola")
 		{
-			return false;
+			return true;
 		}
 		if($table=="dependencia")
 		{
-			return false;
+			return true;
 		}
 		if($table=="dependencias_001")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato")
 		{
-			return false;
+			return true;
 		}
 		if($table=="interventor_periodos")
 		{
-			return false;
-		}
-		if($table=="contractor_master_signature")
-		{
 			return true;
 		}
-		if($table=="informe_intersup")
+		if($table=="contractor_master_signature")
 		{
 			return true;
 		}
@@ -937,6 +949,26 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="Dashboard")
+		{
+			return false;
+		}
+		if($table=="informe_intersup_contratista")
+		{
+			return true;
+		}
+		if($table=="informe_intersup_oe_contratista")
+		{
+			return true;
+		}
+		if($table=="tparam_sn_oe")
+		{
+			return true;
+		}
+		if($table=="informe_intersup_anexos_contratista")
+		{
+			return false;
+		}
+		if($table=="informe_intersup_anexos_tipo")
 		{
 			return false;
 		}

@@ -1,7 +1,5 @@
 <?php
-			$optionsArray = array( 'details' => array( 'informe_intersup' => array( 'displayPreview' => 2,
-'previewPageId' => '' ) ),
-'captcha' => array( 'captcha' => false ),
+			$optionsArray = array( 'captcha' => array( 'captcha' => false ),
 'fields' => array( 'gridFields' => array( 'prenumero',
 'numregistro',
 'pre_contnumero',

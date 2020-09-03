@@ -296,7 +296,7 @@ function getMenuNodes_main($menuNodesObject)
 	$menuNode["name"] = "Informes de supervisión";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
-	$menuNode["table"] = "informe_intersup";
+	$menuNode["table"] = "informe_intersup_contratista";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
 	$menuNode["parent"] = "11";
@@ -306,9 +306,9 @@ function getMenuNodes_main($menuNodesObject)
 	$menuNode["pageId"] = "";
 	$menuNode["openType"] = "None";
 
-	$menuNode["icon"] = "glyphicon-menu-right";
+	$menuNode["icon"] = "glyphicon-headphones";
 	$menuNode["iconType"] = "2";
-	$menuNode["iconShow"] = "1";
+	$menuNode["iconShow"] = "2";
 
 		$menuNode["color"] = "";
 

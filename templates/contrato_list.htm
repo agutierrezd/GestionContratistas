@@ -596,29 +596,6 @@
 				 
 					<li class="container-fluid 
 										">
-									{BEGIN print_details}
-<div>
-	<label for="printDetailsToggler{$id}">
-		<input type="checkbox" id="printDetailsToggler{$id}">
-		Detalles de impresión	</label>
-	<div  id="printdetailstables{$id}" style="display:none;">
-											{BEGIN print_details_informe_intersup}
-			<div>
-				<label for="printDetailsinforme_intersup{$id}">
-					<input type="checkbox" value="informe_intersup" id="printDetailsinforme_intersup{$id}" checked>
-					Informes supervisión				</label>
-			</div>
-			{END print_details_informe_intersup}
-						</div>
-</div>
-{END print_details}
-				 
-					</li>
-											<li class="divider" role="separator"></li>
-																				 
-				 
-					<li class="container-fluid 
-										">
 									<div>
 	<label for="printPerPage{$id}">
 					Resultados por página							
@@ -712,23 +689,16 @@
 {END view_link}
 {END view_column}
 	 
-			 
-		
-	{BEGIN dtables_link}
-				<span data-itemtype="grid_details_link" data-itemid="grid_details_link" {$item_grid_details_link} data-pageid="{$pageid}" data-record-id="{$recId}">
-		<a 
-			{$informe_intersup_link_attrs} 
-			class="{$dtables_link_class} details-badge badge informe_intersup_badge" 
-			title="Mostrar detalles"
-		>
-							<span class="glyphicon glyphicon-th-list"></span>
-									<span class="{$informe_intersup_cntspan_class}" {$informe_intersup_childnumber_attr}>
-				{$informe_intersup_childnumber}				
-			</span>
-		</a>
-		</span>
-	{END dtables_link}
-
+		{BEGIN dtables_link}
+	<a 
+		data-itemtype="grid_alldetails_link" data-itemid="grid_alldetails_link" {$item_grid_alldetails_link} data-pageid="{$pageid}" data-record-id="{$recId}" 
+		{$dtables_link_attrs} 
+		class="{$dtables_link_class}" 
+		title="Mostrar detalles"
+	>
+					<span class="glyphicon glyphicon-th-list"></span>
+					</a>
+{END dtables_link}
 	
 	</th>
 	{END cellblock_grid_cell_top}
@@ -1635,16 +1605,7 @@
 <div style="clear: both;"></div>
  
 	{BEGIN grid_record}
-		 
-	<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
-	data-orders="informe_intersup"
-			data-details-informe_intersup	>
-		<span data-details-inside data-short-table="informe_intersup">
-			</span>
-		<div data-details-preview>
-	</div>
-</div>
-	{END grid_record}
+			{END grid_record}
 
 
 {END grid_row}

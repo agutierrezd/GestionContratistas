@@ -31,6 +31,8 @@ if (($_SESSION["MyURL"] == "") || (!isLoggedAsGuest())) {
 require_once('include/xtempl.php');
 require_once(getabspath("classes/cipherer.php"));
 
+include_once(getabspath("include/informe_intersup_oe_contratista_events.php"));
+$tableEvents["informe_intersup_oe_contratista"] = new eventclass_informe_intersup_oe_contratista;
 
 $xt = new Xtempl();
 

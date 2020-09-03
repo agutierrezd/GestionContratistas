@@ -70,9 +70,9 @@ $tdatatparam_discapacidad[".listAjax"] = false;
 //	temporary
 $tdatatparam_discapacidad[".listAjax"] = false;
 
-	$tdatatparam_discapacidad[".audit"] = false;
+	$tdatatparam_discapacidad[".audit"] = true;
 
-	$tdatatparam_discapacidad[".locking"] = false;
+	$tdatatparam_discapacidad[".locking"] = true;
 
 
 $pages = $tdatatparam_discapacidad[".defaultPages"];

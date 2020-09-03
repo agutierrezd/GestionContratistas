@@ -245,8 +245,6 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("contractor_master_signature" == $shortTName && ($type===false || ($type!==false && $type == 1)))
 		return true;
-	if ("informe_intersup" == $shortTName && ($type===false || ($type!==false && $type == 0)))
-		return true;
 	if ("informe_intersup_estado" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
 	if ("contractor_master_chart_genero" == $shortTName && ($type===false || ($type!==false && $type == 3)))
@@ -258,6 +256,16 @@ function checkTableName($shortTName, $type=false)
 	if ("contractor_master_chart_fondopension" == $shortTName && ($type===false || ($type!==false && $type == 3)))
 		return true;
 	if ("dashboard" == $shortTName && ($type===false || ($type!==false && $type == 4)))
+		return true;
+	if ("informe_intersup_contratista" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("informe_intersup_oe_contratista" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("tparam_sn_oe" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("informe_intersup_anexos_contratista" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("informe_intersup_anexos_tipo" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
 	return false;
 }
@@ -500,15 +508,6 @@ function GetTablesList($pdfMode = false)
 	}
 	$tableAvailable = true;
 	if( $checkPermissions ) {
-		$strPerm = GetUserPermissions("informe_intersup");
-		$tableAvailable = ( strpos($strPerm, "P") !== false
-			|| $pdfMode && strpos($strPerm, "S") !== false );
-	}
-	if( $tableAvailable ) {
-		$arr[]="informe_intersup";
-	}
-	$tableAvailable = true;
-	if( $checkPermissions ) {
 		$strPerm = GetUserPermissions("informe_intersup_estado");
 		$tableAvailable = ( strpos($strPerm, "P") !== false
 			|| $pdfMode && strpos($strPerm, "S") !== false );
@@ -561,6 +560,51 @@ function GetTablesList($pdfMode = false)
 	if( $tableAvailable ) {
 		$arr[]="Dashboard";
 	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("informe_intersup_contratista");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="informe_intersup_contratista";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("informe_intersup_oe_contratista");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="informe_intersup_oe_contratista";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("tparam_sn_oe");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="tparam_sn_oe";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("informe_intersup_anexos_contratista");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="informe_intersup_anexos_contratista";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("informe_intersup_anexos_tipo");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="informe_intersup_anexos_tipo";
+	}
 	return $arr;
 }
 
@@ -591,13 +635,17 @@ function GetTablesListWithoutSecurity()
 	$arr[]="contrato";
 	$arr[]="interventor_periodos";
 	$arr[]="contractor_master_signature";
-	$arr[]="informe_intersup";
 	$arr[]="informe_intersup_estado";
 	$arr[]="contractor_master_Chart_genero";
 	$arr[]="contractor_master_view";
 	$arr[]="contractor_master_chart_eps";
 	$arr[]="contractor_master_chart_fondopension";
 	$arr[]="Dashboard";
+	$arr[]="informe_intersup_contratista";
+	$arr[]="informe_intersup_oe_contratista";
+	$arr[]="tparam_sn_oe";
+	$arr[]="informe_intersup_anexos_contratista";
+	$arr[]="informe_intersup_anexos_tipo";
 	return $arr;
 }
 
@@ -1368,141 +1416,193 @@ function GetUserPermissionsStatic( $table )
 	if( $table=="contractor_master" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="admin_rights" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="admin_members" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="admin_users" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tipo_docidentidad" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tipo_banco" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tipo_cta_banco" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tipo_regimen" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_fondosalud" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_fondopension" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_cajacomp" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_tipo_ct_arl" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_genero" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_discapacidad" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="tparam_sn" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="q_divipola" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="dependencia" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="dependencias_001" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="contrato" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="interventor_periodos" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="contractor_master_signature" )
 	{
 //	default permissions
-		return "ADESPI".$extraPerm;
-	}
-	if( $table=="informe_intersup" )
-	{
-//	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="informe_intersup_estado" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="contractor_master_Chart_genero" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="contractor_master_view" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="contractor_master_chart_eps" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="contractor_master_chart_fondopension" )
 	{
 //	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="Dashboard" )
 	{
 //	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="informe_intersup_contratista" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="informe_intersup_oe_contratista" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="tparam_sn_oe" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="informe_intersup_anexos_contratista" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="informe_intersup_anexos_tipo" )
+	{
+//	default permissions
+		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	// grant nothing by default
@@ -1628,6 +1728,7 @@ function SetAuthSessionData($pUsername, &$data, $password, &$pageObject = null, 
 		$_SESSION["_contrato_OwnerID"] = $data["contractor_doc_id"];
 		$_SESSION["_contractor_master_signature_OwnerID"] = $data["contractor_doc_id"];
 		$_SESSION["_contractor_master_view_OwnerID"] = $data["contractor_doc_id"];
+		$_SESSION["_informe_intersup_contratista_OwnerID"] = $data["contractor_doc_id"];
 
 	$_SESSION["UserData"] = $data;
 
@@ -1702,6 +1803,12 @@ function CheckSecurity($strValue, $strAction, $table = "")
 				return false;
 		}
 		if($table=="contractor_master_signature")
+		{
+
+				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
+				return false;
+		}
+		if($table=="informe_intersup_contratista")
 		{
 
 				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
@@ -1786,6 +1893,10 @@ function SecuritySQL($strAction, $table, $strPerm="")
 				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
 		}
 		if($table=="contractor_master_signature")
+		{
+				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
+		}
+		if($table=="informe_intersup_contratista")
 		{
 				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
 		}

@@ -261,9 +261,6 @@ pdfDocument = {
 				
 			{"text":"","hidden":"{$item_hide_grid_alldetails_link}"},
 				
-				
-			{"text":"","hidden":"{$item_hide_grid_details_link}"},
-				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
@@ -1379,14 +1376,10 @@ pdfDocument = {
 	
 	
 	
-			"stack": [
+			"text": [
 		
-				
-			 {BEGIN details_informe_intersup}
-			{$displayDetailTable_informe_intersup }
-		{END details_informe_intersup},
-				
-		  ],
+				'',
+	  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
   },
@@ -1414,6 +1407,24 @@ pdfDocument = {
 				cellId: 'cell_dpreview',
 				row:  0,
 				col:  4,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  5,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  6,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  7,
 				text: ''
 			},
 							],

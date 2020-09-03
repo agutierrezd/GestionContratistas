@@ -271,9 +271,9 @@ $tdatacontrato[".listAjax"] = false;
 //	temporary
 $tdatacontrato[".listAjax"] = false;
 
-	$tdatacontrato[".audit"] = false;
+	$tdatacontrato[".audit"] = true;
 
-	$tdatacontrato[".locking"] = false;
+	$tdatacontrato[".locking"] = true;
 
 
 $pages = $tdatacontrato[".defaultPages"];
@@ -9987,35 +9987,6 @@ $page_titles["contrato"] = &$pageTitlescontrato;
 // -----------------start  prepare master-details data arrays ------------------------------//
 // tables which are detail tables for current table (master)
 $detailsTablesData["contrato"] = array();
-//	informe_intersup
-	
-	
-
-		$dIndex = 0;
-	$detailsParam = array();
-	$detailsParam["dDataSourceTable"]="informe_intersup";
-		$detailsParam["dOriginalTable"] = "informe_intersup";
-
-
-
-				$detailsParam["dType"]=PAGE_LIST;
-	$detailsParam["dShortTable"] = "informe_intersup";
-	$detailsParam["dCaptionTable"] = GetTableCaption("informe_intersup");
-	$detailsParam["masterKeys"] =array();
-	$detailsParam["detailKeys"] =array();
-
-
-		
-	$detailsTablesData["contrato"][$dIndex] = $detailsParam;
-
-	
-		$detailsTablesData["contrato"][$dIndex]["masterKeys"] = array();
-
-	$detailsTablesData["contrato"][$dIndex]["masterKeys"][]="id_cont";
-
-				$detailsTablesData["contrato"][$dIndex]["detailKeys"] = array();
-
-	$detailsTablesData["contrato"][$dIndex]["detailKeys"][]="id_cont_fk";
 
 // tables which are master tables for current table (detail)
 $masterTablesData["contrato"] = array();
@@ -11065,6 +11036,7 @@ $proto145["m_columns"][] = "numregistro";
 $proto145["m_columns"][] = "pre_contnumero";
 $proto145["m_columns"][] = "contnumero";
 $proto145["m_columns"][] = "cont_unspsc";
+$proto145["m_columns"][] = "cont_munejec";
 $proto145["m_columns"][] = "cont_tipo";
 $proto145["m_columns"][] = "cont_ano";
 $proto145["m_columns"][] = "cont_codrubro";
@@ -11125,6 +11097,7 @@ $proto145["m_columns"][] = "vf_valor";
 $proto145["m_columns"][] = "cont_fechasistema";
 $proto145["m_columns"][] = "cont_cesion";
 $proto145["m_columns"][] = "cont_fase";
+$proto145["m_columns"][] = "cont_numpoliza";
 $obj = new SQLTable($proto145);
 
 $proto144["m_table"] = $obj;

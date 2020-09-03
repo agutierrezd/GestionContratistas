@@ -85,9 +85,9 @@ $tdataq_divipola[".listAjax"] = false;
 //	temporary
 $tdataq_divipola[".listAjax"] = false;
 
-	$tdataq_divipola[".audit"] = false;
+	$tdataq_divipola[".audit"] = true;
 
-	$tdataq_divipola[".locking"] = false;
+	$tdataq_divipola[".locking"] = true;
 
 
 $pages = $tdataq_divipola[".defaultPages"];

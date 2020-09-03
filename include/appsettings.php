@@ -48,6 +48,7 @@ include(getabspath('classes/pdlayout.php'));
 //	custom labels
 $custom_labels = array();
 $custom_labels["Spanish"] = array();
+	$custom_labels["Spanish"]['UPDATE_SELECTED'] = "Actualizar los seleccionados";
 
 define('GLOBAL_PAGES_SHORT', ".global");
 define('GLOBAL_PAGES', "<global>");
@@ -548,7 +549,7 @@ $globalSettings["useCookieBanner"] = 1 != 0;
 
 
 $globalSettings["createLoginPage"] = true;
-$globalSettings["userGroupCount"] = 1;
+$globalSettings["userGroupCount"] = 0;
 
 
 $globalSettings["apiGoogleMapsCode"] = "";
@@ -644,9 +645,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "316_1596024980";
+$projectBuildKey = "334_1597589837";
 $wizardBuildKey = "34656";
-$projectBuildNumber = "316";
+$projectBuildNumber = "334";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -688,13 +689,17 @@ $tableCaptions["Spanish"]["dependencias_001"] = "Dependencias 001";
 $tableCaptions["Spanish"]["contrato"] = "Contrato";
 $tableCaptions["Spanish"]["interventor_periodos"] = "Interventor Periodos";
 $tableCaptions["Spanish"]["contractor_master_signature"] = "Contractor Master Signature";
-$tableCaptions["Spanish"]["informe_intersup"] = "Informes supervisión";
 $tableCaptions["Spanish"]["informe_intersup_estado"] = "Informe Intersup Estado";
 $tableCaptions["Spanish"]["contractor_master_Chart_genero"] = "Caracterización por género";
 $tableCaptions["Spanish"]["contractor_master_view"] = "Búsqueda por datos identificacores";
 $tableCaptions["Spanish"]["contractor_master_chart_eps"] = "Caracterización por EPS";
 $tableCaptions["Spanish"]["contractor_master_chart_fondopension"] = "Caracterización por FONDO PENSIÓN";
 $tableCaptions["Spanish"]["Dashboard"] = "Tablero";
+$tableCaptions["Spanish"]["informe_intersup_contratista"] = "Informe Intersup Contratista";
+$tableCaptions["Spanish"]["informe_intersup_oe_contratista"] = "Relación de Obligaciones Específicas";
+$tableCaptions["Spanish"]["tparam_sn_oe"] = "Tparam Sn Oe";
+$tableCaptions["Spanish"]["informe_intersup_anexos_contratista"] = "Informe Intersup Anexos Contratista";
+$tableCaptions["Spanish"]["informe_intersup_anexos_tipo"] = "Informe Intersup Anexos Tipo";
 
 
 $globalEvents = new class_GlobalEvents;

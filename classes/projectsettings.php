@@ -3141,8 +3141,6 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "interventor_periodos" ] = "interventor_periodos";
 	$projectEntities[ "contractor_master_signature" ] = array( "url" => "contractor_master_signature", "type" => 1 );
 	$projectEntitiesReverse[ "contractor_master_signature" ] = "contractor_master_signature";
-	$projectEntities[ "informe_intersup" ] = array( "url" => "informe_intersup", "type" => 0 );
-	$projectEntitiesReverse[ "informe_intersup" ] = "informe_intersup";
 	$projectEntities[ "informe_intersup_estado" ] = array( "url" => "informe_intersup_estado", "type" => 0 );
 	$projectEntitiesReverse[ "informe_intersup_estado" ] = "informe_intersup_estado";
 	$projectEntities[ "contractor_master_Chart_genero" ] = array( "url" => "contractor_master_chart_genero", "type" => 3 );
@@ -3155,6 +3153,16 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "contractor_master_chart_fondopension" ] = "contractor_master_chart_fondopension";
 	$projectEntities[ "Dashboard" ] = array( "url" => "dashboard", "type" => 4 );
 	$projectEntitiesReverse[ "dashboard" ] = "Dashboard";
+	$projectEntities[ "informe_intersup_contratista" ] = array( "url" => "informe_intersup_contratista", "type" => 1 );
+	$projectEntitiesReverse[ "informe_intersup_contratista" ] = "informe_intersup_contratista";
+	$projectEntities[ "informe_intersup_oe_contratista" ] = array( "url" => "informe_intersup_oe_contratista", "type" => 1 );
+	$projectEntitiesReverse[ "informe_intersup_oe_contratista" ] = "informe_intersup_oe_contratista";
+	$projectEntities[ "tparam_sn_oe" ] = array( "url" => "tparam_sn_oe", "type" => 0 );
+	$projectEntitiesReverse[ "tparam_sn_oe" ] = "tparam_sn_oe";
+	$projectEntities[ "informe_intersup_anexos_contratista" ] = array( "url" => "informe_intersup_anexos_contratista", "type" => 1 );
+	$projectEntitiesReverse[ "informe_intersup_anexos_contratista" ] = "informe_intersup_anexos_contratista";
+	$projectEntities[ "informe_intersup_anexos_tipo" ] = array( "url" => "informe_intersup_anexos_tipo", "type" => 0 );
+	$projectEntitiesReverse[ "informe_intersup_anexos_tipo" ] = "informe_intersup_anexos_tipo";
 }
 
 function findTable( $table ) {

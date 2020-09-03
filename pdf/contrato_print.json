@@ -1269,14 +1269,10 @@ pdfDocument = {
 	
 	
 	
-			"stack": [
+			"text": [
 		
-				
-			 {BEGIN details_informe_intersup}
-			{$displayDetailTable_informe_intersup }
-		{END details_informe_intersup},
-				
-		  ],
+				'',
+	  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
   },
@@ -1298,6 +1294,18 @@ pdfDocument = {
 				cellId: 'cell_dpreview',
 				row:  0,
 				col:  3,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  4,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  5,
 				text: ''
 			},
 							],

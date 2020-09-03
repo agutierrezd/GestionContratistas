@@ -73,9 +73,9 @@ $tdatatparam_fondosalud[".listAjax"] = false;
 //	temporary
 $tdatatparam_fondosalud[".listAjax"] = false;
 
-	$tdatatparam_fondosalud[".audit"] = false;
+	$tdatatparam_fondosalud[".audit"] = true;
 
-	$tdatatparam_fondosalud[".locking"] = false;
+	$tdatatparam_fondosalud[".locking"] = true;
 
 
 $pages = $tdatatparam_fondosalud[".defaultPages"];

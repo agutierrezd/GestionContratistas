@@ -223,9 +223,9 @@ $tdataadmin_members[".listAjax"] = false;
 //	temporary
 $tdataadmin_members[".listAjax"] = false;
 
-	$tdataadmin_members[".audit"] = false;
+	$tdataadmin_members[".audit"] = true;
 
-	$tdataadmin_members[".locking"] = false;
+	$tdataadmin_members[".locking"] = true;
 
 
 $pages = $tdataadmin_members[".defaultPages"];

@@ -942,6 +942,16 @@ function fileCustomExpression($file, $data, $field, $ptype, $table )
 		;
 		return $value;
 	}
+				if($table=="informe_intersup_oe_contratista" && $field=="evidencia")
+	{
+		;
+		return $value;
+	}
+				if($table=="informe_intersup_anexos_contratista" && $field=="anexo_file")
+	{
+		;
+		return $value;
+	}
 	return $value;
 }
 
@@ -1030,6 +1040,14 @@ function GetDefaultValue($field, $ptype, $table="")
 	{
 		return 1;
 	}
+				if($table=="informe_intersup_oe_contratista" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="informe_intersup_anexos_contratista" && $field=="anexo_usuario")
+	{
+		return $_SESSION["UserID"];
+	}
 	return "";
 }
 
@@ -1096,6 +1114,14 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 				if($table=="contractor_master_view" && $field=="active")
 	{
 		return 1;
+	}
+				if($table=="informe_intersup_oe_contratista" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="informe_intersup_anexos_contratista" && $field=="anexo_usuario")
+	{
+		return $_SESSION["UserID"];
 	}
 	return "";
 }

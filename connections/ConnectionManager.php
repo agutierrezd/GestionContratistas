@@ -403,12 +403,16 @@ class ConnectionManager
 		$connectionsIds["contrato"] = "dbct_at_localhost";
 		$connectionsIds["interventor_periodos"] = "dbct_at_localhost";
 		$connectionsIds["contractor_master_signature"] = "dbct_at_localhost";
-		$connectionsIds["informe_intersup"] = "dbct_at_localhost";
 		$connectionsIds["informe_intersup_estado"] = "dbct_at_localhost";
 		$connectionsIds["contractor_master_Chart_genero"] = "dbct_at_localhost";
 		$connectionsIds["contractor_master_view"] = "dbct_at_localhost";
 		$connectionsIds["contractor_master_chart_eps"] = "dbct_at_localhost";
 		$connectionsIds["contractor_master_chart_fondopension"] = "dbct_at_localhost";
+		$connectionsIds["informe_intersup_contratista"] = "dbct_at_localhost";
+		$connectionsIds["informe_intersup_oe_contratista"] = "dbct_at_localhost";
+		$connectionsIds["tparam_sn_oe"] = "dbct_at_localhost";
+		$connectionsIds["informe_intersup_anexos_contratista"] = "dbct_at_localhost";
+		$connectionsIds["informe_intersup_anexos_tipo"] = "dbct_at_localhost";
 		$this->_tablesConnectionIds = $connectionsIds;
 	}
 	

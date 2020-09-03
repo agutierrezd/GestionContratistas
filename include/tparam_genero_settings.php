@@ -70,9 +70,9 @@ $tdatatparam_genero[".listAjax"] = false;
 //	temporary
 $tdatatparam_genero[".listAjax"] = false;
 
-	$tdatatparam_genero[".audit"] = false;
+	$tdatatparam_genero[".audit"] = true;
 
-	$tdatatparam_genero[".locking"] = false;
+	$tdatatparam_genero[".locking"] = true;
 
 
 $pages = $tdatatparam_genero[".defaultPages"];

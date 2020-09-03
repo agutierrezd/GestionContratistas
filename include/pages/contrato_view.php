@@ -1,7 +1,5 @@
 <?php
 			$optionsArray = array( 'pdf' => array( 'pdfView' => false ),
-'details' => array( 'informe_intersup' => array( 'displayPreview' => 2,
-'previewPageId' => '' ) ),
 'fields' => array( 'gridFields' => array( 'prenumero',
 'numregistro',
 'pre_contnumero',

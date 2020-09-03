@@ -73,9 +73,9 @@ $tdatatparam_fondopension[".listAjax"] = false;
 //	temporary
 $tdatatparam_fondopension[".listAjax"] = false;
 
-	$tdatatparam_fondopension[".audit"] = false;
+	$tdatatparam_fondopension[".audit"] = true;
 
-	$tdatatparam_fondopension[".locking"] = false;
+	$tdatatparam_fondopension[".locking"] = true;
 
 
 $pages = $tdatatparam_fondopension[".defaultPages"];

@@ -58,7 +58,10 @@ class tDAL
 	var $tbldbct_at_localhost__gestioncontratistas_ver_103_ugmembers;
 	var $tbldbct_at_localhost__gestioncontratistas_ver_103_ugrights;
 	var $tbldbct_at_localhost__informe_intersup;
+	var $tbldbct_at_localhost__informe_intersup_anexos;
+	var $tbldbct_at_localhost__informe_intersup_anexos_tipo;
 	var $tbldbct_at_localhost__informe_intersup_estado;
+	var $tbldbct_at_localhost__informe_intersup_oe;
 	var $tbldbct_at_localhost__interventor_periodos;
 	var $tbldbct_at_localhost__tipo_banco;
 	var $tbldbct_at_localhost__tipo_cta_banco;
@@ -70,6 +73,7 @@ class tDAL
 	var $tbldbct_at_localhost__tparam_fondosalud;
 	var $tbldbct_at_localhost__tparam_genero;
 	var $tbldbct_at_localhost__tparam_sn;
+	var $tbldbct_at_localhost__tparam_sn_oe;
 	var $tbldbct_at_localhost__tparam_tipo_ct_002;
 	var $tbldbct_at_localhost__tparam_tipo_ct_arl;
 	var $tbldbusers_at_127_0_0_1__q_divipola;
@@ -93,7 +97,10 @@ class tDAL
 		$this->lstTables[] = array("name" => "gestioncontratistas_ver_103_ugmembers", "varname" => "dbct_at_localhost__gestioncontratistas_ver_103_ugmembers", "altvarname" => "gestioncontratistas_ver_103_ugmembers", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
 		$this->lstTables[] = array("name" => "gestioncontratistas_ver_103_ugrights", "varname" => "dbct_at_localhost__gestioncontratistas_ver_103_ugrights", "altvarname" => "gestioncontratistas_ver_103_ugrights", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
 		$this->lstTables[] = array("name" => "informe_intersup", "varname" => "dbct_at_localhost__informe_intersup", "altvarname" => "informe_intersup", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+		$this->lstTables[] = array("name" => "informe_intersup_anexos", "varname" => "dbct_at_localhost__informe_intersup_anexos", "altvarname" => "informe_intersup_anexos", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+		$this->lstTables[] = array("name" => "informe_intersup_anexos_tipo", "varname" => "dbct_at_localhost__informe_intersup_anexos_tipo", "altvarname" => "informe_intersup_anexos_tipo", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
 		$this->lstTables[] = array("name" => "informe_intersup_estado", "varname" => "dbct_at_localhost__informe_intersup_estado", "altvarname" => "informe_intersup_estado", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+		$this->lstTables[] = array("name" => "informe_intersup_oe", "varname" => "dbct_at_localhost__informe_intersup_oe", "altvarname" => "informe_intersup_oe", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
 		$this->lstTables[] = array("name" => "interventor_periodos", "varname" => "dbct_at_localhost__interventor_periodos", "altvarname" => "interventor_periodos", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
 		$this->lstTables[] = array("name" => "tipo_banco", "varname" => "dbct_at_localhost__tipo_banco", "altvarname" => "tipo_banco", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
 		$this->lstTables[] = array("name" => "tipo_cta_banco", "varname" => "dbct_at_localhost__tipo_cta_banco", "altvarname" => "tipo_cta_banco", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
@@ -105,6 +112,7 @@ class tDAL
 		$this->lstTables[] = array("name" => "tparam_fondosalud", "varname" => "dbct_at_localhost__tparam_fondosalud", "altvarname" => "tparam_fondosalud", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
 		$this->lstTables[] = array("name" => "tparam_genero", "varname" => "dbct_at_localhost__tparam_genero", "altvarname" => "tparam_genero", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
 		$this->lstTables[] = array("name" => "tparam_sn", "varname" => "dbct_at_localhost__tparam_sn", "altvarname" => "tparam_sn", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
+		$this->lstTables[] = array("name" => "tparam_sn_oe", "varname" => "dbct_at_localhost__tparam_sn_oe", "altvarname" => "tparam_sn_oe", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
 		$this->lstTables[] = array("name" => "tparam_tipo_ct_002", "varname" => "dbct_at_localhost__tparam_tipo_ct_002", "altvarname" => "tparam_tipo_ct_002", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
 		$this->lstTables[] = array("name" => "tparam_tipo_ct_arl", "varname" => "dbct_at_localhost__tparam_tipo_ct_arl", "altvarname" => "tparam_tipo_ct_arl", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at 127.0.0.1");
 		$this->lstTables[] = array("name" => "q_divipola", "varname" => "dbusers_at_127_0_0_1__q_divipola", "altvarname" => "q_divipola", "connId" => "dbusers_at_127_0_0_1", "schema" => "", "connName" => "dbusers at 127.0.0.1");

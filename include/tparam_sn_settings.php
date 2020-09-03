@@ -9,11 +9,11 @@ $tdatatparam_sn[".OwnerID"] = "";
 $tdatatparam_sn[".OriginalTable"] = "tparam_sn";
 
 
-$tdatatparam_sn[".pagesByType"] = my_json_decode( "{}" );
+$tdatatparam_sn[".pagesByType"] = my_json_decode( "{\"search\":[\"search\"]}" );
 $tdatatparam_sn[".originalPagesByType"] = $tdatatparam_sn[".pagesByType"];
-$tdatatparam_sn[".pages"] = types2pages( my_json_decode( "{}" ) );
+$tdatatparam_sn[".pages"] = types2pages( my_json_decode( "{\"search\":[\"search\"]}" ) );
 $tdatatparam_sn[".originalPages"] = $tdatatparam_sn[".pages"];
-$tdatatparam_sn[".defaultPages"] = my_json_decode( "{}" );
+$tdatatparam_sn[".defaultPages"] = my_json_decode( "{\"search\":\"search\"}" );
 $tdatatparam_sn[".originalDefaultPages"] = $tdatatparam_sn[".defaultPages"];
 
 //	field labels
@@ -34,6 +34,9 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelstparam_sn["Spanish"]["sn"] = "Sn";
 	$fieldToolTipstparam_sn["Spanish"]["sn"] = "";
 	$placeHolderstparam_sn["Spanish"]["sn"] = "";
+	$fieldLabelstparam_sn["Spanish"]["sn_oe"] = "Sn Oe";
+	$fieldToolTipstparam_sn["Spanish"]["sn_oe"] = "";
+	$placeHolderstparam_sn["Spanish"]["sn_oe"] = "";
 	if (count($fieldToolTipstparam_sn["Spanish"]))
 		$tdatatparam_sn[".isUseToolTips"] = true;
 }
@@ -70,9 +73,9 @@ $tdatatparam_sn[".listAjax"] = false;
 //	temporary
 $tdatatparam_sn[".listAjax"] = false;
 
-	$tdatatparam_sn[".audit"] = false;
+	$tdatatparam_sn[".audit"] = true;
 
-	$tdatatparam_sn[".locking"] = false;
+	$tdatatparam_sn[".locking"] = true;
 
 
 $pages = $tdatatparam_sn[".defaultPages"];
@@ -158,6 +161,7 @@ $tdatatparam_sn[".requiredSearchFields"] = array();
 $tdatatparam_sn[".googleLikeFields"] = array();
 $tdatatparam_sn[".googleLikeFields"][] = "sn_id";
 $tdatatparam_sn[".googleLikeFields"][] = "sn";
+$tdatatparam_sn[".googleLikeFields"][] = "sn_oe";
 
 
 
@@ -192,7 +196,7 @@ $tdatatparam_sn[".strOrderBy"] = $tstrOrderBy;
 
 $tdatatparam_sn[".orderindexes"] = array();
 
-$tdatatparam_sn[".sqlHead"] = "SELECT sn_id,  	sn";
+$tdatatparam_sn[".sqlHead"] = "SELECT sn_id,  	sn,  	sn_oe";
 $tdatatparam_sn[".sqlFrom"] = "FROM tparam_sn";
 $tdatatparam_sn[".sqlWhereExpr"] = "";
 $tdatatparam_sn[".sqlTail"] = "";
@@ -513,6 +517,141 @@ $tdatatparam_sn[".hideMobileList"] = array();
 
 	$tdatatparam_sn["sn"] = $fdata;
 		$tdatatparam_sn[".searchableFields"][] = "sn";
+//	sn_oe
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 3;
+	$fdata["strName"] = "sn_oe";
+	$fdata["GoodName"] = "sn_oe";
+	$fdata["ownerTable"] = "tparam_sn";
+	$fdata["Label"] = GetFieldLabel("tparam_sn","sn_oe");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "sn_oe";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "sn_oe";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=30";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatatparam_sn["sn_oe"] = $fdata;
+		$tdatatparam_sn[".searchableFields"][] = "sn_oe";
 
 
 $tables_data["tparam_sn"]=&$tdatatparam_sn;
@@ -548,7 +687,7 @@ function createSqlQuery_tparam_sn()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "sn_id,  	sn";
+$proto0["m_strFieldList"] = "sn_id,  	sn,  	sn_oe";
 $proto0["m_strFrom"] = "FROM tparam_sn";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -616,38 +755,53 @@ $proto8["m_alias"] = "";
 $obj = new SQLFieldListItem($proto8);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto10=array();
-$proto10["m_link"] = "SQLL_MAIN";
-			$proto11=array();
-$proto11["m_strName"] = "tparam_sn";
-$proto11["m_srcTableName"] = "tparam_sn";
-$proto11["m_columns"] = array();
-$proto11["m_columns"][] = "sn_id";
-$proto11["m_columns"][] = "sn";
-$obj = new SQLTable($proto11);
+						$proto10=array();
+			$obj = new SQLField(array(
+	"m_strName" => "sn_oe",
+	"m_strTable" => "tparam_sn",
+	"m_srcTableName" => "tparam_sn"
+));
 
-$proto10["m_table"] = $obj;
-$proto10["m_sql"] = "tparam_sn";
-$proto10["m_alias"] = "";
+$proto10["m_sql"] = "sn_oe";
 $proto10["m_srcTableName"] = "tparam_sn";
-$proto12=array();
-$proto12["m_sql"] = "";
-$proto12["m_uniontype"] = "SQLL_UNKNOWN";
+$proto10["m_expr"]=$obj;
+$proto10["m_alias"] = "";
+$obj = new SQLFieldListItem($proto10);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto12=array();
+$proto12["m_link"] = "SQLL_MAIN";
+			$proto13=array();
+$proto13["m_strName"] = "tparam_sn";
+$proto13["m_srcTableName"] = "tparam_sn";
+$proto13["m_columns"] = array();
+$proto13["m_columns"][] = "sn_id";
+$proto13["m_columns"][] = "sn";
+$proto13["m_columns"][] = "sn_oe";
+$obj = new SQLTable($proto13);
+
+$proto12["m_table"] = $obj;
+$proto12["m_sql"] = "tparam_sn";
+$proto12["m_alias"] = "";
+$proto12["m_srcTableName"] = "tparam_sn";
+$proto14=array();
+$proto14["m_sql"] = "";
+$proto14["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto12["m_column"]=$obj;
-$proto12["m_contained"] = array();
-$proto12["m_strCase"] = "";
-$proto12["m_havingmode"] = false;
-$proto12["m_inBrackets"] = false;
-$proto12["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto12);
+$proto14["m_column"]=$obj;
+$proto14["m_contained"] = array();
+$proto14["m_strCase"] = "";
+$proto14["m_havingmode"] = false;
+$proto14["m_inBrackets"] = false;
+$proto14["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto14);
 
-$proto10["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto10);
+$proto12["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto12);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -663,7 +817,7 @@ $queryData_tparam_sn = createSqlQuery_tparam_sn();
 	
 						;
 
-		
+			
 
 $tdatatparam_sn[".sqlquery"] = $queryData_tparam_sn;
 

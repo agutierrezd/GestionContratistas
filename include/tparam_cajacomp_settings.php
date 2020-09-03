@@ -79,9 +79,9 @@ $tdatatparam_cajacomp[".listAjax"] = false;
 //	temporary
 $tdatatparam_cajacomp[".listAjax"] = false;
 
-	$tdatatparam_cajacomp[".audit"] = false;
+	$tdatatparam_cajacomp[".audit"] = true;
 
-	$tdatatparam_cajacomp[".locking"] = false;
+	$tdatatparam_cajacomp[".locking"] = true;
 
 
 $pages = $tdatatparam_cajacomp[".defaultPages"];
