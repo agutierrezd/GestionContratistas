@@ -312,6 +312,9 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_edit_field35}","stack":[{"text":"{$jslabel admin_users pin }","bold":true},{"text":{$pin_pdfvalue}}],"margin":[0,0,0,15]},
 				
+				
+			{"hidden":"{$item_hide_integrated_edit_field36}","stack":[{"text":"{$jslabel admin_users ct_fecha_nacimiento_mun }","bold":true},{"text":{$ct_fecha_nacimiento_mun_pdfvalue}}],"margin":[0,0,0,15]},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

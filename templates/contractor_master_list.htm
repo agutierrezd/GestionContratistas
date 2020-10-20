@@ -113,6 +113,19 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_dem_profesion}</span>
 						</div>
 		{END searchCtrlBlock_dem_profesion}
+																{BEGIN searchCtrlBlock_ct_fecha_nacimiento_mun}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ct_fecha_nacimiento_mun}" {$filterRow_attrs_ct_fecha_nacimiento_mun}>
+			<label>{$label contractor_master ct_fecha_nacimiento_mun }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ct_fecha_nacimiento_mun}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ct_fecha_nacimiento_mun}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ct_fecha_nacimiento_mun}</span>
+						</div>
+		{END searchCtrlBlock_ct_fecha_nacimiento_mun}
 																{BEGIN searchCtrlBlock_contractor_dependencia}
 
 
@@ -1100,6 +1113,7 @@
 									 
 									 
 									 
+									 
 											
 					</tbody>
 				</table>
@@ -1300,10 +1314,10 @@
 												
 						<tr class="{$rowclass}">
 						 
-							{BEGIN cellblock_grid_cell_field10}
+							{BEGIN cellblock_grid_cell_field14}
 	<td
 	
-	{$cell_grid_cell_field10}
+	{$cell_grid_cell_field14}
 	{$recordattrs}
 	class="
 		r-align-right r-ori-vert				{$contractor_name_class}
@@ -1311,7 +1325,7 @@
 
 			data-field="contractor_name"
 	
-	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1323,12 +1337,12 @@
 
 	
 	</td>
-	{END cellblock_grid_cell_field10}
+	{END cellblock_grid_cell_field14}
 						 
-							{BEGIN cellblock_grid_cell_field11}
+							{BEGIN cellblock_grid_cell_field15}
 	<td
 	
-	{$cell_grid_cell_field11}
+	{$cell_grid_cell_field15}
 	{$recordattrs}
 	class="
 		 r-ori-vert				{$contractor_name_class}
@@ -1336,7 +1350,7 @@
 
 			data-field="contractor_name"
 	
-	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1346,12 +1360,12 @@
 </span>
 {END contractor_name_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field11}
+	{END cellblock_grid_cell_field15}
 						 
-							{BEGIN cellblock_grid_cell_field12}
+							{BEGIN cellblock_grid_cell_field16}
 	<td
 	
-	{$cell_grid_cell_field12}
+	{$cell_grid_cell_field16}
 	{$recordattrs}
 	class="
 		r-align-right r-ori-vert				{$contractor_lname_class}
@@ -1359,7 +1373,7 @@
 
 			data-field="contractor_lname"
 	
-	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1371,12 +1385,12 @@
 
 	
 	</td>
-	{END cellblock_grid_cell_field12}
+	{END cellblock_grid_cell_field16}
 						 
-							{BEGIN cellblock_grid_cell_field13}
+							{BEGIN cellblock_grid_cell_field17}
 	<td
 	
-	{$cell_grid_cell_field13}
+	{$cell_grid_cell_field17}
 	{$recordattrs}
 	class="
 		 r-ori-vert				{$contractor_lname_class}
@@ -1384,7 +1398,7 @@
 
 			data-field="contractor_lname"
 	
-	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1393,6 +1407,90 @@
 {$contractor_lname_value}
 </span>
 {END contractor_lname_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field17}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$ct_fecha_nacimiento_mun_class}
+			"
+
+			data-field="ct_fecha_nacimiento_mun"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ct_fecha_nacimiento_mun_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label3" {$item_grid_field_label3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ct_fecha_nacimiento_mun">
+	{$label contractor_master ct_fecha_nacimiento_mun }	</span>
+{END ct_fecha_nacimiento_mun_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_field10}
+						 
+							{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ct_fecha_nacimiento_mun_class}
+			"
+
+			data-field="ct_fecha_nacimiento_mun"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ct_fecha_nacimiento_mun_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field3" {$item_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ct_fecha_nacimiento_mun" data-default-width >
+{$ct_fecha_nacimiento_mun_value}
+</span>
+{END ct_fecha_nacimiento_mun_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+						 
+							{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field12}
+						 
+							{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
 	</td>
 	{END cellblock_grid_cell_field13}
 												</tr>

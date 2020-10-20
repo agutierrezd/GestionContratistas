@@ -9,11 +9,11 @@ $tdatainforme_intersup_contratista[".OwnerID"] = "inf_doccontratista";
 $tdatainforme_intersup_contratista[".OriginalTable"] = "informe_intersup";
 
 
-$tdatainforme_intersup_contratista[".pagesByType"] = my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" );
+$tdatainforme_intersup_contratista[".pagesByType"] = my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" );
 $tdatainforme_intersup_contratista[".originalPagesByType"] = $tdatainforme_intersup_contratista[".pagesByType"];
-$tdatainforme_intersup_contratista[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" ) );
+$tdatainforme_intersup_contratista[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" ) );
 $tdatainforme_intersup_contratista[".originalPages"] = $tdatainforme_intersup_contratista[".pages"];
-$tdatainforme_intersup_contratista[".defaultPages"] = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"export\":\"export\",\"import\":\"import\",\"list\":\"list\",\"masterlist\":\"masterlist\",\"masterprint\":\"masterprint\",\"print\":\"print\",\"search\":\"search\",\"view\":\"view\"}" );
+$tdatainforme_intersup_contratista[".defaultPages"] = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"export\":\"export\",\"list\":\"list\",\"masterlist\":\"masterlist\",\"masterprint\":\"masterprint\",\"print\":\"print\",\"search\":\"search\",\"view\":\"view\"}" );
 $tdatainforme_intersup_contratista[".originalDefaultPages"] = $tdatainforme_intersup_contratista[".defaultPages"];
 
 //	field labels
@@ -196,6 +196,22 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsinforme_intersup_contratista["Spanish"]["mun_ejec"] = "Mun Ejec";
 	$fieldToolTipsinforme_intersup_contratista["Spanish"]["mun_ejec"] = "";
 	$placeHoldersinforme_intersup_contratista["Spanish"]["mun_ejec"] = "";
+	$fieldLabelsinforme_intersup_contratista["Spanish"]["cont_cesion"] = "Cont Cesion";
+	$fieldToolTipsinforme_intersup_contratista["Spanish"]["cont_cesion"] = "";
+	$placeHoldersinforme_intersup_contratista["Spanish"]["cont_cesion"] = "";
+	$fieldLabelsinforme_intersup_contratista["Spanish"]["cont_modifica"] = "Cont Modifica";
+	$fieldToolTipsinforme_intersup_contratista["Spanish"]["cont_modifica"] = "";
+	$placeHoldersinforme_intersup_contratista["Spanish"]["cont_modifica"] = "";
+	$fieldLabelsinforme_intersup_contratista["Spanish"]["qty_inf"] = "Meta";
+	$fieldToolTipsinforme_intersup_contratista["Spanish"]["qty_inf"] = "";
+	$placeHoldersinforme_intersup_contratista["Spanish"]["qty_inf"] = "";
+	$fieldLabelsinforme_intersup_contratista["Spanish"]["qty_inf_compare"] = "Gestionados";
+	$fieldToolTipsinforme_intersup_contratista["Spanish"]["qty_inf_compare"] = "";
+	$placeHoldersinforme_intersup_contratista["Spanish"]["qty_inf_compare"] = "";
+	$fieldLabelsinforme_intersup_contratista["Spanish"]["qty_inf_verifica"] = "Qty Inf Verifica";
+	$fieldToolTipsinforme_intersup_contratista["Spanish"]["qty_inf_verifica"] = "";
+	$placeHoldersinforme_intersup_contratista["Spanish"]["qty_inf_verifica"] = "";
+	$pageTitlesinforme_intersup_contratista["Spanish"]["edit"] = "Cambiar estado a informe";
 	if (count($fieldToolTipsinforme_intersup_contratista["Spanish"]))
 		$tdatainforme_intersup_contratista[".isUseToolTips"] = true;
 }
@@ -357,16 +373,7 @@ $tdatainforme_intersup_contratista[".googleLikeFields"][] = "inf_incumplimiento"
 $tdatainforme_intersup_contratista[".googleLikeFields"][] = "inf_incumplimiento_obs";
 $tdatainforme_intersup_contratista[".googleLikeFields"][] = "inf_otrosaspectostecnicos";
 $tdatainforme_intersup_contratista[".googleLikeFields"][] = "inf_recomyobserva";
-$tdatainforme_intersup_contratista[".googleLikeFields"][] = "sign_date";
-$tdatainforme_intersup_contratista[".googleLikeFields"][] = "sign_hash";
-$tdatainforme_intersup_contratista[".googleLikeFields"][] = "sign_file";
-$tdatainforme_intersup_contratista[".googleLikeFields"][] = "sign_mailnot";
 $tdatainforme_intersup_contratista[".googleLikeFields"][] = "file_verifica";
-$tdatainforme_intersup_contratista[".googleLikeFields"][] = "sign_verificacert";
-$tdatainforme_intersup_contratista[".googleLikeFields"][] = "cert_date";
-$tdatainforme_intersup_contratista[".googleLikeFields"][] = "cert_file";
-$tdatainforme_intersup_contratista[".googleLikeFields"][] = "cert_mail";
-$tdatainforme_intersup_contratista[".googleLikeFields"][] = "cert_compare";
 $tdatainforme_intersup_contratista[".googleLikeFields"][] = "inf_ultimopago";
 $tdatainforme_intersup_contratista[".googleLikeFields"][] = "sys_date";
 $tdatainforme_intersup_contratista[".googleLikeFields"][] = "inf_mail_a";
@@ -374,6 +381,20 @@ $tdatainforme_intersup_contratista[".googleLikeFields"][] = "inf_mail_b";
 $tdatainforme_intersup_contratista[".googleLikeFields"][] = "url_secop";
 $tdatainforme_intersup_contratista[".googleLikeFields"][] = "num_poliza";
 $tdatainforme_intersup_contratista[".googleLikeFields"][] = "mun_ejec";
+$tdatainforme_intersup_contratista[".googleLikeFields"][] = "cont_cesion";
+$tdatainforme_intersup_contratista[".googleLikeFields"][] = "cont_modifica";
+$tdatainforme_intersup_contratista[".googleLikeFields"][] = "qty_inf";
+$tdatainforme_intersup_contratista[".googleLikeFields"][] = "qty_inf_compare";
+$tdatainforme_intersup_contratista[".googleLikeFields"][] = "qty_inf_verifica";
+$tdatainforme_intersup_contratista[".googleLikeFields"][] = "cert_mail";
+$tdatainforme_intersup_contratista[".googleLikeFields"][] = "cert_file";
+$tdatainforme_intersup_contratista[".googleLikeFields"][] = "cert_date";
+$tdatainforme_intersup_contratista[".googleLikeFields"][] = "cert_compare";
+$tdatainforme_intersup_contratista[".googleLikeFields"][] = "sign_hash";
+$tdatainforme_intersup_contratista[".googleLikeFields"][] = "sign_date";
+$tdatainforme_intersup_contratista[".googleLikeFields"][] = "sign_mailnot";
+$tdatainforme_intersup_contratista[".googleLikeFields"][] = "sign_verificacert";
+$tdatainforme_intersup_contratista[".googleLikeFields"][] = "sign_file";
 
 
 
@@ -409,7 +430,7 @@ $tdatainforme_intersup_contratista[".strOrderBy"] = $tstrOrderBy;
 
 $tdatainforme_intersup_contratista[".orderindexes"] = array();
 
-$tdatainforme_intersup_contratista[".sqlHead"] = "SELECT inf_id,  	id_cont_fk,  	inf_consecutivo,  	inf_hash,  	inf_estado,  	inf_fechapresenta,  	inf_periodicidad,  	inf_fecharep_i,  	inf_fecharep_f,  	inf_numerocontrato,  	inf_anio,  	inf_prenum,  	inf_doccontratista,  	inf_nombrecontratista,  	inf_valorcontrato,  	inf_adicionreduc,  	inf_cdp,  	inf_rp,  	inf_rubrocode,  	inf_rubroname,  	inf_objeto,  	inf_fechasuscripcion,  	inf_fechacont_i,  	inf_fechacont_f,  	inf_plazo,  	inf_vigencia,  	inf_modificacionesplazo,  	inf_intersup,  	inf_nombre,  	inf_cargo,  	inf_dependencia,  	inf_avgejecucion,  	inf_actividades,  	inf_declarainconf,  	inf_declarainconf_obs,  	inf_incumplimiento,  	inf_incumplimiento_obs,  	inf_otrosaspectostecnicos,  	inf_recomyobserva,  	sign_date,  	sign_hash,  	sign_file,  	sign_mailnot,  	file_verifica,  	sign_verificacert,  	cert_date,  	cert_file,  	cert_mail,  	cert_compare,  	inf_ultimopago,  	sys_date,  	inf_mail_a,  	inf_mail_b,  	url_secop,  	num_poliza,  	mun_ejec";
+$tdatainforme_intersup_contratista[".sqlHead"] = "SELECT inf_id,  	id_cont_fk,  	inf_consecutivo,  	inf_hash,  	inf_estado,  	inf_fechapresenta,  	inf_periodicidad,  	inf_fecharep_i,  	inf_fecharep_f,  	inf_numerocontrato,  	inf_anio,  	inf_prenum,  	inf_doccontratista,  	inf_nombrecontratista,  	inf_valorcontrato,  	inf_adicionreduc,  	inf_cdp,  	inf_rp,  	inf_rubrocode,  	inf_rubroname,  	inf_objeto,  	inf_fechasuscripcion,  	inf_fechacont_i,  	inf_fechacont_f,  	inf_plazo,  	inf_vigencia,  	inf_modificacionesplazo,  	inf_intersup,  	inf_nombre,  	inf_cargo,  	inf_dependencia,  	inf_avgejecucion,  	inf_actividades,  	inf_declarainconf,  	inf_declarainconf_obs,  	inf_incumplimiento,  	inf_incumplimiento_obs,  	inf_otrosaspectostecnicos,  	inf_recomyobserva,  	file_verifica,  	inf_ultimopago,  	sys_date,  	inf_mail_a,  	inf_mail_b,  	url_secop,  	num_poliza,  	mun_ejec,  	cont_cesion,  	cont_modifica,  	qty_inf,  	qty_inf_compare,  	qty_inf_verifica,  	cert_mail,  	cert_file,  	cert_date,  	cert_compare,  	sign_hash,  	sign_date,  	sign_mailnot,  	sign_verificacert,  	sign_file";
 $tdatainforme_intersup_contratista[".sqlFrom"] = "FROM informe_intersup";
 $tdatainforme_intersup_contratista[".sqlWhereExpr"] = "";
 $tdatainforme_intersup_contratista[".sqlTail"] = "";
@@ -783,7 +804,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -809,19 +830,15 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+							
 	
 	//	End validation
 
@@ -920,7 +937,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -945,11 +962,8 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=10";
-
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -1078,7 +1092,8 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 	$edata["LinkFieldType"] = 0;
 	$edata["DisplayField"] = "estadoname";
 
-	
+				$edata["LookupWhereCode"] = true;
+
 
 	
 	$edata["LookupOrderBy"] = "";
@@ -1119,7 +1134,8 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 	$edata["validateAs"]["customMessages"] = array();
 						$edata["validateAs"]["basicValidate"][] = "IsRequired";
 		
-	
+		$edata["autoUpdatable"] = true;
+
 	//	End validation
 
 	
@@ -1488,10 +1504,10 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Date");
+	$edata = array("EditFormat" => "Readonly");
 
 	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+		$edata["weekdayMessage"] = array("message" => "Invalid week day", "messageType" => "Text");
 	$edata["weekdays"] = "[]";
 
 
@@ -1511,10 +1527,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 
 	
 	
-		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
-
+	
 	
 	
 	
@@ -1623,10 +1636,10 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Date");
+	$edata = array("EditFormat" => "Readonly");
 
 	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+		$edata["weekdayMessage"] = array("message" => "Invalid week day", "messageType" => "Text");
 	$edata["weekdays"] = "[]";
 
 
@@ -1646,10 +1659,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 
 	
 	
-		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
-
+	
 	
 	
 	
@@ -1758,7 +1768,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1783,11 +1793,8 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=25";
-
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -1893,7 +1900,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1918,17 +1925,14 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
 							
 	
 	//	End validation
@@ -2163,7 +2167,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -2175,7 +2179,8 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 	
@@ -2188,18 +2193,15 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=15";
-
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-	
+							
 	
 	//	End validation
 
@@ -2298,7 +2300,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -2310,7 +2312,8 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 	
@@ -2323,18 +2326,15 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=120";
-
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-	
+							
 	
 	//	End validation
 
@@ -3199,7 +3199,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 	$fdata["GoodName"] = "inf_objeto";
 	$fdata["ownerTable"] = "informe_intersup";
 	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","inf_objeto");
-	$fdata["FieldType"] = 201;
+	$fdata["FieldType"] = 200;
 
 	
 	
@@ -3244,7 +3244,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text area");
+	$edata = array("EditFormat" => "Text field");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -3268,11 +3268,11 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 	
 	
 	
-				$edata["nRows"] = 100;
-			$edata["nCols"] = 200;
+	
+			$edata["HTML5InuptType"] = "text";
 
-	
-	
+		$edata["EditParams"] = "";
+		
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -4822,7 +4822,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 	$fdata["GoodName"] = "inf_actividades";
 	$fdata["ownerTable"] = "informe_intersup";
 	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","inf_actividades");
-	$fdata["FieldType"] = 201;
+	$fdata["FieldType"] = 200;
 
 	
 	
@@ -4959,7 +4959,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 	$fdata["GoodName"] = "inf_declarainconf";
 	$fdata["ownerTable"] = "informe_intersup";
 	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","inf_declarainconf");
-	$fdata["FieldType"] = 16;
+	$fdata["FieldType"] = 200;
 
 	
 	
@@ -5032,15 +5032,15 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 			$edata["HTML5InuptType"] = "text";
 
 		$edata["EditParams"] = "";
-		
+			$edata["EditParams"].= " maxlength=2";
+
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
+	
 	
 	//	End validation
 
@@ -5094,7 +5094,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 	$fdata["GoodName"] = "inf_declarainconf_obs";
 	$fdata["ownerTable"] = "informe_intersup";
 	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","inf_declarainconf_obs");
-	$fdata["FieldType"] = 201;
+	$fdata["FieldType"] = 200;
 
 	
 	
@@ -5139,7 +5139,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text area");
+	$edata = array("EditFormat" => "Text field");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -5163,11 +5163,11 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 	
 	
 	
-				$edata["nRows"] = 100;
-			$edata["nCols"] = 200;
+	
+			$edata["HTML5InuptType"] = "text";
 
-	
-	
+		$edata["EditParams"] = "";
+		
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -5231,7 +5231,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 	$fdata["GoodName"] = "inf_incumplimiento";
 	$fdata["ownerTable"] = "informe_intersup";
 	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","inf_incumplimiento");
-	$fdata["FieldType"] = 16;
+	$fdata["FieldType"] = 200;
 
 	
 	
@@ -5304,15 +5304,15 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 			$edata["HTML5InuptType"] = "text";
 
 		$edata["EditParams"] = "";
-		
+			$edata["EditParams"].= " maxlength=2";
+
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
+	
 	
 	//	End validation
 
@@ -5366,7 +5366,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 	$fdata["GoodName"] = "inf_incumplimiento_obs";
 	$fdata["ownerTable"] = "informe_intersup";
 	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","inf_incumplimiento_obs");
-	$fdata["FieldType"] = 201;
+	$fdata["FieldType"] = 200;
 
 	
 	
@@ -5411,7 +5411,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text area");
+	$edata = array("EditFormat" => "Text field");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -5435,11 +5435,11 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 	
 	
 	
-				$edata["nRows"] = 100;
-			$edata["nCols"] = 200;
+	
+			$edata["HTML5InuptType"] = "text";
 
-	
-	
+		$edata["EditParams"] = "";
+		
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -5503,7 +5503,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 	$fdata["GoodName"] = "inf_otrosaspectostecnicos";
 	$fdata["ownerTable"] = "informe_intersup";
 	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","inf_otrosaspectostecnicos");
-	$fdata["FieldType"] = 201;
+	$fdata["FieldType"] = 200;
 
 	
 	
@@ -5548,7 +5548,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text area");
+	$edata = array("EditFormat" => "Text field");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -5572,11 +5572,11 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 	
 	
 	
-				$edata["nRows"] = 100;
-			$edata["nCols"] = 200;
+	
+			$edata["HTML5InuptType"] = "text";
 
-	
-	
+		$edata["EditParams"] = "";
+		
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -5640,7 +5640,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 	$fdata["GoodName"] = "inf_recomyobserva";
 	$fdata["ownerTable"] = "informe_intersup";
 	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","inf_recomyobserva");
-	$fdata["FieldType"] = 201;
+	$fdata["FieldType"] = 200;
 
 	
 	
@@ -5685,7 +5685,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text area");
+	$edata = array("EditFormat" => "Text field");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -5709,11 +5709,11 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 	
 	
 	
-				$edata["nRows"] = 100;
-			$edata["nCols"] = 200;
+	
+			$edata["HTML5InuptType"] = "text";
 
-	
-	
+		$edata["EditParams"] = "";
+		
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -5769,550 +5769,10 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 
 	$tdatainforme_intersup_contratista["inf_recomyobserva"] = $fdata;
 		$tdatainforme_intersup_contratista[".searchableFields"][] = "inf_recomyobserva";
-//	sign_date
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 40;
-	$fdata["strName"] = "sign_date";
-	$fdata["GoodName"] = "sign_date";
-	$fdata["ownerTable"] = "informe_intersup";
-	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","sign_date");
-	$fdata["FieldType"] = 7;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "sign_date";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "sign_date";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Short Date");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Date");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
-
-	
-	
-	
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatainforme_intersup_contratista["sign_date"] = $fdata;
-		$tdatainforme_intersup_contratista[".searchableFields"][] = "sign_date";
-//	sign_hash
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 41;
-	$fdata["strName"] = "sign_hash";
-	$fdata["GoodName"] = "sign_hash";
-	$fdata["ownerTable"] = "informe_intersup";
-	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","sign_hash");
-	$fdata["FieldType"] = 200;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "sign_hash";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "sign_hash";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=20";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatainforme_intersup_contratista["sign_hash"] = $fdata;
-		$tdatainforme_intersup_contratista[".searchableFields"][] = "sign_hash";
-//	sign_file
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 42;
-	$fdata["strName"] = "sign_file";
-	$fdata["GoodName"] = "sign_file";
-	$fdata["ownerTable"] = "informe_intersup";
-	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","sign_file");
-	$fdata["FieldType"] = 200;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "sign_file";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "sign_file";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=50";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatainforme_intersup_contratista["sign_file"] = $fdata;
-		$tdatainforme_intersup_contratista[".searchableFields"][] = "sign_file";
-//	sign_mailnot
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 43;
-	$fdata["strName"] = "sign_mailnot";
-	$fdata["GoodName"] = "sign_mailnot";
-	$fdata["ownerTable"] = "informe_intersup";
-	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","sign_mailnot");
-	$fdata["FieldType"] = 200;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "sign_mailnot";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "sign_mailnot";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=100";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatainforme_intersup_contratista["sign_mailnot"] = $fdata;
-		$tdatainforme_intersup_contratista[".searchableFields"][] = "sign_mailnot";
 //	file_verifica
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 44;
+	$fdata["Index"] = 40;
 	$fdata["strName"] = "file_verifica";
 	$fdata["GoodName"] = "file_verifica";
 	$fdata["ownerTable"] = "informe_intersup";
@@ -6444,685 +5904,10 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 
 	$tdatainforme_intersup_contratista["file_verifica"] = $fdata;
 		$tdatainforme_intersup_contratista[".searchableFields"][] = "file_verifica";
-//	sign_verificacert
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 45;
-	$fdata["strName"] = "sign_verificacert";
-	$fdata["GoodName"] = "sign_verificacert";
-	$fdata["ownerTable"] = "informe_intersup";
-	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","sign_verificacert");
-	$fdata["FieldType"] = 16;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "sign_verificacert";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "sign_verificacert";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatainforme_intersup_contratista["sign_verificacert"] = $fdata;
-		$tdatainforme_intersup_contratista[".searchableFields"][] = "sign_verificacert";
-//	cert_date
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 46;
-	$fdata["strName"] = "cert_date";
-	$fdata["GoodName"] = "cert_date";
-	$fdata["ownerTable"] = "informe_intersup";
-	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","cert_date");
-	$fdata["FieldType"] = 7;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "cert_date";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "cert_date";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Short Date");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Date");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
-
-	
-	
-	
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatainforme_intersup_contratista["cert_date"] = $fdata;
-		$tdatainforme_intersup_contratista[".searchableFields"][] = "cert_date";
-//	cert_file
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 47;
-	$fdata["strName"] = "cert_file";
-	$fdata["GoodName"] = "cert_file";
-	$fdata["ownerTable"] = "informe_intersup";
-	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","cert_file");
-	$fdata["FieldType"] = 200;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "cert_file";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "cert_file";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=100";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatainforme_intersup_contratista["cert_file"] = $fdata;
-		$tdatainforme_intersup_contratista[".searchableFields"][] = "cert_file";
-//	cert_mail
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 48;
-	$fdata["strName"] = "cert_mail";
-	$fdata["GoodName"] = "cert_mail";
-	$fdata["ownerTable"] = "informe_intersup";
-	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","cert_mail");
-	$fdata["FieldType"] = 200;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "cert_mail";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "cert_mail";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=100";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatainforme_intersup_contratista["cert_mail"] = $fdata;
-		$tdatainforme_intersup_contratista[".searchableFields"][] = "cert_mail";
-//	cert_compare
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 49;
-	$fdata["strName"] = "cert_compare";
-	$fdata["GoodName"] = "cert_compare";
-	$fdata["ownerTable"] = "informe_intersup";
-	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","cert_compare");
-	$fdata["FieldType"] = 200;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "cert_compare";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "cert_compare";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=100";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatainforme_intersup_contratista["cert_compare"] = $fdata;
-		$tdatainforme_intersup_contratista[".searchableFields"][] = "cert_compare";
 //	inf_ultimopago
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 50;
+	$fdata["Index"] = 41;
 	$fdata["strName"] = "inf_ultimopago";
 	$fdata["GoodName"] = "inf_ultimopago";
 	$fdata["ownerTable"] = "informe_intersup";
@@ -7257,7 +6042,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 //	sys_date
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 51;
+	$fdata["Index"] = 42;
 	$fdata["strName"] = "sys_date";
 	$fdata["GoodName"] = "sys_date";
 	$fdata["ownerTable"] = "informe_intersup";
@@ -7392,7 +6177,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 //	inf_mail_a
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 52;
+	$fdata["Index"] = 43;
 	$fdata["strName"] = "inf_mail_a";
 	$fdata["GoodName"] = "inf_mail_a";
 	$fdata["ownerTable"] = "informe_intersup";
@@ -7527,7 +6312,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 //	inf_mail_b
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 53;
+	$fdata["Index"] = 44;
 	$fdata["strName"] = "inf_mail_b";
 	$fdata["GoodName"] = "inf_mail_b";
 	$fdata["ownerTable"] = "informe_intersup";
@@ -7662,7 +6447,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 //	url_secop
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 54;
+	$fdata["Index"] = 45;
 	$fdata["strName"] = "url_secop";
 	$fdata["GoodName"] = "url_secop";
 	$fdata["ownerTable"] = "informe_intersup";
@@ -7797,7 +6582,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 //	num_poliza
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 55;
+	$fdata["Index"] = 46;
 	$fdata["strName"] = "num_poliza";
 	$fdata["GoodName"] = "num_poliza";
 	$fdata["ownerTable"] = "informe_intersup";
@@ -7932,7 +6717,7 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 //	mun_ejec
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 56;
+	$fdata["Index"] = 47;
 	$fdata["strName"] = "mun_ejec";
 	$fdata["GoodName"] = "mun_ejec";
 	$fdata["ownerTable"] = "informe_intersup";
@@ -8064,6 +6849,1896 @@ $tdatainforme_intersup_contratista[".hideMobileList"] = array();
 
 	$tdatainforme_intersup_contratista["mun_ejec"] = $fdata;
 		$tdatainforme_intersup_contratista[".searchableFields"][] = "mun_ejec";
+//	cont_cesion
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 48;
+	$fdata["strName"] = "cont_cesion";
+	$fdata["GoodName"] = "cont_cesion";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","cont_cesion");
+	$fdata["FieldType"] = 16;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "cont_cesion";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "cont_cesion";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup_contratista["cont_cesion"] = $fdata;
+		$tdatainforme_intersup_contratista[".searchableFields"][] = "cont_cesion";
+//	cont_modifica
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 49;
+	$fdata["strName"] = "cont_modifica";
+	$fdata["GoodName"] = "cont_modifica";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","cont_modifica");
+	$fdata["FieldType"] = 16;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "cont_modifica";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "cont_modifica";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup_contratista["cont_modifica"] = $fdata;
+		$tdatainforme_intersup_contratista[".searchableFields"][] = "cont_modifica";
+//	qty_inf
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 50;
+	$fdata["strName"] = "qty_inf";
+	$fdata["GoodName"] = "qty_inf";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","qty_inf");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "qty_inf";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "qty_inf";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup_contratista["qty_inf"] = $fdata;
+		$tdatainforme_intersup_contratista[".searchableFields"][] = "qty_inf";
+//	qty_inf_compare
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 51;
+	$fdata["strName"] = "qty_inf_compare";
+	$fdata["GoodName"] = "qty_inf_compare";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","qty_inf_compare");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "qty_inf_compare";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "qty_inf_compare";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup_contratista["qty_inf_compare"] = $fdata;
+		$tdatainforme_intersup_contratista[".searchableFields"][] = "qty_inf_compare";
+//	qty_inf_verifica
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 52;
+	$fdata["strName"] = "qty_inf_verifica";
+	$fdata["GoodName"] = "qty_inf_verifica";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","qty_inf_verifica");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "qty_inf_verifica";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "qty_inf_verifica";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup_contratista["qty_inf_verifica"] = $fdata;
+		$tdatainforme_intersup_contratista[".searchableFields"][] = "qty_inf_verifica";
+//	cert_mail
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 53;
+	$fdata["strName"] = "cert_mail";
+	$fdata["GoodName"] = "cert_mail";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","cert_mail");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "cert_mail";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "cert_mail";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=100";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup_contratista["cert_mail"] = $fdata;
+		$tdatainforme_intersup_contratista[".searchableFields"][] = "cert_mail";
+//	cert_file
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 54;
+	$fdata["strName"] = "cert_file";
+	$fdata["GoodName"] = "cert_file";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","cert_file");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "cert_file";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "cert_file";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=100";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup_contratista["cert_file"] = $fdata;
+		$tdatainforme_intersup_contratista[".searchableFields"][] = "cert_file";
+//	cert_date
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 55;
+	$fdata["strName"] = "cert_date";
+	$fdata["GoodName"] = "cert_date";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","cert_date");
+	$fdata["FieldType"] = 7;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "cert_date";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "cert_date";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Short Date");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Date");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+		$edata["DateEditType"] = 13;
+	$edata["InitialYearFactor"] = 100;
+	$edata["LastYearFactor"] = 10;
+
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup_contratista["cert_date"] = $fdata;
+		$tdatainforme_intersup_contratista[".searchableFields"][] = "cert_date";
+//	cert_compare
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 56;
+	$fdata["strName"] = "cert_compare";
+	$fdata["GoodName"] = "cert_compare";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","cert_compare");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "cert_compare";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "cert_compare";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=100";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup_contratista["cert_compare"] = $fdata;
+		$tdatainforme_intersup_contratista[".searchableFields"][] = "cert_compare";
+//	sign_hash
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 57;
+	$fdata["strName"] = "sign_hash";
+	$fdata["GoodName"] = "sign_hash";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","sign_hash");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "sign_hash";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "sign_hash";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=20";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup_contratista["sign_hash"] = $fdata;
+		$tdatainforme_intersup_contratista[".searchableFields"][] = "sign_hash";
+//	sign_date
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 58;
+	$fdata["strName"] = "sign_date";
+	$fdata["GoodName"] = "sign_date";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","sign_date");
+	$fdata["FieldType"] = 135;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "sign_date";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "sign_date";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Short Date");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Date");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+		$edata["DateEditType"] = 13;
+	$edata["InitialYearFactor"] = 100;
+	$edata["LastYearFactor"] = 10;
+
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup_contratista["sign_date"] = $fdata;
+		$tdatainforme_intersup_contratista[".searchableFields"][] = "sign_date";
+//	sign_mailnot
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 59;
+	$fdata["strName"] = "sign_mailnot";
+	$fdata["GoodName"] = "sign_mailnot";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","sign_mailnot");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "sign_mailnot";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "sign_mailnot";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=100";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup_contratista["sign_mailnot"] = $fdata;
+		$tdatainforme_intersup_contratista[".searchableFields"][] = "sign_mailnot";
+//	sign_verificacert
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 60;
+	$fdata["strName"] = "sign_verificacert";
+	$fdata["GoodName"] = "sign_verificacert";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","sign_verificacert");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "sign_verificacert";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "sign_verificacert";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=20";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup_contratista["sign_verificacert"] = $fdata;
+		$tdatainforme_intersup_contratista[".searchableFields"][] = "sign_verificacert";
+//	sign_file
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 61;
+	$fdata["strName"] = "sign_file";
+	$fdata["GoodName"] = "sign_file";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup_contratista","sign_file");
+	$fdata["FieldType"] = 16;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "sign_file";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "sign_file";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=50";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup_contratista["sign_file"] = $fdata;
+		$tdatainforme_intersup_contratista[".searchableFields"][] = "sign_file";
 
 
 $tables_data["informe_intersup_contratista"]=&$tdatainforme_intersup_contratista;
@@ -8167,7 +8842,7 @@ function createSqlQuery_informe_intersup_contratista()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "inf_id,  	id_cont_fk,  	inf_consecutivo,  	inf_hash,  	inf_estado,  	inf_fechapresenta,  	inf_periodicidad,  	inf_fecharep_i,  	inf_fecharep_f,  	inf_numerocontrato,  	inf_anio,  	inf_prenum,  	inf_doccontratista,  	inf_nombrecontratista,  	inf_valorcontrato,  	inf_adicionreduc,  	inf_cdp,  	inf_rp,  	inf_rubrocode,  	inf_rubroname,  	inf_objeto,  	inf_fechasuscripcion,  	inf_fechacont_i,  	inf_fechacont_f,  	inf_plazo,  	inf_vigencia,  	inf_modificacionesplazo,  	inf_intersup,  	inf_nombre,  	inf_cargo,  	inf_dependencia,  	inf_avgejecucion,  	inf_actividades,  	inf_declarainconf,  	inf_declarainconf_obs,  	inf_incumplimiento,  	inf_incumplimiento_obs,  	inf_otrosaspectostecnicos,  	inf_recomyobserva,  	sign_date,  	sign_hash,  	sign_file,  	sign_mailnot,  	file_verifica,  	sign_verificacert,  	cert_date,  	cert_file,  	cert_mail,  	cert_compare,  	inf_ultimopago,  	sys_date,  	inf_mail_a,  	inf_mail_b,  	url_secop,  	num_poliza,  	mun_ejec";
+$proto0["m_strFieldList"] = "inf_id,  	id_cont_fk,  	inf_consecutivo,  	inf_hash,  	inf_estado,  	inf_fechapresenta,  	inf_periodicidad,  	inf_fecharep_i,  	inf_fecharep_f,  	inf_numerocontrato,  	inf_anio,  	inf_prenum,  	inf_doccontratista,  	inf_nombrecontratista,  	inf_valorcontrato,  	inf_adicionreduc,  	inf_cdp,  	inf_rp,  	inf_rubrocode,  	inf_rubroname,  	inf_objeto,  	inf_fechasuscripcion,  	inf_fechacont_i,  	inf_fechacont_f,  	inf_plazo,  	inf_vigencia,  	inf_modificacionesplazo,  	inf_intersup,  	inf_nombre,  	inf_cargo,  	inf_dependencia,  	inf_avgejecucion,  	inf_actividades,  	inf_declarainconf,  	inf_declarainconf_obs,  	inf_incumplimiento,  	inf_incumplimiento_obs,  	inf_otrosaspectostecnicos,  	inf_recomyobserva,  	file_verifica,  	inf_ultimopago,  	sys_date,  	inf_mail_a,  	inf_mail_b,  	url_secop,  	num_poliza,  	mun_ejec,  	cont_cesion,  	cont_modifica,  	qty_inf,  	qty_inf_compare,  	qty_inf_verifica,  	cert_mail,  	cert_file,  	cert_date,  	cert_compare,  	sign_hash,  	sign_date,  	sign_mailnot,  	sign_verificacert,  	sign_file";
 $proto0["m_strFrom"] = "FROM informe_intersup";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -8755,12 +9430,12 @@ $obj = new SQLFieldListItem($proto82);
 $proto0["m_fieldlist"][]=$obj;
 						$proto84=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sign_date",
+	"m_strName" => "file_verifica",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup_contratista"
 ));
 
-$proto84["m_sql"] = "sign_date";
+$proto84["m_sql"] = "file_verifica";
 $proto84["m_srcTableName"] = "informe_intersup_contratista";
 $proto84["m_expr"]=$obj;
 $proto84["m_alias"] = "";
@@ -8769,12 +9444,12 @@ $obj = new SQLFieldListItem($proto84);
 $proto0["m_fieldlist"][]=$obj;
 						$proto86=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sign_hash",
+	"m_strName" => "inf_ultimopago",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup_contratista"
 ));
 
-$proto86["m_sql"] = "sign_hash";
+$proto86["m_sql"] = "inf_ultimopago";
 $proto86["m_srcTableName"] = "informe_intersup_contratista";
 $proto86["m_expr"]=$obj;
 $proto86["m_alias"] = "";
@@ -8783,12 +9458,12 @@ $obj = new SQLFieldListItem($proto86);
 $proto0["m_fieldlist"][]=$obj;
 						$proto88=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sign_file",
+	"m_strName" => "sys_date",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup_contratista"
 ));
 
-$proto88["m_sql"] = "sign_file";
+$proto88["m_sql"] = "sys_date";
 $proto88["m_srcTableName"] = "informe_intersup_contratista";
 $proto88["m_expr"]=$obj;
 $proto88["m_alias"] = "";
@@ -8797,12 +9472,12 @@ $obj = new SQLFieldListItem($proto88);
 $proto0["m_fieldlist"][]=$obj;
 						$proto90=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sign_mailnot",
+	"m_strName" => "inf_mail_a",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup_contratista"
 ));
 
-$proto90["m_sql"] = "sign_mailnot";
+$proto90["m_sql"] = "inf_mail_a";
 $proto90["m_srcTableName"] = "informe_intersup_contratista";
 $proto90["m_expr"]=$obj;
 $proto90["m_alias"] = "";
@@ -8811,12 +9486,12 @@ $obj = new SQLFieldListItem($proto90);
 $proto0["m_fieldlist"][]=$obj;
 						$proto92=array();
 			$obj = new SQLField(array(
-	"m_strName" => "file_verifica",
+	"m_strName" => "inf_mail_b",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup_contratista"
 ));
 
-$proto92["m_sql"] = "file_verifica";
+$proto92["m_sql"] = "inf_mail_b";
 $proto92["m_srcTableName"] = "informe_intersup_contratista";
 $proto92["m_expr"]=$obj;
 $proto92["m_alias"] = "";
@@ -8825,12 +9500,12 @@ $obj = new SQLFieldListItem($proto92);
 $proto0["m_fieldlist"][]=$obj;
 						$proto94=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sign_verificacert",
+	"m_strName" => "url_secop",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup_contratista"
 ));
 
-$proto94["m_sql"] = "sign_verificacert";
+$proto94["m_sql"] = "url_secop";
 $proto94["m_srcTableName"] = "informe_intersup_contratista";
 $proto94["m_expr"]=$obj;
 $proto94["m_alias"] = "";
@@ -8839,12 +9514,12 @@ $obj = new SQLFieldListItem($proto94);
 $proto0["m_fieldlist"][]=$obj;
 						$proto96=array();
 			$obj = new SQLField(array(
-	"m_strName" => "cert_date",
+	"m_strName" => "num_poliza",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup_contratista"
 ));
 
-$proto96["m_sql"] = "cert_date";
+$proto96["m_sql"] = "num_poliza";
 $proto96["m_srcTableName"] = "informe_intersup_contratista";
 $proto96["m_expr"]=$obj;
 $proto96["m_alias"] = "";
@@ -8853,12 +9528,12 @@ $obj = new SQLFieldListItem($proto96);
 $proto0["m_fieldlist"][]=$obj;
 						$proto98=array();
 			$obj = new SQLField(array(
-	"m_strName" => "cert_file",
+	"m_strName" => "mun_ejec",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup_contratista"
 ));
 
-$proto98["m_sql"] = "cert_file";
+$proto98["m_sql"] = "mun_ejec";
 $proto98["m_srcTableName"] = "informe_intersup_contratista";
 $proto98["m_expr"]=$obj;
 $proto98["m_alias"] = "";
@@ -8867,12 +9542,12 @@ $obj = new SQLFieldListItem($proto98);
 $proto0["m_fieldlist"][]=$obj;
 						$proto100=array();
 			$obj = new SQLField(array(
-	"m_strName" => "cert_mail",
+	"m_strName" => "cont_cesion",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup_contratista"
 ));
 
-$proto100["m_sql"] = "cert_mail";
+$proto100["m_sql"] = "cont_cesion";
 $proto100["m_srcTableName"] = "informe_intersup_contratista";
 $proto100["m_expr"]=$obj;
 $proto100["m_alias"] = "";
@@ -8881,12 +9556,12 @@ $obj = new SQLFieldListItem($proto100);
 $proto0["m_fieldlist"][]=$obj;
 						$proto102=array();
 			$obj = new SQLField(array(
-	"m_strName" => "cert_compare",
+	"m_strName" => "cont_modifica",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup_contratista"
 ));
 
-$proto102["m_sql"] = "cert_compare";
+$proto102["m_sql"] = "cont_modifica";
 $proto102["m_srcTableName"] = "informe_intersup_contratista";
 $proto102["m_expr"]=$obj;
 $proto102["m_alias"] = "";
@@ -8895,12 +9570,12 @@ $obj = new SQLFieldListItem($proto102);
 $proto0["m_fieldlist"][]=$obj;
 						$proto104=array();
 			$obj = new SQLField(array(
-	"m_strName" => "inf_ultimopago",
+	"m_strName" => "qty_inf",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup_contratista"
 ));
 
-$proto104["m_sql"] = "inf_ultimopago";
+$proto104["m_sql"] = "qty_inf";
 $proto104["m_srcTableName"] = "informe_intersup_contratista";
 $proto104["m_expr"]=$obj;
 $proto104["m_alias"] = "";
@@ -8909,12 +9584,12 @@ $obj = new SQLFieldListItem($proto104);
 $proto0["m_fieldlist"][]=$obj;
 						$proto106=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sys_date",
+	"m_strName" => "qty_inf_compare",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup_contratista"
 ));
 
-$proto106["m_sql"] = "sys_date";
+$proto106["m_sql"] = "qty_inf_compare";
 $proto106["m_srcTableName"] = "informe_intersup_contratista";
 $proto106["m_expr"]=$obj;
 $proto106["m_alias"] = "";
@@ -8923,12 +9598,12 @@ $obj = new SQLFieldListItem($proto106);
 $proto0["m_fieldlist"][]=$obj;
 						$proto108=array();
 			$obj = new SQLField(array(
-	"m_strName" => "inf_mail_a",
+	"m_strName" => "qty_inf_verifica",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup_contratista"
 ));
 
-$proto108["m_sql"] = "inf_mail_a";
+$proto108["m_sql"] = "qty_inf_verifica";
 $proto108["m_srcTableName"] = "informe_intersup_contratista";
 $proto108["m_expr"]=$obj;
 $proto108["m_alias"] = "";
@@ -8937,12 +9612,12 @@ $obj = new SQLFieldListItem($proto108);
 $proto0["m_fieldlist"][]=$obj;
 						$proto110=array();
 			$obj = new SQLField(array(
-	"m_strName" => "inf_mail_b",
+	"m_strName" => "cert_mail",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup_contratista"
 ));
 
-$proto110["m_sql"] = "inf_mail_b";
+$proto110["m_sql"] = "cert_mail";
 $proto110["m_srcTableName"] = "informe_intersup_contratista";
 $proto110["m_expr"]=$obj;
 $proto110["m_alias"] = "";
@@ -8951,12 +9626,12 @@ $obj = new SQLFieldListItem($proto110);
 $proto0["m_fieldlist"][]=$obj;
 						$proto112=array();
 			$obj = new SQLField(array(
-	"m_strName" => "url_secop",
+	"m_strName" => "cert_file",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup_contratista"
 ));
 
-$proto112["m_sql"] = "url_secop";
+$proto112["m_sql"] = "cert_file";
 $proto112["m_srcTableName"] = "informe_intersup_contratista";
 $proto112["m_expr"]=$obj;
 $proto112["m_alias"] = "";
@@ -8965,12 +9640,12 @@ $obj = new SQLFieldListItem($proto112);
 $proto0["m_fieldlist"][]=$obj;
 						$proto114=array();
 			$obj = new SQLField(array(
-	"m_strName" => "num_poliza",
+	"m_strName" => "cert_date",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup_contratista"
 ));
 
-$proto114["m_sql"] = "num_poliza";
+$proto114["m_sql"] = "cert_date";
 $proto114["m_srcTableName"] = "informe_intersup_contratista";
 $proto114["m_expr"]=$obj;
 $proto114["m_alias"] = "";
@@ -8979,104 +9654,179 @@ $obj = new SQLFieldListItem($proto114);
 $proto0["m_fieldlist"][]=$obj;
 						$proto116=array();
 			$obj = new SQLField(array(
-	"m_strName" => "mun_ejec",
+	"m_strName" => "cert_compare",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup_contratista"
 ));
 
-$proto116["m_sql"] = "mun_ejec";
+$proto116["m_sql"] = "cert_compare";
 $proto116["m_srcTableName"] = "informe_intersup_contratista";
 $proto116["m_expr"]=$obj;
 $proto116["m_alias"] = "";
 $obj = new SQLFieldListItem($proto116);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto118=array();
-$proto118["m_link"] = "SQLL_MAIN";
-			$proto119=array();
-$proto119["m_strName"] = "informe_intersup";
-$proto119["m_srcTableName"] = "informe_intersup_contratista";
-$proto119["m_columns"] = array();
-$proto119["m_columns"][] = "inf_id";
-$proto119["m_columns"][] = "id_cont_fk";
-$proto119["m_columns"][] = "inf_consecutivo";
-$proto119["m_columns"][] = "inf_hash";
-$proto119["m_columns"][] = "inf_estado";
-$proto119["m_columns"][] = "inf_fechapresenta";
-$proto119["m_columns"][] = "inf_periodicidad";
-$proto119["m_columns"][] = "inf_fecharep_i";
-$proto119["m_columns"][] = "inf_fecharep_f";
-$proto119["m_columns"][] = "inf_numerocontrato";
-$proto119["m_columns"][] = "inf_anio";
-$proto119["m_columns"][] = "inf_prenum";
-$proto119["m_columns"][] = "inf_doccontratista";
-$proto119["m_columns"][] = "inf_nombrecontratista";
-$proto119["m_columns"][] = "inf_valorcontrato";
-$proto119["m_columns"][] = "inf_adicionreduc";
-$proto119["m_columns"][] = "inf_cdp";
-$proto119["m_columns"][] = "inf_rp";
-$proto119["m_columns"][] = "inf_rubrocode";
-$proto119["m_columns"][] = "inf_rubroname";
-$proto119["m_columns"][] = "inf_objeto";
-$proto119["m_columns"][] = "inf_fechasuscripcion";
-$proto119["m_columns"][] = "inf_fechacont_i";
-$proto119["m_columns"][] = "inf_fechacont_f";
-$proto119["m_columns"][] = "inf_plazo";
-$proto119["m_columns"][] = "inf_vigencia";
-$proto119["m_columns"][] = "inf_modificacionesplazo";
-$proto119["m_columns"][] = "inf_intersup";
-$proto119["m_columns"][] = "inf_nombre";
-$proto119["m_columns"][] = "inf_cargo";
-$proto119["m_columns"][] = "inf_dependencia";
-$proto119["m_columns"][] = "inf_avgejecucion";
-$proto119["m_columns"][] = "inf_actividades";
-$proto119["m_columns"][] = "inf_declarainconf";
-$proto119["m_columns"][] = "inf_declarainconf_obs";
-$proto119["m_columns"][] = "inf_incumplimiento";
-$proto119["m_columns"][] = "inf_incumplimiento_obs";
-$proto119["m_columns"][] = "inf_otrosaspectostecnicos";
-$proto119["m_columns"][] = "inf_recomyobserva";
-$proto119["m_columns"][] = "sign_date";
-$proto119["m_columns"][] = "sign_hash";
-$proto119["m_columns"][] = "sign_file";
-$proto119["m_columns"][] = "sign_mailnot";
-$proto119["m_columns"][] = "file_verifica";
-$proto119["m_columns"][] = "sign_verificacert";
-$proto119["m_columns"][] = "cert_date";
-$proto119["m_columns"][] = "cert_file";
-$proto119["m_columns"][] = "cert_mail";
-$proto119["m_columns"][] = "cert_compare";
-$proto119["m_columns"][] = "inf_ultimopago";
-$proto119["m_columns"][] = "sys_date";
-$proto119["m_columns"][] = "inf_mail_a";
-$proto119["m_columns"][] = "inf_mail_b";
-$proto119["m_columns"][] = "url_secop";
-$proto119["m_columns"][] = "num_poliza";
-$proto119["m_columns"][] = "mun_ejec";
-$obj = new SQLTable($proto119);
+						$proto118=array();
+			$obj = new SQLField(array(
+	"m_strName" => "sign_hash",
+	"m_strTable" => "informe_intersup",
+	"m_srcTableName" => "informe_intersup_contratista"
+));
 
-$proto118["m_table"] = $obj;
-$proto118["m_sql"] = "informe_intersup";
-$proto118["m_alias"] = "";
+$proto118["m_sql"] = "sign_hash";
 $proto118["m_srcTableName"] = "informe_intersup_contratista";
-$proto120=array();
-$proto120["m_sql"] = "";
-$proto120["m_uniontype"] = "SQLL_UNKNOWN";
+$proto118["m_expr"]=$obj;
+$proto118["m_alias"] = "";
+$obj = new SQLFieldListItem($proto118);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto120=array();
+			$obj = new SQLField(array(
+	"m_strName" => "sign_date",
+	"m_strTable" => "informe_intersup",
+	"m_srcTableName" => "informe_intersup_contratista"
+));
+
+$proto120["m_sql"] = "sign_date";
+$proto120["m_srcTableName"] = "informe_intersup_contratista";
+$proto120["m_expr"]=$obj;
+$proto120["m_alias"] = "";
+$obj = new SQLFieldListItem($proto120);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto122=array();
+			$obj = new SQLField(array(
+	"m_strName" => "sign_mailnot",
+	"m_strTable" => "informe_intersup",
+	"m_srcTableName" => "informe_intersup_contratista"
+));
+
+$proto122["m_sql"] = "sign_mailnot";
+$proto122["m_srcTableName"] = "informe_intersup_contratista";
+$proto122["m_expr"]=$obj;
+$proto122["m_alias"] = "";
+$obj = new SQLFieldListItem($proto122);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto124=array();
+			$obj = new SQLField(array(
+	"m_strName" => "sign_verificacert",
+	"m_strTable" => "informe_intersup",
+	"m_srcTableName" => "informe_intersup_contratista"
+));
+
+$proto124["m_sql"] = "sign_verificacert";
+$proto124["m_srcTableName"] = "informe_intersup_contratista";
+$proto124["m_expr"]=$obj;
+$proto124["m_alias"] = "";
+$obj = new SQLFieldListItem($proto124);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto126=array();
+			$obj = new SQLField(array(
+	"m_strName" => "sign_file",
+	"m_strTable" => "informe_intersup",
+	"m_srcTableName" => "informe_intersup_contratista"
+));
+
+$proto126["m_sql"] = "sign_file";
+$proto126["m_srcTableName"] = "informe_intersup_contratista";
+$proto126["m_expr"]=$obj;
+$proto126["m_alias"] = "";
+$obj = new SQLFieldListItem($proto126);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto128=array();
+$proto128["m_link"] = "SQLL_MAIN";
+			$proto129=array();
+$proto129["m_strName"] = "informe_intersup";
+$proto129["m_srcTableName"] = "informe_intersup_contratista";
+$proto129["m_columns"] = array();
+$proto129["m_columns"][] = "inf_id";
+$proto129["m_columns"][] = "id_cont_fk";
+$proto129["m_columns"][] = "inf_consecutivo";
+$proto129["m_columns"][] = "inf_hash";
+$proto129["m_columns"][] = "inf_estado";
+$proto129["m_columns"][] = "inf_fechapresenta";
+$proto129["m_columns"][] = "inf_periodicidad";
+$proto129["m_columns"][] = "inf_fecharep_i";
+$proto129["m_columns"][] = "inf_fecharep_f";
+$proto129["m_columns"][] = "inf_numerocontrato";
+$proto129["m_columns"][] = "inf_anio";
+$proto129["m_columns"][] = "inf_prenum";
+$proto129["m_columns"][] = "inf_doccontratista";
+$proto129["m_columns"][] = "inf_nombrecontratista";
+$proto129["m_columns"][] = "inf_valorcontrato";
+$proto129["m_columns"][] = "inf_adicionreduc";
+$proto129["m_columns"][] = "inf_cdp";
+$proto129["m_columns"][] = "inf_rp";
+$proto129["m_columns"][] = "inf_rubrocode";
+$proto129["m_columns"][] = "inf_rubroname";
+$proto129["m_columns"][] = "inf_objeto";
+$proto129["m_columns"][] = "inf_fechasuscripcion";
+$proto129["m_columns"][] = "inf_fechacont_i";
+$proto129["m_columns"][] = "inf_fechacont_f";
+$proto129["m_columns"][] = "inf_plazo";
+$proto129["m_columns"][] = "inf_vigencia";
+$proto129["m_columns"][] = "inf_modificacionesplazo";
+$proto129["m_columns"][] = "inf_intersup";
+$proto129["m_columns"][] = "inf_nombre";
+$proto129["m_columns"][] = "inf_cargo";
+$proto129["m_columns"][] = "inf_dependencia";
+$proto129["m_columns"][] = "inf_avgejecucion";
+$proto129["m_columns"][] = "inf_actividades";
+$proto129["m_columns"][] = "inf_declarainconf";
+$proto129["m_columns"][] = "inf_declarainconf_obs";
+$proto129["m_columns"][] = "inf_incumplimiento";
+$proto129["m_columns"][] = "inf_incumplimiento_obs";
+$proto129["m_columns"][] = "inf_otrosaspectostecnicos";
+$proto129["m_columns"][] = "inf_recomyobserva";
+$proto129["m_columns"][] = "file_verifica";
+$proto129["m_columns"][] = "inf_ultimopago";
+$proto129["m_columns"][] = "sys_date";
+$proto129["m_columns"][] = "inf_mail_a";
+$proto129["m_columns"][] = "inf_mail_b";
+$proto129["m_columns"][] = "url_secop";
+$proto129["m_columns"][] = "num_poliza";
+$proto129["m_columns"][] = "mun_ejec";
+$proto129["m_columns"][] = "cont_cesion";
+$proto129["m_columns"][] = "cont_modifica";
+$proto129["m_columns"][] = "qty_inf";
+$proto129["m_columns"][] = "qty_inf_compare";
+$proto129["m_columns"][] = "qty_inf_verifica";
+$proto129["m_columns"][] = "cert_mail";
+$proto129["m_columns"][] = "cert_file";
+$proto129["m_columns"][] = "cert_date";
+$proto129["m_columns"][] = "cert_compare";
+$proto129["m_columns"][] = "sign_hash";
+$proto129["m_columns"][] = "sign_date";
+$proto129["m_columns"][] = "sign_mailnot";
+$proto129["m_columns"][] = "sign_verificacert";
+$proto129["m_columns"][] = "sign_file";
+$obj = new SQLTable($proto129);
+
+$proto128["m_table"] = $obj;
+$proto128["m_sql"] = "informe_intersup";
+$proto128["m_alias"] = "";
+$proto128["m_srcTableName"] = "informe_intersup_contratista";
+$proto130=array();
+$proto130["m_sql"] = "";
+$proto130["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto120["m_column"]=$obj;
-$proto120["m_contained"] = array();
-$proto120["m_strCase"] = "";
-$proto120["m_havingmode"] = false;
-$proto120["m_inBrackets"] = false;
-$proto120["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto120);
+$proto130["m_column"]=$obj;
+$proto130["m_contained"] = array();
+$proto130["m_strCase"] = "";
+$proto130["m_havingmode"] = false;
+$proto130["m_inBrackets"] = false;
+$proto130["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto130);
 
-$proto118["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto118);
+$proto128["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto128);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -9092,7 +9842,7 @@ $queryData_informe_intersup_contratista = createSqlQuery_informe_intersup_contra
 	
 						;
 
-																																																								
+																																																													
 
 $tdatainforme_intersup_contratista[".sqlquery"] = $queryData_informe_intersup_contratista;
 

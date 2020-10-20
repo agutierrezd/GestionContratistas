@@ -14,6 +14,8 @@
 	// fill list of events
 		$this->events["IsRecordEditable"]=true;
 
+		$this->events["AfterEdit"]=true;
+
 
 	}
 
@@ -84,6 +86,82 @@ return $isEditable;
 ;		
 } // function IsRecordEditable
 
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				// After record updated
+function AfterEdit(&$values, $where, &$oldvalues, &$keys, $inline, &$pageObject)
+{
+
+		$sql = DB::prepareSQL("UPDATE
+dbct.informe_intersup
+INNER JOIN dbct.q_qty_ctrl_inf ON dbct.informe_intersup.inf_id = dbct.q_qty_ctrl_inf.inf_id_fk
+SET
+dbct.informe_intersup.qty_inf_compare = q_qty_ctrl_inf.qty;");
+DB::Exec( $sql );
+
+
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+;		
+} // function AfterEdit
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		

@@ -200,6 +200,9 @@ pdfDocument = {
 															{BEGIN row_grid_6}			
 								"%",
 								{END row_grid_6}
+															{BEGIN row_grid_7}			
+								"%",
+								{END row_grid_7}
 														],
 													
 							body: [
@@ -475,6 +478,114 @@ pdfDocument = {
 				{END row_grid_2}
 								{BEGIN row_grid_3}
 				[
+												{BEGIN cellblock_grid_cell_field14}
+{
+	cellId: 'cell_field14',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field9}","text":"{$jslabel contractor_master contractor_name }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field14}
+																			{BEGIN cellblock_grid_cell_field15}
+{
+	cellId: 'cell_field15',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field6}","text":{$contractor_name_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$contractor_name_align}',
+  },
+
+{END cellblock_grid_cell_field15}
+																			{BEGIN cellblock_grid_cell_field16}
+{
+	cellId: 'cell_field16',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field12}","text":"{$jslabel contractor_master contractor_lname }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field16}
+																			{BEGIN cellblock_grid_cell_field17}
+{
+	cellId: 'cell_field17',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field7}","text":{$contractor_lname_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$contractor_lname_align}',
+  },
+
+{END cellblock_grid_cell_field17}
+											],
+				{END row_grid_3}
+								{BEGIN row_grid_4}
+				[
 												{BEGIN cellblock_grid_cell_field10}
 {
 	cellId: 'cell_field10',
@@ -493,7 +604,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field9}","text":"{$jslabel contractor_master contractor_name }","bold":true},
+			{"hidden":"{$item_hide_grid_field_label3}","text":"{$jslabel contractor_master ct_fecha_nacimiento_mun }","bold":true},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -519,11 +630,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field6}","text":{$contractor_name_pdfvalue}},
+			{"hidden":"{$item_hide_grid_field3}","text":{$ct_fecha_nacimiento_mun_pdfvalue}},
 				
 		  ],
   "border": [ false, false, false, false ],
-          "alignment": '{$contractor_name_align}',
+          "alignment": '{$ct_fecha_nacimiento_mun_align}',
   },
 
 {END cellblock_grid_cell_field11}
@@ -544,10 +655,8 @@ pdfDocument = {
 	
 			"text": [
 		
-				
-			{"hidden":"{$item_hide_simple_grid_field12}","text":"{$jslabel contractor_master contractor_lname }","bold":true},
-				
-		  ],
+				'',
+	  ],
   "border": [ false, false, false, false ],
           "alignment": 'right',
   },
@@ -570,18 +679,16 @@ pdfDocument = {
 	
 			"text": [
 		
-				
-			{"hidden":"{$item_hide_simple_grid_field7}","text":{$contractor_lname_pdfvalue}},
-				
-		  ],
+				'',
+	  ],
   "border": [ false, false, false, false ],
-          "alignment": '{$contractor_lname_align}',
+          "alignment": 'left',
   },
 
 {END cellblock_grid_cell_field13}
 											],
-				{END row_grid_3}
-								{BEGIN row_grid_4}
+				{END row_grid_4}
+								{BEGIN row_grid_5}
 				[
 												{BEGIN cellblock_grid_cell_field6}
 {
@@ -688,8 +795,8 @@ pdfDocument = {
 
 {END cellblock_grid_cell_field9}
 											],
-				{END row_grid_4}
-								{BEGIN row_grid_5}
+				{END row_grid_5}
+								{BEGIN row_grid_6}
 				[
 												{BEGIN cellblock_grid_cell_label2}
 {
@@ -796,8 +903,8 @@ pdfDocument = {
 
 {END cellblock_grid_cell_field3}
 											],
-				{END row_grid_5}
-								{BEGIN row_grid_6}
+				{END row_grid_6}
+								{BEGIN row_grid_7}
 				[
 												{BEGIN cellblock_grid_cell_dpreview}
 {
@@ -845,7 +952,7 @@ pdfDocument = {
 				text: ''
 			},
 							],
-				{END row_grid_6}
+				{END row_grid_7}
 										]
 						}
 					}

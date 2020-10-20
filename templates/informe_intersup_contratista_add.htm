@@ -316,6 +316,29 @@
 
 
 {END inf_estado_fieldblock}
+											
+{BEGIN qty_inf_verifica_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_qty_inf_verifica}  r-vertical-field" 
+	data-fieldname="qty_inf_verifica" 
+	data-signal-error-for="qty_inf_verifica{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="qty_inf_verifica" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_qty_inf_verifica}">
+		{BEGIN qty_inf_verifica_label}{$label informe_intersup_contratista qty_inf_verifica }{END qty_inf_verifica_label}
+	</label>
+	<div class="r-edit-field">
+		{$qty_inf_verifica_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="qty_inf_verifica">
+		<div class="text-muted" >
+		{$tooltip informe_intersup_contratista qty_inf_verifica }		</div>
+	</div>
+</div>
+
+
+{END qty_inf_verifica_fieldblock}
 	
 								</td>
 			{END cellblock_grid_c3}

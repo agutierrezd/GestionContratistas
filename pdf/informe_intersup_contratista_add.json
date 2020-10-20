@@ -183,6 +183,9 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel informe_intersup_contratista inf_estado }","bold":true},{"text":{$inf_estado_pdfvalue}}],"margin":[0,0,0,15]},
 				
+				
+			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel informe_intersup_contratista qty_inf_verifica }","bold":true},{"text":{$qty_inf_verifica_pdfvalue}}],"margin":[0,0,0,15]},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

@@ -272,8 +272,8 @@
 	
 			data-single
 			
-	ocolspan="2"		data-cellId="grid_c3" data-pageid="{$pageid}"
-		data-v-cell="4"
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
 		
 >
 	<div edit-form-cell class="clearfix">
@@ -303,6 +303,47 @@
 	
 								</td>
 			{END cellblock_grid_c3}
+			 
+																
+
+{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sup_aprueba_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sup_aprueba}  r-vertical-field" 
+	data-fieldname="sup_aprueba" 
+	data-signal-error-for="sup_aprueba{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="sup_aprueba" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_sup_aprueba}">
+		{BEGIN sup_aprueba_label}{$label informe_intersup_oe_contratista sup_aprueba }{END sup_aprueba_label}
+	</label>
+	<div class="r-edit-field">
+		{$sup_aprueba_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sup_aprueba">
+		<div class="text-muted" >
+		{$tooltip informe_intersup_oe_contratista sup_aprueba }		</div>
+	</div>
+</div>
+
+
+{END sup_aprueba_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c}
 								</tr>
 			</tbody></table>
 {END grid_block}
@@ -324,7 +365,8 @@
 <span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
 	<a type="button" title="" class="btn btn-primary   
 	" {$savebutton_attrs} >
-							Guardar			</a>
+					<span class="fa fa-save"></span>
+							Guardar cambios			</a>
 </span>
 {END save_edit}
 	 

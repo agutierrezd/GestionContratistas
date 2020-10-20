@@ -210,18 +210,6 @@ pdfDocument = {
 			{"hidden":"{$item_hide_integrated_search_field30}","text":{$cont_valormensual_pdfvalue}},
 				
 				
-			{"hidden":"{$item_hide_integrated_search_field31}","text":{$cont_valoradic_fecha_pdfvalue}},
-				
-				
-			{"hidden":"{$item_hide_integrated_search_field32}","text":{$cont_valoradic_pdfvalue}},
-				
-				
-			{"hidden":"{$item_hide_integrated_search_field33}","text":{$cont_valorreduc_fecha_pdfvalue}},
-				
-				
-			{"hidden":"{$item_hide_integrated_search_field34}","text":{$cont_valorreduc_pdfvalue}},
-				
-				
 			{"hidden":"{$item_hide_integrated_search_field35}","text":{$cont_valorvigente_pdfvalue}},
 				
 				

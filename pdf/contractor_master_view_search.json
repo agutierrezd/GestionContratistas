@@ -275,6 +275,9 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_search_field36}","text":{$pin_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_integrated_search_field37}","text":{$ct_fecha_nacimiento_mun_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

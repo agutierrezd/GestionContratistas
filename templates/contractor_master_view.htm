@@ -50,6 +50,19 @@
 	data-v-margin="0"
 	
 >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<span data-itemtype="text" data-itemid="text1" {$item_text1} data-pageid="{$pageid}" data-small > 
+	<div class="alert alert-info">
+  <a href="https://www.funcionpublica.gov.co/web/sigep/hojas-de-vida" class="alert-link" target="_blank">Clic para ir a la página de función pública</a>
+</div></span>
+	</div>					</div>
 	</div>		
 {END above-grid_block}
 									{BEGIN grid_block}
@@ -63,6 +76,10 @@
 	<div class="panel-heading">
 		<ul class="nav nav-tabs" role="tablist">
 									<li role="presentation" class="active">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section4{$pageid}">
+					Protección de datos				</a>
+			</li>
+										<li role="presentation" class="">
 				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section{$pageid}">
 					Datos personales				</a>
 			</li>
@@ -90,7 +107,107 @@
 	</div>
 	<div class="panel-body">
 		<div class="tab-content">
-							<div role="tabpanel" class="tab-pane active" id="tab_section{$pageid}"> 
+							<div role="tabpanel" class="tab-pane active" id="tab_section4{$pageid}"> 
+			{BEGIN section4_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section4" id="form_section4_{$pageid}" data-makeup="small" {$form_section4} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section4_c}
+<td
+	{$cell_section4_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section4_c" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN terms_msj_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_terms_msj}  r-vertical-field" data-fieldname="terms_msj" data-signal-error-for="terms_msj{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field53" {$item_integrated_edit_field53} data-pageid="{$pageid}" data-field="terms_msj" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_terms_msj}">
+		
+		{BEGIN terms_msj_label}{$label contractor_master terms_msj }{END terms_msj_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$terms_msj_value}	</div>
+
+		
+</div>
+
+
+{END terms_msj_fieldblock}
+	
+								</td>
+			{END cellblock_section4_c}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section4_c1}
+<td
+	{$cell_section4_c1}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section4_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN terms_acepta_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_terms_acepta}  r-vertical-field" data-fieldname="terms_acepta" data-signal-error-for="terms_acepta{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field54" {$item_integrated_edit_field54} data-pageid="{$pageid}" data-field="terms_acepta" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_terms_acepta}">
+		
+		{BEGIN terms_acepta_label}{$label contractor_master terms_acepta }{END terms_acepta_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$terms_acepta_value}	</div>
+
+		
+</div>
+
+
+{END terms_acepta_fieldblock}
+	
+								</td>
+			{END cellblock_section4_c1}
+								</tr>
+			</tbody></table>
+{END section4_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section{$pageid}"> 
 			{BEGIN section_block}
 
 
@@ -455,26 +572,26 @@
 >
 	<div edit-form-cell class="clearfix">
 				
-{BEGIN dem_genero_fieldblock}
+{BEGIN ct_fecha_nacimiento_mun_fieldblock}
 
 
-<div class="r-integrated-field form-group clearfix {$fielddispclass_dem_genero}  r-vertical-field" data-fieldname="dem_genero" data-signal-error-for="dem_genero{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field43" {$item_integrated_edit_field43} data-pageid="{$pageid}" data-field="dem_genero" >
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ct_fecha_nacimiento_mun}  r-vertical-field" data-fieldname="ct_fecha_nacimiento_mun" data-signal-error-for="ct_fecha_nacimiento_mun{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="ct_fecha_nacimiento_mun" >
 
 		<div class="col-md-12">
 	
-	<label class="" for="{$labelfor_dem_genero}">
+	<label class="" for="{$labelfor_ct_fecha_nacimiento_mun}">
 		
-		{BEGIN dem_genero_label}{$label contractor_master dem_genero }{END dem_genero_label}
+		{BEGIN ct_fecha_nacimiento_mun_label}{$label contractor_master ct_fecha_nacimiento_mun }{END ct_fecha_nacimiento_mun_label}
 	</label>
 	<div class="" >
-		{$dem_genero_value}	</div>
+		{$ct_fecha_nacimiento_mun_value}	</div>
 
 		</div>
 		
 </div>
 
 
-{END dem_genero_fieldblock}
+{END ct_fecha_nacimiento_mun_fieldblock}
 	
 								</td>
 			{END cellblock_section_c10}
@@ -521,8 +638,7 @@
 								</td>
 			{END cellblock_section_c11}
 			 
-		
-							
+																
 
 {BEGIN cellblock_section_c12}
 <td
@@ -536,7 +652,29 @@
 		
 >
 	<div edit-form-cell class="clearfix">
-									</td>
+				
+{BEGIN dem_genero_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dem_genero}  r-vertical-field" data-fieldname="dem_genero" data-signal-error-for="dem_genero{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field43" {$item_integrated_edit_field43} data-pageid="{$pageid}" data-field="dem_genero" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_dem_genero}">
+		
+		{BEGIN dem_genero_label}{$label contractor_master dem_genero }{END dem_genero_label}
+	</label>
+	<div class="" >
+		{$dem_genero_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END dem_genero_fieldblock}
+	
+								</td>
 			{END cellblock_section_c12}
 								</tr>
 	 

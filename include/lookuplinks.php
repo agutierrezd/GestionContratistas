@@ -124,6 +124,13 @@ function InitLookupLinks()
 			$lookupTableLinks["tparam_genero"]["contractor_master.dem_genero"] = array();
 		}
 		$lookupTableLinks["tparam_genero"]["contractor_master.dem_genero"]["edit"] = array("table" => "contractor_master", "field" => "dem_genero", "page" => "edit");
+		if( !isset( $lookupTableLinks["q_divipola"] ) ) {
+			$lookupTableLinks["q_divipola"] = array();
+		}
+		if( !isset( $lookupTableLinks["q_divipola"]["contractor_master.ct_fecha_nacimiento_mun"] )) {
+			$lookupTableLinks["q_divipola"]["contractor_master.ct_fecha_nacimiento_mun"] = array();
+		}
+		$lookupTableLinks["q_divipola"]["contractor_master.ct_fecha_nacimiento_mun"]["edit"] = array("table" => "contractor_master", "field" => "ct_fecha_nacimiento_mun", "page" => "edit");
 		if( !isset( $lookupTableLinks["tparam_discapacidad"] ) ) {
 			$lookupTableLinks["tparam_discapacidad"] = array();
 		}

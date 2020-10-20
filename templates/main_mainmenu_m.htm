@@ -41,15 +41,20 @@
 
 			</li>
 			{END item3_menulink}
-	
-			{BEGIN item4_menulink}
-			<li id="item4" style="display:none" class="subitem level2 {$item4_groupclass} {$item4_current} menuLeaf" level=2>
-					<div>
+	{END item1_menulink}
+
+	{BEGIN item4_menulink}
+	<li id="item4" class="{$item4_groupclass} {$item4_current} menuGroup" level=1>
+			<div>
+{BEGIN item4_groupimage}
+<span class="groupbox">
+<img alt="*" src="images/plus.gif" class="groupImg">
+</span>
+{END item4_groupimage}
 <a {$item4_menulink_attrs} class="{$item4_current}">{$item4_title}</a>
 </div>
 
-			</li>
-			{END item4_menulink}
+	</li>
 	
 			{BEGIN item5_menulink}
 			<li id="item5" style="display:none" class="subitem level2 {$item5_groupclass} {$item5_current} menuLeaf" level=2>
@@ -59,7 +64,7 @@
 
 			</li>
 			{END item5_menulink}
-	{END item1_menulink}
+	{END item4_menulink}
 
 	{BEGIN item6_menulink}
 	<li id="item6" class="{$item6_groupclass} {$item6_current} menuGroup" level=1>
@@ -82,29 +87,29 @@
 
 			</li>
 			{END item7_menulink}
-	
-			{BEGIN item8_menulink}
-			<li id="item8" style="display:none" class="subitem level2 {$item8_groupclass} {$item8_current} menuLeaf" level=2>
-					<div>
-<a {$item8_menulink_attrs} class="{$item8_current}">{$item8_title}</a>
-</div>
-
-			</li>
-			{END item8_menulink}
 	{END item6_menulink}
 
-	{BEGIN item9_menulink}
-	<li id="item9" class="{$item9_groupclass} {$item9_current} menuGroup" level=1>
+	{BEGIN item8_menulink}
+	<li id="item8" class="{$item8_groupclass} {$item8_current} menuGroup" level=1>
 			<div>
-{BEGIN item9_groupimage}
+{BEGIN item8_groupimage}
 <span class="groupbox">
 <img alt="*" src="images/plus.gif" class="groupImg">
 </span>
-{END item9_groupimage}
-<a {$item9_menulink_attrs} class="{$item9_current}">{$item9_title}</a>
+{END item8_groupimage}
+<a {$item8_menulink_attrs} class="{$item8_current}">{$item8_title}</a>
 </div>
 
 	</li>
+	
+			{BEGIN item9_menulink}
+			<li id="item9" style="display:none" class="subitem level2 {$item9_groupclass} {$item9_current} menuLeaf" level=2>
+					<div>
+<a {$item9_menulink_attrs} class="{$item9_current}">{$item9_title}</a>
+</div>
+
+			</li>
+			{END item9_menulink}
 	
 			{BEGIN item10_menulink}
 			<li id="item10" style="display:none" class="subitem level2 {$item10_groupclass} {$item10_current} menuLeaf" level=2>
@@ -114,20 +119,15 @@
 
 			</li>
 			{END item10_menulink}
-	{END item9_menulink}
-
-	{BEGIN item11_menulink}
-	<li id="item11" class="{$item11_groupclass} {$item11_current} menuGroup" level=1>
-			<div>
-{BEGIN item11_groupimage}
-<span class="groupbox">
-<img alt="*" src="images/plus.gif" class="groupImg">
-</span>
-{END item11_groupimage}
+	
+			{BEGIN item11_menulink}
+			<li id="item11" style="display:none" class="subitem level2 {$item11_groupclass} {$item11_current} menuLeaf" level=2>
+					<div>
 <a {$item11_menulink_attrs} class="{$item11_current}">{$item11_title}</a>
 </div>
 
-	</li>
+			</li>
+			{END item11_menulink}
 	
 			{BEGIN item12_menulink}
 			<li id="item12" style="display:none" class="subitem level2 {$item12_groupclass} {$item12_current} menuLeaf" level=2>
@@ -137,66 +137,16 @@
 
 			</li>
 			{END item12_menulink}
-	{END item11_menulink}
+	{END item8_menulink}
 
 	{BEGIN item13_menulink}
-	<li id="item13" class="{$item13_groupclass} {$item13_current} menuGroup" level=1>
+	<li id="item13" class="{$item13_groupclass} {$item13_current} menuLeaf" level=1>
 			<div>
-{BEGIN item13_groupimage}
-<span class="groupbox">
-<img alt="*" src="images/plus.gif" class="groupImg">
-</span>
-{END item13_groupimage}
 <a {$item13_menulink_attrs} class="{$item13_current}">{$item13_title}</a>
 </div>
 
 	</li>
-	
-			{BEGIN item14_menulink}
-			<li id="item14" style="display:none" class="subitem level2 {$item14_groupclass} {$item14_current} menuLeaf" level=2>
-					<div>
-<a {$item14_menulink_attrs} class="{$item14_current}">{$item14_title}</a>
-</div>
-
-			</li>
-			{END item14_menulink}
-	
-			{BEGIN item15_menulink}
-			<li id="item15" style="display:none" class="subitem level2 {$item15_groupclass} {$item15_current} menuLeaf" level=2>
-					<div>
-<a {$item15_menulink_attrs} class="{$item15_current}">{$item15_title}</a>
-</div>
-
-			</li>
-			{END item15_menulink}
-	
-			{BEGIN item16_menulink}
-			<li id="item16" style="display:none" class="subitem level2 {$item16_groupclass} {$item16_current} menuLeaf" level=2>
-					<div>
-<a {$item16_menulink_attrs} class="{$item16_current}">{$item16_title}</a>
-</div>
-
-			</li>
-			{END item16_menulink}
-	
-			{BEGIN item17_menulink}
-			<li id="item17" style="display:none" class="subitem level2 {$item17_groupclass} {$item17_current} menuLeaf" level=2>
-					<div>
-<a {$item17_menulink_attrs} class="{$item17_current}">{$item17_title}</a>
-</div>
-
-			</li>
-			{END item17_menulink}
 	{END item13_menulink}
-
-	{BEGIN item18_menulink}
-	<li id="item18" class="{$item18_groupclass} {$item18_current} menuLeaf" level=1>
-			<div>
-<a {$item18_menulink_attrs} class="{$item18_current}">{$item18_title}</a>
-</div>
-
-	</li>
-	{END item18_menulink}
 </ul>
 {END mainmenu_block}
 

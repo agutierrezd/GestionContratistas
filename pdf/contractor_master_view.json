@@ -69,7 +69,55 @@ pdfDocument = {
 ,
 		
 								
-''
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+					colSpan: 2,
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"<div class=\"alert alert-info\">\n  <a href=\"https://www.funcionpublica.gov.co/web/sigep/hojas-de-vida\" class=\"alert-link\" target=\"_blank\">Clic para ir a la página de función pública</a>\n</div>","hidden":"{$item_hide_text1}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+																		{ 
+				cellId: 'c1',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+							],
+					]
+	}
+}
 ,
 		
 								
@@ -122,6 +170,95 @@ pdfDocument = {
 			"stack": [
 		
 						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section4',
+			widths: ['*'],
+			body: [
+				[{text: 'Protección de datos', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+							 
+								{BEGIN col_section4_0}
+								'*', 
+								{END col_section4_0}
+													],
+						body: [
+								
+					{BEGIN row_section4_0}
+				[
+												{BEGIN cellblock_section4_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field53}","stack":[{"text":"{$jslabel contractor_master terms_msj }","bold":true},{"text":{$terms_msj_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section4_c}
+											],
+				{END row_section4_0}
+								{BEGIN row_section4_1}
+				[
+												{BEGIN cellblock_section4_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field54}","stack":[{"text":"{$jslabel contractor_master terms_acepta }","bold":true},{"text":{$terms_acepta_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section4_c1}
+											],
+				{END row_section4_1}
+									]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+ 
 		{
 		layout: 'panel',
 		
@@ -417,7 +554,7 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field43}","stack":[{"text":"{$jslabel contractor_master dem_genero }","bold":true},{"text":{$dem_genero_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field22}","stack":[{"text":"{$jslabel contractor_master ct_fecha_nacimiento_mun }","bold":true},{"text":{$ct_fecha_nacimiento_mun_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -472,8 +609,10 @@ pdfDocument = {
 	
 			"stack": [
 		
-				'',
-	  ],
+				
+			{"hidden":"{$item_hide_integrated_edit_field43}","stack":[{"text":"{$jslabel contractor_master dem_genero }","bold":true},{"text":{$dem_genero_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
   },

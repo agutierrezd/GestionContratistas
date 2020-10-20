@@ -187,6 +187,9 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsadmin_members["Spanish"]["pin"] = "Pin";
 	$fieldToolTipsadmin_members["Spanish"]["pin"] = "";
 	$placeHoldersadmin_members["Spanish"]["pin"] = "";
+	$fieldLabelsadmin_members["Spanish"]["ct_fecha_nacimiento_mun"] = "Ct Fecha Nacimiento Mun";
+	$fieldToolTipsadmin_members["Spanish"]["ct_fecha_nacimiento_mun"] = "";
+	$placeHoldersadmin_members["Spanish"]["ct_fecha_nacimiento_mun"] = "";
 	if (count($fieldToolTipsadmin_members["Spanish"]))
 		$tdataadmin_members[".isUseToolTips"] = true;
 }
@@ -353,6 +356,7 @@ $tdataadmin_members[".googleLikeFields"][] = "dem_genero";
 $tdataadmin_members[".googleLikeFields"][] = "dem_ocupacion";
 $tdataadmin_members[".googleLikeFields"][] = "dem_profesion";
 $tdataadmin_members[".googleLikeFields"][] = "ct_fecha_nacimiento";
+$tdataadmin_members[".googleLikeFields"][] = "ct_fecha_nacimiento_mun";
 $tdataadmin_members[".googleLikeFields"][] = "ct_nacionalidad";
 $tdataadmin_members[".googleLikeFields"][] = "dem_edad";
 $tdataadmin_members[".googleLikeFields"][] = "dem_educacion";
@@ -396,7 +400,7 @@ $tdataadmin_members[".strOrderBy"] = $tstrOrderBy;
 
 $tdataadmin_members[".orderindexes"] = array();
 
-$tdataadmin_members[".sqlHead"] = "SELECT contractor_id,  	contractor_type,  	contractor_doc_id,  	contractor_doc_dv,  	contractor_pwd,  	contractor_image,  	contractor_name,  	contractor_lname,  	contractor_nombresfull,  	enlace_sigep,  	contractor_email,  	contractor_email_mincit,  	contractor_address,  	contractor_phone,  	contractor_mobile,  	contractor_city,  	contractor_sup_jerarquico,  	contractor_dependencia,  	bank_name,  	bank_cta_type,  	bank_cta_number,  	iva_regimen,  	sys_update,  	sys_user,  	sys_date,  	sys_level,  	sys_status,  	sys_last_upd,  	groupid,  	active,  	contractor_dependientes,  	contractor_medicinapre_file,  	contractor_picmonetaria_file,  	contractor_decljur,  	contractor_eps,  	contractor_fondopensiones,  	contractor_cajacompensacion,  	contractor_arl,  	ubica_dep,  	ubica_extension,  	dem_genero,  	dem_ocupacion,  	dem_profesion,  	ct_fecha_nacimiento,  	ct_nacionalidad,  	dem_edad,  	dem_educacion,  	dem_discapacidad,  	emergencia,  	terms_msj,  	terms_acepta,  	signature,  	pin";
+$tdataadmin_members[".sqlHead"] = "SELECT contractor_id,  	contractor_type,  	contractor_doc_id,  	contractor_doc_dv,  	contractor_pwd,  	contractor_image,  	contractor_name,  	contractor_lname,  	contractor_nombresfull,  	enlace_sigep,  	contractor_email,  	contractor_email_mincit,  	contractor_address,  	contractor_phone,  	contractor_mobile,  	contractor_city,  	contractor_sup_jerarquico,  	contractor_dependencia,  	bank_name,  	bank_cta_type,  	bank_cta_number,  	iva_regimen,  	sys_update,  	sys_user,  	sys_date,  	sys_level,  	sys_status,  	sys_last_upd,  	groupid,  	active,  	contractor_dependientes,  	contractor_medicinapre_file,  	contractor_picmonetaria_file,  	contractor_decljur,  	contractor_eps,  	contractor_fondopensiones,  	contractor_cajacompensacion,  	contractor_arl,  	ubica_dep,  	ubica_extension,  	dem_genero,  	dem_ocupacion,  	dem_profesion,  	ct_fecha_nacimiento,  	ct_fecha_nacimiento_mun,  	ct_nacionalidad,  	dem_edad,  	dem_educacion,  	dem_discapacidad,  	emergencia,  	terms_msj,  	terms_acepta,  	signature,  	pin";
 $tdataadmin_members[".sqlFrom"] = "FROM contractor_master";
 $tdataadmin_members[".sqlWhereExpr"] = "";
 $tdataadmin_members[".sqlTail"] = "";
@@ -6388,10 +6392,145 @@ $tdataadmin_members[".hideMobileList"] = array();
 
 	$tdataadmin_members["ct_fecha_nacimiento"] = $fdata;
 		$tdataadmin_members[".searchableFields"][] = "ct_fecha_nacimiento";
-//	ct_nacionalidad
+//	ct_fecha_nacimiento_mun
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 45;
+	$fdata["strName"] = "ct_fecha_nacimiento_mun";
+	$fdata["GoodName"] = "ct_fecha_nacimiento_mun";
+	$fdata["ownerTable"] = "contractor_master";
+	$fdata["Label"] = GetFieldLabel("admin_members","ct_fecha_nacimiento_mun");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "ct_fecha_nacimiento_mun";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "ct_fecha_nacimiento_mun";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=5";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataadmin_members["ct_fecha_nacimiento_mun"] = $fdata;
+		$tdataadmin_members[".searchableFields"][] = "ct_fecha_nacimiento_mun";
+//	ct_nacionalidad
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 46;
 	$fdata["strName"] = "ct_nacionalidad";
 	$fdata["GoodName"] = "ct_nacionalidad";
 	$fdata["ownerTable"] = "contractor_master";
@@ -6526,7 +6665,7 @@ $tdataadmin_members[".hideMobileList"] = array();
 //	dem_edad
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 46;
+	$fdata["Index"] = 47;
 	$fdata["strName"] = "dem_edad";
 	$fdata["GoodName"] = "dem_edad";
 	$fdata["ownerTable"] = "contractor_master";
@@ -6661,7 +6800,7 @@ $tdataadmin_members[".hideMobileList"] = array();
 //	dem_educacion
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 47;
+	$fdata["Index"] = 48;
 	$fdata["strName"] = "dem_educacion";
 	$fdata["GoodName"] = "dem_educacion";
 	$fdata["ownerTable"] = "contractor_master";
@@ -6796,7 +6935,7 @@ $tdataadmin_members[".hideMobileList"] = array();
 //	dem_discapacidad
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 48;
+	$fdata["Index"] = 49;
 	$fdata["strName"] = "dem_discapacidad";
 	$fdata["GoodName"] = "dem_discapacidad";
 	$fdata["ownerTable"] = "contractor_master";
@@ -6931,7 +7070,7 @@ $tdataadmin_members[".hideMobileList"] = array();
 //	emergencia
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 49;
+	$fdata["Index"] = 50;
 	$fdata["strName"] = "emergencia";
 	$fdata["GoodName"] = "emergencia";
 	$fdata["ownerTable"] = "contractor_master";
@@ -7066,7 +7205,7 @@ $tdataadmin_members[".hideMobileList"] = array();
 //	terms_msj
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 50;
+	$fdata["Index"] = 51;
 	$fdata["strName"] = "terms_msj";
 	$fdata["GoodName"] = "terms_msj";
 	$fdata["ownerTable"] = "contractor_master";
@@ -7201,7 +7340,7 @@ $tdataadmin_members[".hideMobileList"] = array();
 //	terms_acepta
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 51;
+	$fdata["Index"] = 52;
 	$fdata["strName"] = "terms_acepta";
 	$fdata["GoodName"] = "terms_acepta";
 	$fdata["ownerTable"] = "contractor_master";
@@ -7336,7 +7475,7 @@ $tdataadmin_members[".hideMobileList"] = array();
 //	signature
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 52;
+	$fdata["Index"] = 53;
 	$fdata["strName"] = "signature";
 	$fdata["GoodName"] = "signature";
 	$fdata["ownerTable"] = "contractor_master";
@@ -7471,7 +7610,7 @@ $tdataadmin_members[".hideMobileList"] = array();
 //	pin
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 53;
+	$fdata["Index"] = 54;
 	$fdata["strName"] = "pin";
 	$fdata["GoodName"] = "pin";
 	$fdata["ownerTable"] = "contractor_master";
@@ -7638,7 +7777,7 @@ function createSqlQuery_admin_members()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "contractor_id,  	contractor_type,  	contractor_doc_id,  	contractor_doc_dv,  	contractor_pwd,  	contractor_image,  	contractor_name,  	contractor_lname,  	contractor_nombresfull,  	enlace_sigep,  	contractor_email,  	contractor_email_mincit,  	contractor_address,  	contractor_phone,  	contractor_mobile,  	contractor_city,  	contractor_sup_jerarquico,  	contractor_dependencia,  	bank_name,  	bank_cta_type,  	bank_cta_number,  	iva_regimen,  	sys_update,  	sys_user,  	sys_date,  	sys_level,  	sys_status,  	sys_last_upd,  	groupid,  	active,  	contractor_dependientes,  	contractor_medicinapre_file,  	contractor_picmonetaria_file,  	contractor_decljur,  	contractor_eps,  	contractor_fondopensiones,  	contractor_cajacompensacion,  	contractor_arl,  	ubica_dep,  	ubica_extension,  	dem_genero,  	dem_ocupacion,  	dem_profesion,  	ct_fecha_nacimiento,  	ct_nacionalidad,  	dem_edad,  	dem_educacion,  	dem_discapacidad,  	emergencia,  	terms_msj,  	terms_acepta,  	signature,  	pin";
+$proto0["m_strFieldList"] = "contractor_id,  	contractor_type,  	contractor_doc_id,  	contractor_doc_dv,  	contractor_pwd,  	contractor_image,  	contractor_name,  	contractor_lname,  	contractor_nombresfull,  	enlace_sigep,  	contractor_email,  	contractor_email_mincit,  	contractor_address,  	contractor_phone,  	contractor_mobile,  	contractor_city,  	contractor_sup_jerarquico,  	contractor_dependencia,  	bank_name,  	bank_cta_type,  	bank_cta_number,  	iva_regimen,  	sys_update,  	sys_user,  	sys_date,  	sys_level,  	sys_status,  	sys_last_upd,  	groupid,  	active,  	contractor_dependientes,  	contractor_medicinapre_file,  	contractor_picmonetaria_file,  	contractor_decljur,  	contractor_eps,  	contractor_fondopensiones,  	contractor_cajacompensacion,  	contractor_arl,  	ubica_dep,  	ubica_extension,  	dem_genero,  	dem_ocupacion,  	dem_profesion,  	ct_fecha_nacimiento,  	ct_fecha_nacimiento_mun,  	ct_nacionalidad,  	dem_edad,  	dem_educacion,  	dem_discapacidad,  	emergencia,  	terms_msj,  	terms_acepta,  	signature,  	pin";
 $proto0["m_strFrom"] = "FROM contractor_master";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -8296,12 +8435,12 @@ $obj = new SQLFieldListItem($proto92);
 $proto0["m_fieldlist"][]=$obj;
 						$proto94=array();
 			$obj = new SQLField(array(
-	"m_strName" => "ct_nacionalidad",
+	"m_strName" => "ct_fecha_nacimiento_mun",
 	"m_strTable" => "contractor_master",
 	"m_srcTableName" => "admin_members"
 ));
 
-$proto94["m_sql"] = "ct_nacionalidad";
+$proto94["m_sql"] = "ct_fecha_nacimiento_mun";
 $proto94["m_srcTableName"] = "admin_members";
 $proto94["m_expr"]=$obj;
 $proto94["m_alias"] = "";
@@ -8310,12 +8449,12 @@ $obj = new SQLFieldListItem($proto94);
 $proto0["m_fieldlist"][]=$obj;
 						$proto96=array();
 			$obj = new SQLField(array(
-	"m_strName" => "dem_edad",
+	"m_strName" => "ct_nacionalidad",
 	"m_strTable" => "contractor_master",
 	"m_srcTableName" => "admin_members"
 ));
 
-$proto96["m_sql"] = "dem_edad";
+$proto96["m_sql"] = "ct_nacionalidad";
 $proto96["m_srcTableName"] = "admin_members";
 $proto96["m_expr"]=$obj;
 $proto96["m_alias"] = "";
@@ -8324,12 +8463,12 @@ $obj = new SQLFieldListItem($proto96);
 $proto0["m_fieldlist"][]=$obj;
 						$proto98=array();
 			$obj = new SQLField(array(
-	"m_strName" => "dem_educacion",
+	"m_strName" => "dem_edad",
 	"m_strTable" => "contractor_master",
 	"m_srcTableName" => "admin_members"
 ));
 
-$proto98["m_sql"] = "dem_educacion";
+$proto98["m_sql"] = "dem_edad";
 $proto98["m_srcTableName"] = "admin_members";
 $proto98["m_expr"]=$obj;
 $proto98["m_alias"] = "";
@@ -8338,12 +8477,12 @@ $obj = new SQLFieldListItem($proto98);
 $proto0["m_fieldlist"][]=$obj;
 						$proto100=array();
 			$obj = new SQLField(array(
-	"m_strName" => "dem_discapacidad",
+	"m_strName" => "dem_educacion",
 	"m_strTable" => "contractor_master",
 	"m_srcTableName" => "admin_members"
 ));
 
-$proto100["m_sql"] = "dem_discapacidad";
+$proto100["m_sql"] = "dem_educacion";
 $proto100["m_srcTableName"] = "admin_members";
 $proto100["m_expr"]=$obj;
 $proto100["m_alias"] = "";
@@ -8352,12 +8491,12 @@ $obj = new SQLFieldListItem($proto100);
 $proto0["m_fieldlist"][]=$obj;
 						$proto102=array();
 			$obj = new SQLField(array(
-	"m_strName" => "emergencia",
+	"m_strName" => "dem_discapacidad",
 	"m_strTable" => "contractor_master",
 	"m_srcTableName" => "admin_members"
 ));
 
-$proto102["m_sql"] = "emergencia";
+$proto102["m_sql"] = "dem_discapacidad";
 $proto102["m_srcTableName"] = "admin_members";
 $proto102["m_expr"]=$obj;
 $proto102["m_alias"] = "";
@@ -8366,12 +8505,12 @@ $obj = new SQLFieldListItem($proto102);
 $proto0["m_fieldlist"][]=$obj;
 						$proto104=array();
 			$obj = new SQLField(array(
-	"m_strName" => "terms_msj",
+	"m_strName" => "emergencia",
 	"m_strTable" => "contractor_master",
 	"m_srcTableName" => "admin_members"
 ));
 
-$proto104["m_sql"] = "terms_msj";
+$proto104["m_sql"] = "emergencia";
 $proto104["m_srcTableName"] = "admin_members";
 $proto104["m_expr"]=$obj;
 $proto104["m_alias"] = "";
@@ -8380,12 +8519,12 @@ $obj = new SQLFieldListItem($proto104);
 $proto0["m_fieldlist"][]=$obj;
 						$proto106=array();
 			$obj = new SQLField(array(
-	"m_strName" => "terms_acepta",
+	"m_strName" => "terms_msj",
 	"m_strTable" => "contractor_master",
 	"m_srcTableName" => "admin_members"
 ));
 
-$proto106["m_sql"] = "terms_acepta";
+$proto106["m_sql"] = "terms_msj";
 $proto106["m_srcTableName"] = "admin_members";
 $proto106["m_expr"]=$obj;
 $proto106["m_alias"] = "";
@@ -8394,12 +8533,12 @@ $obj = new SQLFieldListItem($proto106);
 $proto0["m_fieldlist"][]=$obj;
 						$proto108=array();
 			$obj = new SQLField(array(
-	"m_strName" => "signature",
+	"m_strName" => "terms_acepta",
 	"m_strTable" => "contractor_master",
 	"m_srcTableName" => "admin_members"
 ));
 
-$proto108["m_sql"] = "signature";
+$proto108["m_sql"] = "terms_acepta";
 $proto108["m_srcTableName"] = "admin_members";
 $proto108["m_expr"]=$obj;
 $proto108["m_alias"] = "";
@@ -8408,101 +8547,116 @@ $obj = new SQLFieldListItem($proto108);
 $proto0["m_fieldlist"][]=$obj;
 						$proto110=array();
 			$obj = new SQLField(array(
-	"m_strName" => "pin",
+	"m_strName" => "signature",
 	"m_strTable" => "contractor_master",
 	"m_srcTableName" => "admin_members"
 ));
 
-$proto110["m_sql"] = "pin";
+$proto110["m_sql"] = "signature";
 $proto110["m_srcTableName"] = "admin_members";
 $proto110["m_expr"]=$obj;
 $proto110["m_alias"] = "";
 $obj = new SQLFieldListItem($proto110);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto112=array();
-$proto112["m_link"] = "SQLL_MAIN";
-			$proto113=array();
-$proto113["m_strName"] = "contractor_master";
-$proto113["m_srcTableName"] = "admin_members";
-$proto113["m_columns"] = array();
-$proto113["m_columns"][] = "contractor_id";
-$proto113["m_columns"][] = "contractor_type";
-$proto113["m_columns"][] = "contractor_doc_id";
-$proto113["m_columns"][] = "contractor_doc_dv";
-$proto113["m_columns"][] = "contractor_pwd";
-$proto113["m_columns"][] = "contractor_image";
-$proto113["m_columns"][] = "contractor_name";
-$proto113["m_columns"][] = "contractor_lname";
-$proto113["m_columns"][] = "contractor_nombresfull";
-$proto113["m_columns"][] = "enlace_sigep";
-$proto113["m_columns"][] = "contractor_email";
-$proto113["m_columns"][] = "contractor_email_mincit";
-$proto113["m_columns"][] = "contractor_address";
-$proto113["m_columns"][] = "contractor_phone";
-$proto113["m_columns"][] = "contractor_mobile";
-$proto113["m_columns"][] = "contractor_city";
-$proto113["m_columns"][] = "contractor_sup_jerarquico";
-$proto113["m_columns"][] = "contractor_dependencia";
-$proto113["m_columns"][] = "bank_name";
-$proto113["m_columns"][] = "bank_cta_type";
-$proto113["m_columns"][] = "bank_cta_number";
-$proto113["m_columns"][] = "iva_regimen";
-$proto113["m_columns"][] = "sys_update";
-$proto113["m_columns"][] = "sys_user";
-$proto113["m_columns"][] = "sys_date";
-$proto113["m_columns"][] = "sys_level";
-$proto113["m_columns"][] = "sys_status";
-$proto113["m_columns"][] = "sys_last_upd";
-$proto113["m_columns"][] = "groupid";
-$proto113["m_columns"][] = "active";
-$proto113["m_columns"][] = "contractor_dependientes";
-$proto113["m_columns"][] = "contractor_medicinapre_file";
-$proto113["m_columns"][] = "contractor_picmonetaria_file";
-$proto113["m_columns"][] = "contractor_decljur";
-$proto113["m_columns"][] = "contractor_eps";
-$proto113["m_columns"][] = "contractor_fondopensiones";
-$proto113["m_columns"][] = "contractor_cajacompensacion";
-$proto113["m_columns"][] = "contractor_arl";
-$proto113["m_columns"][] = "ubica_dep";
-$proto113["m_columns"][] = "ubica_extension";
-$proto113["m_columns"][] = "dem_genero";
-$proto113["m_columns"][] = "dem_ocupacion";
-$proto113["m_columns"][] = "dem_profesion";
-$proto113["m_columns"][] = "ct_fecha_nacimiento";
-$proto113["m_columns"][] = "ct_nacionalidad";
-$proto113["m_columns"][] = "dem_edad";
-$proto113["m_columns"][] = "dem_educacion";
-$proto113["m_columns"][] = "dem_discapacidad";
-$proto113["m_columns"][] = "emergencia";
-$proto113["m_columns"][] = "terms_msj";
-$proto113["m_columns"][] = "terms_acepta";
-$proto113["m_columns"][] = "signature";
-$proto113["m_columns"][] = "pin";
-$obj = new SQLTable($proto113);
+						$proto112=array();
+			$obj = new SQLField(array(
+	"m_strName" => "pin",
+	"m_strTable" => "contractor_master",
+	"m_srcTableName" => "admin_members"
+));
 
-$proto112["m_table"] = $obj;
-$proto112["m_sql"] = "contractor_master";
-$proto112["m_alias"] = "";
+$proto112["m_sql"] = "pin";
 $proto112["m_srcTableName"] = "admin_members";
-$proto114=array();
-$proto114["m_sql"] = "";
-$proto114["m_uniontype"] = "SQLL_UNKNOWN";
+$proto112["m_expr"]=$obj;
+$proto112["m_alias"] = "";
+$obj = new SQLFieldListItem($proto112);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto114=array();
+$proto114["m_link"] = "SQLL_MAIN";
+			$proto115=array();
+$proto115["m_strName"] = "contractor_master";
+$proto115["m_srcTableName"] = "admin_members";
+$proto115["m_columns"] = array();
+$proto115["m_columns"][] = "contractor_id";
+$proto115["m_columns"][] = "contractor_type";
+$proto115["m_columns"][] = "contractor_doc_id";
+$proto115["m_columns"][] = "contractor_doc_dv";
+$proto115["m_columns"][] = "contractor_pwd";
+$proto115["m_columns"][] = "contractor_image";
+$proto115["m_columns"][] = "contractor_name";
+$proto115["m_columns"][] = "contractor_lname";
+$proto115["m_columns"][] = "contractor_nombresfull";
+$proto115["m_columns"][] = "enlace_sigep";
+$proto115["m_columns"][] = "contractor_email";
+$proto115["m_columns"][] = "contractor_email_mincit";
+$proto115["m_columns"][] = "contractor_address";
+$proto115["m_columns"][] = "contractor_phone";
+$proto115["m_columns"][] = "contractor_mobile";
+$proto115["m_columns"][] = "contractor_city";
+$proto115["m_columns"][] = "contractor_sup_jerarquico";
+$proto115["m_columns"][] = "contractor_dependencia";
+$proto115["m_columns"][] = "bank_name";
+$proto115["m_columns"][] = "bank_cta_type";
+$proto115["m_columns"][] = "bank_cta_number";
+$proto115["m_columns"][] = "iva_regimen";
+$proto115["m_columns"][] = "sys_update";
+$proto115["m_columns"][] = "sys_user";
+$proto115["m_columns"][] = "sys_date";
+$proto115["m_columns"][] = "sys_level";
+$proto115["m_columns"][] = "sys_status";
+$proto115["m_columns"][] = "sys_last_upd";
+$proto115["m_columns"][] = "groupid";
+$proto115["m_columns"][] = "active";
+$proto115["m_columns"][] = "contractor_dependientes";
+$proto115["m_columns"][] = "contractor_medicinapre_file";
+$proto115["m_columns"][] = "contractor_picmonetaria_file";
+$proto115["m_columns"][] = "contractor_decljur";
+$proto115["m_columns"][] = "contractor_eps";
+$proto115["m_columns"][] = "contractor_fondopensiones";
+$proto115["m_columns"][] = "contractor_cajacompensacion";
+$proto115["m_columns"][] = "contractor_arl";
+$proto115["m_columns"][] = "ubica_dep";
+$proto115["m_columns"][] = "ubica_extension";
+$proto115["m_columns"][] = "dem_genero";
+$proto115["m_columns"][] = "dem_ocupacion";
+$proto115["m_columns"][] = "dem_profesion";
+$proto115["m_columns"][] = "ct_fecha_nacimiento";
+$proto115["m_columns"][] = "ct_fecha_nacimiento_mun";
+$proto115["m_columns"][] = "ct_nacionalidad";
+$proto115["m_columns"][] = "dem_edad";
+$proto115["m_columns"][] = "dem_educacion";
+$proto115["m_columns"][] = "dem_discapacidad";
+$proto115["m_columns"][] = "emergencia";
+$proto115["m_columns"][] = "terms_msj";
+$proto115["m_columns"][] = "terms_acepta";
+$proto115["m_columns"][] = "signature";
+$proto115["m_columns"][] = "pin";
+$obj = new SQLTable($proto115);
+
+$proto114["m_table"] = $obj;
+$proto114["m_sql"] = "contractor_master";
+$proto114["m_alias"] = "";
+$proto114["m_srcTableName"] = "admin_members";
+$proto116=array();
+$proto116["m_sql"] = "";
+$proto116["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto114["m_column"]=$obj;
-$proto114["m_contained"] = array();
-$proto114["m_strCase"] = "";
-$proto114["m_havingmode"] = false;
-$proto114["m_inBrackets"] = false;
-$proto114["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto114);
+$proto116["m_column"]=$obj;
+$proto116["m_contained"] = array();
+$proto116["m_strCase"] = "";
+$proto116["m_havingmode"] = false;
+$proto116["m_inBrackets"] = false;
+$proto116["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto116);
 
-$proto112["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto112);
+$proto114["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto114);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -8518,7 +8672,7 @@ $queryData_admin_members = createSqlQuery_admin_members();
 	
 						;
 
-																																																					
+																																																						
 
 $tdataadmin_members[".sqlquery"] = $queryData_admin_members;
 

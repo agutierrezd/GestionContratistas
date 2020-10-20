@@ -965,6 +965,16 @@ function GetLWWhere($field, $ptype, $table = "")
 	global $strTableName;
 	if(!$table)
 		$table = $strTableName;
+		if($table=="informe_intersup_contratista" && $field=="inf_estado")
+	{
+		$strWhere = " estadoi_id = 2";
+		return $strWhere;
+	}
+		if($table=="informe_intersup_oe_contratista" && $field=="sup_aprueba")
+	{
+		$strWhere = ' sn_id = 1 ';
+		return $strWhere;
+	}
 	return "";
 }
 
@@ -1037,6 +1047,14 @@ function GetDefaultValue($field, $ptype, $table="")
 		return 1;
 	}
 				if($table=="contractor_master_view" && $field=="active")
+	{
+		return 1;
+	}
+				if($table=="informe_intersup_contratista" && $field=="inf_estado")
+	{
+		return 2;
+	}
+				if($table=="informe_intersup_oe_contratista" && $field=="sup_aprueba")
 	{
 		return 1;
 	}
@@ -1114,6 +1132,10 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 				if($table=="contractor_master_view" && $field=="active")
 	{
 		return 1;
+	}
+				if($table=="informe_intersup_contratista" && $field=="inf_estado")
+	{
+		return 2;
 	}
 				if($table=="informe_intersup_oe_contratista" && $field=="sys_user")
 	{

@@ -760,6 +760,7 @@ $proto12["m_columns"][] = "dem_genero";
 $proto12["m_columns"][] = "dem_ocupacion";
 $proto12["m_columns"][] = "dem_profesion";
 $proto12["m_columns"][] = "ct_fecha_nacimiento";
+$proto12["m_columns"][] = "ct_fecha_nacimiento_mun";
 $proto12["m_columns"][] = "ct_nacionalidad";
 $proto12["m_columns"][] = "dem_edad";
 $proto12["m_columns"][] = "dem_educacion";

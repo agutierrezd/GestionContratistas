@@ -46,10 +46,10 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsinforme_intersup_oe_contratista["Spanish"]["oe_ordinal"] = "Ordinal";
 	$fieldToolTipsinforme_intersup_oe_contratista["Spanish"]["oe_ordinal"] = "";
 	$placeHoldersinforme_intersup_oe_contratista["Spanish"]["oe_ordinal"] = "";
-	$fieldLabelsinforme_intersup_oe_contratista["Spanish"]["oe"] = "Obligación específica";
+	$fieldLabelsinforme_intersup_oe_contratista["Spanish"]["oe"] = "Obligación";
 	$fieldToolTipsinforme_intersup_oe_contratista["Spanish"]["oe"] = "";
 	$placeHoldersinforme_intersup_oe_contratista["Spanish"]["oe"] = "";
-	$fieldLabelsinforme_intersup_oe_contratista["Spanish"]["actividad"] = "Actividad realizada";
+	$fieldLabelsinforme_intersup_oe_contratista["Spanish"]["actividad"] = "Actividad";
 	$fieldToolTipsinforme_intersup_oe_contratista["Spanish"]["actividad"] = "";
 	$placeHoldersinforme_intersup_oe_contratista["Spanish"]["actividad"] = "";
 	$fieldLabelsinforme_intersup_oe_contratista["Spanish"]["evidencia"] = "Evidencia";
@@ -1276,9 +1276,7 @@ $tdatainforme_intersup_oe_contratista[".hideMobileList"] = array();
 		$vdata["NeedEncode"] = true;
 
 	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
+	
 	$fdata["ViewFormats"]["view"] = $vdata;
 //  End View Formats
 
@@ -1571,7 +1569,7 @@ $tdatainforme_intersup_oe_contratista[".hideMobileList"] = array();
 	$edata["LookupTable"] = "tparam_sn_oe";
 			$edata["autoCompleteFieldsOnEdit"] = 0;
 	$edata["autoCompleteFields"] = array();
-		$edata["LCType"] = 0;
+		$edata["LCType"] = 4;
 
 	
 		
@@ -1579,7 +1577,8 @@ $tdatainforme_intersup_oe_contratista[".hideMobileList"] = array();
 	$edata["LinkFieldType"] = 16;
 	$edata["DisplayField"] = "sn_oe";
 
-	
+				$edata["LookupWhereCode"] = true;
+
 
 	
 	$edata["LookupOrderBy"] = "";
@@ -1591,8 +1590,7 @@ $tdatainforme_intersup_oe_contratista[".hideMobileList"] = array();
 
 	
 	
-		$edata["SelectSize"] = 1;
-
+	
 // End Lookup Settings
 
 
@@ -1646,9 +1644,10 @@ $tdatainforme_intersup_oe_contratista[".hideMobileList"] = array();
 
 
 //Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
+	$fdata["filterTotals"] = 1;
+		$fdata["filterMultiSelect"] = 1;
+		$fdata["filterTotalFields"] = "isoe_id";
+		$fdata["filterFormat"] = "Values list";
 		$fdata["showCollapsed"] = false;
 
 		$fdata["sortValueType"] = 0;

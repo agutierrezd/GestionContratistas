@@ -492,6 +492,9 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_simple_grid_field9}","text":"{$jslabel contractor_master_view contractor_name }","bold":true},
 				
+				
+			{"hidden":"{$item_hide_grid_field_label3}","text":"{$jslabel contractor_master_view ct_fecha_nacimiento_mun }","bold":true},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'right',
@@ -518,9 +521,12 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_simple_grid_field6}","text":{$contractor_name_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_grid_field3}","text":{$ct_fecha_nacimiento_mun_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
-          "alignment": '{$contractor_name_align}',
+          "alignment": 'left',
   },
 
 {END cellblock_grid_cell_field11}

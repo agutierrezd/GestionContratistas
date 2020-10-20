@@ -253,18 +253,6 @@ pdfDocument = {
 										{BEGIN col_grid_64}
 					"%",
 					{END col_grid_64}
-										{BEGIN col_grid_65}
-					"%",
-					{END col_grid_65}
-										{BEGIN col_grid_66}
-					"%",
-					{END col_grid_66}
-										{BEGIN col_grid_67}
-					"%",
-					{END col_grid_67}
-										{BEGIN col_grid_68}
-					"%",
-					{END col_grid_68}
 															],
 							heights: [ // first height for header part
 					"%",
@@ -368,7 +356,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field69}","text":"{$jslabel contrato id_cont }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field31}","text":"{$jslabel contrato id_cont }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -394,7 +382,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field70}","text":"{$jslabel contrato cont_hash }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field32}","text":"{$jslabel contrato cont_hash }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -420,7 +408,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field71}","text":"{$jslabel contrato cont_nit_contra_ta }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field33}","text":"{$jslabel contrato cont_nit_contra_ta }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -446,7 +434,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field72}","text":"{$jslabel contrato cont_paa_id }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field34}","text":"{$jslabel contrato cont_paa_id }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -472,7 +460,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field73}","text":"{$jslabel contrato cont_estado }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field69}","text":"{$jslabel contrato cont_estado }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -498,7 +486,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field74}","text":"{$jslabel contrato prenumero }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field70}","text":"{$jslabel contrato prenumero }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -524,7 +512,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field75}","text":"{$jslabel contrato numregistro }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field71}","text":"{$jslabel contrato numregistro }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -550,7 +538,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field76}","text":"{$jslabel contrato pre_contnumero }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field72}","text":"{$jslabel contrato pre_contnumero }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -576,7 +564,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field77}","text":"{$jslabel contrato contnumero }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field73}","text":"{$jslabel contrato contnumero }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -602,7 +590,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field78}","text":"{$jslabel contrato cont_unspsc }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field74}","text":"{$jslabel contrato cont_unspsc }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -628,7 +616,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field79}","text":"{$jslabel contrato cont_tipo }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field75}","text":"{$jslabel contrato cont_tipo }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -654,7 +642,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field80}","text":"{$jslabel contrato cont_ano }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field76}","text":"{$jslabel contrato cont_ano }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -680,7 +668,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field81}","text":"{$jslabel contrato cont_codrubro }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field77}","text":"{$jslabel contrato cont_codrubro }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -706,7 +694,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field82}","text":"{$jslabel contrato cont_tipo_rubro }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field78}","text":"{$jslabel contrato cont_tipo_rubro }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -732,7 +720,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field83}","text":"{$jslabel contrato cont_reg_sigep }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field79}","text":"{$jslabel contrato cont_reg_sigep }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -758,7 +746,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field84}","text":"{$jslabel contrato cont_catalogo_presupuestal }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field80}","text":"{$jslabel contrato cont_catalogo_presupuestal }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -784,7 +772,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field85}","text":"{$jslabel contrato cont_tipopre }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field81}","text":"{$jslabel contrato cont_tipopre }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -810,7 +798,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field86}","text":"{$jslabel contrato cont_fechaapertura }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field82}","text":"{$jslabel contrato cont_fechaapertura }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -836,7 +824,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field87}","text":"{$jslabel contrato cont_plazoi }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field83}","text":"{$jslabel contrato cont_plazoi }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -862,7 +850,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field88}","text":"{$jslabel contrato cont_fecha_inicio }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field84}","text":"{$jslabel contrato cont_fecha_inicio }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -888,7 +876,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field89}","text":"{$jslabel contrato cont_fechafinal }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field85}","text":"{$jslabel contrato cont_fechafinal }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -914,7 +902,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field90}","text":"{$jslabel contrato cont_valormensual_base }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field86}","text":"{$jslabel contrato cont_valormensual_base }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -940,7 +928,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field91}","text":"{$jslabel contrato cont_valormensual_iva }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field87}","text":"{$jslabel contrato cont_valormensual_iva }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -966,7 +954,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field92}","text":"{$jslabel contrato cont_fechavigencia }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field88}","text":"{$jslabel contrato cont_fechavigencia }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -992,7 +980,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field93}","text":"{$jslabel contrato cont_periodicidad }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field89}","text":"{$jslabel contrato cont_periodicidad }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1018,7 +1006,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field94}","text":"{$jslabel contrato cont_informessug }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field90}","text":"{$jslabel contrato cont_informessug }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1044,7 +1032,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field95}","text":"{$jslabel contrato cont_otrosi }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field91}","text":"{$jslabel contrato cont_otrosi }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1070,7 +1058,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field96}","text":"{$jslabel contrato cont_otrosi_type }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field92}","text":"{$jslabel contrato cont_otrosi_type }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1096,7 +1084,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field97}","text":"{$jslabel contrato cont_valorant }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field93}","text":"{$jslabel contrato cont_valorant }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1122,7 +1110,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field98}","text":"{$jslabel contrato cont_valorinicial }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field94}","text":"{$jslabel contrato cont_valorinicial }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1148,7 +1136,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field99}","text":"{$jslabel contrato cont_valormensual }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field95}","text":"{$jslabel contrato cont_valormensual }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1174,11 +1162,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field100}","text":"{$jslabel contrato cont_valoradic_fecha }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field96}","text":"{$jslabel contrato cont_valorvigente }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_valoradic_fecha_align}',
+          "alignment": '{$cont_valorvigente_align}',
   },
 
 {END cellblock_grid_headcell_field31}
@@ -1200,11 +1188,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field101}","text":"{$jslabel contrato cont_valoradic }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field97}","text":"{$jslabel contrato cont_valors }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_valoradic_align}',
+          "alignment": '{$cont_valors_align}',
   },
 
 {END cellblock_grid_headcell_field32}
@@ -1226,11 +1214,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field102}","text":"{$jslabel contrato cont_valorreduc_fecha }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field98}","text":"{$jslabel contrato cont_lugar }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_valorreduc_fecha_align}',
+          "alignment": '{$cont_lugar_align}',
   },
 
 {END cellblock_grid_headcell_field33}
@@ -1252,11 +1240,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field103}","text":"{$jslabel contrato cont_valorreduc }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field99}","text":"{$jslabel contrato cont_region }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_valorreduc_align}',
+          "alignment": '{$cont_region_align}',
   },
 
 {END cellblock_grid_headcell_field34}
@@ -1278,11 +1266,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field104}","text":"{$jslabel contrato cont_valorvigente }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field100}","text":"{$jslabel contrato cont_requactaliq }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_valorvigente_align}',
+          "alignment": '{$cont_requactaliq_align}',
   },
 
 {END cellblock_grid_headcell_field35}
@@ -1304,11 +1292,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field105}","text":"{$jslabel contrato cont_valors }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field101}","text":"{$jslabel contrato cont_plazol }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_valors_align}',
+          "alignment": '{$cont_plazol_align}',
   },
 
 {END cellblock_grid_headcell_field36}
@@ -1330,11 +1318,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field106}","text":"{$jslabel contrato cont_lugar }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field102}","text":"{$jslabel contrato cont_tipoproceso }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_lugar_align}',
+          "alignment": '{$cont_tipoproceso_align}',
   },
 
 {END cellblock_grid_headcell_field37}
@@ -1356,11 +1344,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field107}","text":"{$jslabel contrato cont_region }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field103}","text":"{$jslabel contrato cont_formapago }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_region_align}',
+          "alignment": '{$cont_formapago_align}',
   },
 
 {END cellblock_grid_headcell_field38}
@@ -1382,11 +1370,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field108}","text":"{$jslabel contrato cont_requactaliq }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field104}","text":"{$jslabel contrato cont_tipoc }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_requactaliq_align}',
+          "alignment": '{$cont_tipoc_align}',
   },
 
 {END cellblock_grid_headcell_field39}
@@ -1408,11 +1396,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field109}","text":"{$jslabel contrato cont_plazol }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field105}","text":"{$jslabel contrato cont_modalidad }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_plazol_align}',
+          "alignment": '{$cont_modalidad_align}',
   },
 
 {END cellblock_grid_headcell_field40}
@@ -1434,11 +1422,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field110}","text":"{$jslabel contrato cont_tipoproceso }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field106}","text":"{$jslabel contrato cont_causalc }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_tipoproceso_align}',
+          "alignment": '{$cont_causalc_align}',
   },
 
 {END cellblock_grid_headcell_field41}
@@ -1460,11 +1448,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field111}","text":"{$jslabel contrato cont_formapago }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field107}","text":"{$jslabel contrato cont_funcion }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_formapago_align}',
+          "alignment": '{$cont_funcion_align}',
   },
 
 {END cellblock_grid_headcell_field42}
@@ -1486,11 +1474,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field112}","text":"{$jslabel contrato cont_tipoc }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field108}","text":"{$jslabel contrato cesion_estado }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_tipoc_align}',
+          "alignment": '{$cesion_estado_align}',
   },
 
 {END cellblock_grid_headcell_field43}
@@ -1512,11 +1500,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field113}","text":"{$jslabel contrato cont_modalidad }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field109}","text":"{$jslabel contrato cont_acta_liquidacion }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_modalidad_align}',
+          "alignment": '{$cont_acta_liquidacion_align}',
   },
 
 {END cellblock_grid_headcell_field44}
@@ -1538,11 +1526,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field114}","text":"{$jslabel contrato cont_causalc }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field110}","text":"{$jslabel contrato cont_fecha_aprobgarantia }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_causalc_align}',
+          "alignment": '{$cont_fecha_aprobgarantia_align}',
   },
 
 {END cellblock_grid_headcell_field45}
@@ -1564,11 +1552,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field115}","text":"{$jslabel contrato cont_funcion }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field111}","text":"{$jslabel contrato cont_afilia_arl }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_funcion_align}',
+          "alignment": '{$cont_afilia_arl_align}',
   },
 
 {END cellblock_grid_headcell_field46}
@@ -1590,11 +1578,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field116}","text":"{$jslabel contrato cesion_estado }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field112}","text":"{$jslabel contrato cont_excluir_notificacion }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cesion_estado_align}',
+          "alignment": '{$cont_excluir_notificacion_align}',
   },
 
 {END cellblock_grid_headcell_field47}
@@ -1616,11 +1604,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field117}","text":"{$jslabel contrato cont_acta_liquidacion }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field113}","text":"{$jslabel contrato cont_depsup }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_acta_liquidacion_align}',
+          "alignment": '{$cont_depsup_align}',
   },
 
 {END cellblock_grid_headcell_field48}
@@ -1642,11 +1630,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field118}","text":"{$jslabel contrato cont_fecha_aprobgarantia }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field114}","text":"{$jslabel contrato cont_dep }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_fecha_aprobgarantia_align}',
+          "alignment": '{$cont_dep_align}',
   },
 
 {END cellblock_grid_headcell_field49}
@@ -1668,11 +1656,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field119}","text":"{$jslabel contrato cont_afilia_arl }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field115}","text":"{$jslabel contrato cont_lugar_prestacion }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_afilia_arl_align}',
+          "alignment": '{$cont_lugar_prestacion_align}',
   },
 
 {END cellblock_grid_headcell_field50}
@@ -1694,11 +1682,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field120}","text":"{$jslabel contrato cont_excluir_notificacion }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field116}","text":"{$jslabel contrato cont_objeto }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_excluir_notificacion_align}',
+          "alignment": '{$cont_objeto_align}',
   },
 
 {END cellblock_grid_headcell_field51}
@@ -1720,11 +1708,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field121}","text":"{$jslabel contrato cont_depsup }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field117}","text":"{$jslabel contrato cont_obligaciones }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_depsup_align}',
+          "alignment": '{$cont_obligaciones_align}',
   },
 
 {END cellblock_grid_headcell_field52}
@@ -1746,11 +1734,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field122}","text":"{$jslabel contrato cont_dep }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field118}","text":"{$jslabel contrato cont_plazo }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_dep_align}',
+          "alignment": '{$cont_plazo_align}',
   },
 
 {END cellblock_grid_headcell_field53}
@@ -1772,11 +1760,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field123}","text":"{$jslabel contrato cont_lugar_prestacion }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field119}","text":"{$jslabel contrato cont_tipo_regimen }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_lugar_prestacion_align}',
+          "alignment": '{$cont_tipo_regimen_align}',
   },
 
 {END cellblock_grid_headcell_field54}
@@ -1798,11 +1786,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field124}","text":"{$jslabel contrato cont_objeto }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field120}","text":"{$jslabel contrato cont_fecha_firma }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_objeto_align}',
+          "alignment": '{$cont_fecha_firma_align}',
   },
 
 {END cellblock_grid_headcell_field55}
@@ -1824,11 +1812,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field125}","text":"{$jslabel contrato cont_obligaciones }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field121}","text":"{$jslabel contrato cont_secop_proceso }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_obligaciones_align}',
+          "alignment": '{$cont_secop_proceso_align}',
   },
 
 {END cellblock_grid_headcell_field56}
@@ -1850,11 +1838,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field126}","text":"{$jslabel contrato cont_plazo }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field122}","text":"{$jslabel contrato cont_secop_enlace }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_plazo_align}',
+          "alignment": '{$cont_secop_enlace_align}',
   },
 
 {END cellblock_grid_headcell_field57}
@@ -1876,11 +1864,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field127}","text":"{$jslabel contrato cont_tipo_regimen }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field123}","text":"{$jslabel contrato cont_sigep }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_tipo_regimen_align}',
+          "alignment": '{$cont_sigep_align}',
   },
 
 {END cellblock_grid_headcell_field58}
@@ -1902,11 +1890,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field128}","text":"{$jslabel contrato cont_fecha_firma }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field124}","text":"{$jslabel contrato cont_vigencias_futuras }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_fecha_firma_align}',
+          "alignment": '{$cont_vigencias_futuras_align}',
   },
 
 {END cellblock_grid_headcell_field59}
@@ -1928,11 +1916,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field129}","text":"{$jslabel contrato cont_secop_proceso }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field125}","text":"{$jslabel contrato vf_num_autorizacion }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_secop_proceso_align}',
+          "alignment": '{$vf_num_autorizacion_align}',
   },
 
 {END cellblock_grid_headcell_field60}
@@ -1954,11 +1942,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field130}","text":"{$jslabel contrato cont_secop_enlace }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field126}","text":"{$jslabel contrato vf_fecha }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_secop_enlace_align}',
+          "alignment": '{$vf_fecha_align}',
   },
 
 {END cellblock_grid_headcell_field61}
@@ -1980,11 +1968,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field131}","text":"{$jslabel contrato cont_sigep }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field127}","text":"{$jslabel contrato vf_valor }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_sigep_align}',
+          "alignment": '{$vf_valor_align}',
   },
 
 {END cellblock_grid_headcell_field62}
@@ -2006,11 +1994,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field132}","text":"{$jslabel contrato cont_vigencias_futuras }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field128}","text":"{$jslabel contrato cont_fechasistema }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_vigencias_futuras_align}',
+          "alignment": '{$cont_fechasistema_align}',
   },
 
 {END cellblock_grid_headcell_field63}
@@ -2032,118 +2020,14 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field133}","text":"{$jslabel contrato vf_num_autorizacion }","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$vf_num_autorizacion_align}',
-  },
-
-{END cellblock_grid_headcell_field64}
-																			{BEGIN cellblock_grid_headcell_field65}
-{
-	cellId: 'headcell_field65',
-	col:0,
-	row:0,
-			style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field134}","text":"{$jslabel contrato vf_fecha }","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$vf_fecha_align}',
-  },
-
-{END cellblock_grid_headcell_field65}
-																			{BEGIN cellblock_grid_headcell_field66}
-{
-	cellId: 'headcell_field66',
-	col:0,
-	row:0,
-			style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field135}","text":"{$jslabel contrato vf_valor }","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$vf_valor_align}',
-  },
-
-{END cellblock_grid_headcell_field66}
-																			{BEGIN cellblock_grid_headcell_field67}
-{
-	cellId: 'headcell_field67',
-	col:0,
-	row:0,
-			style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field136}","text":"{$jslabel contrato cont_fechasistema }","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$cont_fechasistema_align}',
-  },
-
-{END cellblock_grid_headcell_field67}
-																			{BEGIN cellblock_grid_headcell_field68}
-{
-	cellId: 'headcell_field68',
-	col:0,
-	row:0,
-			style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field137}","text":"{$jslabel contrato cont_cesion }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field129}","text":"{$jslabel contrato cont_cesion }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
           "alignment": '{$cont_cesion_align}',
   },
 
-{END cellblock_grid_headcell_field68}
+{END cellblock_grid_headcell_field64}
 											],
 				{END row_grid_0}
 								
@@ -2976,110 +2860,6 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field31}","text":{$cont_valoradic_fecha_pdfvalue}},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$cont_valoradic_fecha_align}',
-  },
-
-{END cellblock_grid_cell_field31}
-																			{BEGIN cellblock_grid_cell_field32}
-{
-	cellId: 'cell_field32',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field32}","text":{$cont_valoradic_pdfvalue}},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$cont_valoradic_align}',
-  },
-
-{END cellblock_grid_cell_field32}
-																			{BEGIN cellblock_grid_cell_field33}
-{
-	cellId: 'cell_field33',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field33}","text":{$cont_valorreduc_fecha_pdfvalue}},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$cont_valorreduc_fecha_align}',
-  },
-
-{END cellblock_grid_cell_field33}
-																			{BEGIN cellblock_grid_cell_field34}
-{
-	cellId: 'cell_field34',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field34}","text":{$cont_valorreduc_pdfvalue}},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$cont_valorreduc_align}',
-  },
-
-{END cellblock_grid_cell_field34}
-																			{BEGIN cellblock_grid_cell_field35}
-{
-	cellId: 'cell_field35',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
 			{"hidden":"{$item_hide_simple_grid_field35}","text":{$cont_valorvigente_pdfvalue}},
 				
 		  ],
@@ -3087,10 +2867,10 @@ pdfDocument = {
           "alignment": '{$cont_valorvigente_align}',
   },
 
-{END cellblock_grid_cell_field35}
-																			{BEGIN cellblock_grid_cell_field36}
+{END cellblock_grid_cell_field31}
+																			{BEGIN cellblock_grid_cell_field32}
 {
-	cellId: 'cell_field36',
+	cellId: 'cell_field32',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3113,10 +2893,10 @@ pdfDocument = {
           "alignment": '{$cont_valors_align}',
   },
 
-{END cellblock_grid_cell_field36}
-																			{BEGIN cellblock_grid_cell_field37}
+{END cellblock_grid_cell_field32}
+																			{BEGIN cellblock_grid_cell_field33}
 {
-	cellId: 'cell_field37',
+	cellId: 'cell_field33',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3139,10 +2919,10 @@ pdfDocument = {
           "alignment": '{$cont_lugar_align}',
   },
 
-{END cellblock_grid_cell_field37}
-																			{BEGIN cellblock_grid_cell_field38}
+{END cellblock_grid_cell_field33}
+																			{BEGIN cellblock_grid_cell_field34}
 {
-	cellId: 'cell_field38',
+	cellId: 'cell_field34',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3165,10 +2945,10 @@ pdfDocument = {
           "alignment": '{$cont_region_align}',
   },
 
-{END cellblock_grid_cell_field38}
-																			{BEGIN cellblock_grid_cell_field39}
+{END cellblock_grid_cell_field34}
+																			{BEGIN cellblock_grid_cell_field35}
 {
-	cellId: 'cell_field39',
+	cellId: 'cell_field35',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3191,10 +2971,10 @@ pdfDocument = {
           "alignment": '{$cont_requactaliq_align}',
   },
 
-{END cellblock_grid_cell_field39}
-																			{BEGIN cellblock_grid_cell_field40}
+{END cellblock_grid_cell_field35}
+																			{BEGIN cellblock_grid_cell_field36}
 {
-	cellId: 'cell_field40',
+	cellId: 'cell_field36',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3217,10 +2997,10 @@ pdfDocument = {
           "alignment": '{$cont_plazol_align}',
   },
 
-{END cellblock_grid_cell_field40}
-																			{BEGIN cellblock_grid_cell_field41}
+{END cellblock_grid_cell_field36}
+																			{BEGIN cellblock_grid_cell_field37}
 {
-	cellId: 'cell_field41',
+	cellId: 'cell_field37',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3243,10 +3023,10 @@ pdfDocument = {
           "alignment": '{$cont_tipoproceso_align}',
   },
 
-{END cellblock_grid_cell_field41}
-																			{BEGIN cellblock_grid_cell_field42}
+{END cellblock_grid_cell_field37}
+																			{BEGIN cellblock_grid_cell_field38}
 {
-	cellId: 'cell_field42',
+	cellId: 'cell_field38',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3269,10 +3049,10 @@ pdfDocument = {
           "alignment": '{$cont_formapago_align}',
   },
 
-{END cellblock_grid_cell_field42}
-																			{BEGIN cellblock_grid_cell_field43}
+{END cellblock_grid_cell_field38}
+																			{BEGIN cellblock_grid_cell_field39}
 {
-	cellId: 'cell_field43',
+	cellId: 'cell_field39',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3295,10 +3075,10 @@ pdfDocument = {
           "alignment": '{$cont_tipoc_align}',
   },
 
-{END cellblock_grid_cell_field43}
-																			{BEGIN cellblock_grid_cell_field44}
+{END cellblock_grid_cell_field39}
+																			{BEGIN cellblock_grid_cell_field40}
 {
-	cellId: 'cell_field44',
+	cellId: 'cell_field40',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3321,10 +3101,10 @@ pdfDocument = {
           "alignment": '{$cont_modalidad_align}',
   },
 
-{END cellblock_grid_cell_field44}
-																			{BEGIN cellblock_grid_cell_field45}
+{END cellblock_grid_cell_field40}
+																			{BEGIN cellblock_grid_cell_field41}
 {
-	cellId: 'cell_field45',
+	cellId: 'cell_field41',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3347,10 +3127,10 @@ pdfDocument = {
           "alignment": '{$cont_causalc_align}',
   },
 
-{END cellblock_grid_cell_field45}
-																			{BEGIN cellblock_grid_cell_field46}
+{END cellblock_grid_cell_field41}
+																			{BEGIN cellblock_grid_cell_field42}
 {
-	cellId: 'cell_field46',
+	cellId: 'cell_field42',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3373,10 +3153,10 @@ pdfDocument = {
           "alignment": '{$cont_funcion_align}',
   },
 
-{END cellblock_grid_cell_field46}
-																			{BEGIN cellblock_grid_cell_field47}
+{END cellblock_grid_cell_field42}
+																			{BEGIN cellblock_grid_cell_field43}
 {
-	cellId: 'cell_field47',
+	cellId: 'cell_field43',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3399,10 +3179,10 @@ pdfDocument = {
           "alignment": '{$cesion_estado_align}',
   },
 
-{END cellblock_grid_cell_field47}
-																			{BEGIN cellblock_grid_cell_field48}
+{END cellblock_grid_cell_field43}
+																			{BEGIN cellblock_grid_cell_field44}
 {
-	cellId: 'cell_field48',
+	cellId: 'cell_field44',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3425,10 +3205,10 @@ pdfDocument = {
           "alignment": '{$cont_acta_liquidacion_align}',
   },
 
-{END cellblock_grid_cell_field48}
-																			{BEGIN cellblock_grid_cell_field49}
+{END cellblock_grid_cell_field44}
+																			{BEGIN cellblock_grid_cell_field45}
 {
-	cellId: 'cell_field49',
+	cellId: 'cell_field45',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3451,10 +3231,10 @@ pdfDocument = {
           "alignment": '{$cont_fecha_aprobgarantia_align}',
   },
 
-{END cellblock_grid_cell_field49}
-																			{BEGIN cellblock_grid_cell_field50}
+{END cellblock_grid_cell_field45}
+																			{BEGIN cellblock_grid_cell_field46}
 {
-	cellId: 'cell_field50',
+	cellId: 'cell_field46',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3477,10 +3257,10 @@ pdfDocument = {
           "alignment": '{$cont_afilia_arl_align}',
   },
 
-{END cellblock_grid_cell_field50}
-																			{BEGIN cellblock_grid_cell_field51}
+{END cellblock_grid_cell_field46}
+																			{BEGIN cellblock_grid_cell_field47}
 {
-	cellId: 'cell_field51',
+	cellId: 'cell_field47',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3503,10 +3283,10 @@ pdfDocument = {
           "alignment": '{$cont_excluir_notificacion_align}',
   },
 
-{END cellblock_grid_cell_field51}
-																			{BEGIN cellblock_grid_cell_field52}
+{END cellblock_grid_cell_field47}
+																			{BEGIN cellblock_grid_cell_field48}
 {
-	cellId: 'cell_field52',
+	cellId: 'cell_field48',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3529,10 +3309,10 @@ pdfDocument = {
           "alignment": '{$cont_depsup_align}',
   },
 
-{END cellblock_grid_cell_field52}
-																			{BEGIN cellblock_grid_cell_field53}
+{END cellblock_grid_cell_field48}
+																			{BEGIN cellblock_grid_cell_field49}
 {
-	cellId: 'cell_field53',
+	cellId: 'cell_field49',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3555,10 +3335,10 @@ pdfDocument = {
           "alignment": '{$cont_dep_align}',
   },
 
-{END cellblock_grid_cell_field53}
-																			{BEGIN cellblock_grid_cell_field54}
+{END cellblock_grid_cell_field49}
+																			{BEGIN cellblock_grid_cell_field50}
 {
-	cellId: 'cell_field54',
+	cellId: 'cell_field50',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3581,10 +3361,10 @@ pdfDocument = {
           "alignment": '{$cont_lugar_prestacion_align}',
   },
 
-{END cellblock_grid_cell_field54}
-																			{BEGIN cellblock_grid_cell_field55}
+{END cellblock_grid_cell_field50}
+																			{BEGIN cellblock_grid_cell_field51}
 {
-	cellId: 'cell_field55',
+	cellId: 'cell_field51',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3607,10 +3387,10 @@ pdfDocument = {
           "alignment": '{$cont_objeto_align}',
   },
 
-{END cellblock_grid_cell_field55}
-																			{BEGIN cellblock_grid_cell_field56}
+{END cellblock_grid_cell_field51}
+																			{BEGIN cellblock_grid_cell_field52}
 {
-	cellId: 'cell_field56',
+	cellId: 'cell_field52',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3633,10 +3413,10 @@ pdfDocument = {
           "alignment": '{$cont_obligaciones_align}',
   },
 
-{END cellblock_grid_cell_field56}
-																			{BEGIN cellblock_grid_cell_field57}
+{END cellblock_grid_cell_field52}
+																			{BEGIN cellblock_grid_cell_field53}
 {
-	cellId: 'cell_field57',
+	cellId: 'cell_field53',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3659,10 +3439,10 @@ pdfDocument = {
           "alignment": '{$cont_plazo_align}',
   },
 
-{END cellblock_grid_cell_field57}
-																			{BEGIN cellblock_grid_cell_field58}
+{END cellblock_grid_cell_field53}
+																			{BEGIN cellblock_grid_cell_field54}
 {
-	cellId: 'cell_field58',
+	cellId: 'cell_field54',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3685,10 +3465,10 @@ pdfDocument = {
           "alignment": '{$cont_tipo_regimen_align}',
   },
 
-{END cellblock_grid_cell_field58}
-																			{BEGIN cellblock_grid_cell_field59}
+{END cellblock_grid_cell_field54}
+																			{BEGIN cellblock_grid_cell_field55}
 {
-	cellId: 'cell_field59',
+	cellId: 'cell_field55',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3711,10 +3491,10 @@ pdfDocument = {
           "alignment": '{$cont_fecha_firma_align}',
   },
 
-{END cellblock_grid_cell_field59}
-																			{BEGIN cellblock_grid_cell_field60}
+{END cellblock_grid_cell_field55}
+																			{BEGIN cellblock_grid_cell_field56}
 {
-	cellId: 'cell_field60',
+	cellId: 'cell_field56',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3737,10 +3517,10 @@ pdfDocument = {
           "alignment": '{$cont_secop_proceso_align}',
   },
 
-{END cellblock_grid_cell_field60}
-																			{BEGIN cellblock_grid_cell_field61}
+{END cellblock_grid_cell_field56}
+																			{BEGIN cellblock_grid_cell_field57}
 {
-	cellId: 'cell_field61',
+	cellId: 'cell_field57',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3763,10 +3543,10 @@ pdfDocument = {
           "alignment": '{$cont_secop_enlace_align}',
   },
 
-{END cellblock_grid_cell_field61}
-																			{BEGIN cellblock_grid_cell_field62}
+{END cellblock_grid_cell_field57}
+																			{BEGIN cellblock_grid_cell_field58}
 {
-	cellId: 'cell_field62',
+	cellId: 'cell_field58',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3789,10 +3569,10 @@ pdfDocument = {
           "alignment": '{$cont_sigep_align}',
   },
 
-{END cellblock_grid_cell_field62}
-																			{BEGIN cellblock_grid_cell_field63}
+{END cellblock_grid_cell_field58}
+																			{BEGIN cellblock_grid_cell_field59}
 {
-	cellId: 'cell_field63',
+	cellId: 'cell_field59',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3815,10 +3595,10 @@ pdfDocument = {
           "alignment": '{$cont_vigencias_futuras_align}',
   },
 
-{END cellblock_grid_cell_field63}
-																			{BEGIN cellblock_grid_cell_field64}
+{END cellblock_grid_cell_field59}
+																			{BEGIN cellblock_grid_cell_field60}
 {
-	cellId: 'cell_field64',
+	cellId: 'cell_field60',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3841,10 +3621,10 @@ pdfDocument = {
           "alignment": '{$vf_num_autorizacion_align}',
   },
 
-{END cellblock_grid_cell_field64}
-																			{BEGIN cellblock_grid_cell_field65}
+{END cellblock_grid_cell_field60}
+																			{BEGIN cellblock_grid_cell_field61}
 {
-	cellId: 'cell_field65',
+	cellId: 'cell_field61',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3867,10 +3647,10 @@ pdfDocument = {
           "alignment": '{$vf_fecha_align}',
   },
 
-{END cellblock_grid_cell_field65}
-																			{BEGIN cellblock_grid_cell_field66}
+{END cellblock_grid_cell_field61}
+																			{BEGIN cellblock_grid_cell_field62}
 {
-	cellId: 'cell_field66',
+	cellId: 'cell_field62',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3893,10 +3673,10 @@ pdfDocument = {
           "alignment": '{$vf_valor_align}',
   },
 
-{END cellblock_grid_cell_field66}
-																			{BEGIN cellblock_grid_cell_field67}
+{END cellblock_grid_cell_field62}
+																			{BEGIN cellblock_grid_cell_field63}
 {
-	cellId: 'cell_field67',
+	cellId: 'cell_field63',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3919,10 +3699,10 @@ pdfDocument = {
           "alignment": '{$cont_fechasistema_align}',
   },
 
-{END cellblock_grid_cell_field67}
-																			{BEGIN cellblock_grid_cell_field68}
+{END cellblock_grid_cell_field63}
+																			{BEGIN cellblock_grid_cell_field64}
 {
-	cellId: 'cell_field68',
+	cellId: 'cell_field64',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -3945,7 +3725,7 @@ pdfDocument = {
           "alignment": '{$cont_cesion_align}',
   },
 
-{END cellblock_grid_cell_field68}
+{END cellblock_grid_cell_field64}
 											],
 				{END row_grid_1}
 						{END grid_record}
@@ -5514,102 +5294,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_footcell_field64}
-																			{BEGIN cellblock_grid_footcell_field65}
-{
-	cellId: 'footcell_field65',
-	col:0,
-	row:0,
-			style: 'footcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [ true, true, true, true ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_footcell_field65}
-																			{BEGIN cellblock_grid_footcell_field66}
-{
-	cellId: 'footcell_field66',
-	col:0,
-	row:0,
-			style: 'footcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [ true, true, true, true ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_footcell_field66}
-																			{BEGIN cellblock_grid_footcell_field67}
-{
-	cellId: 'footcell_field67',
-	col:0,
-	row:0,
-			style: 'footcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [ true, true, true, true ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_footcell_field67}
-																			{BEGIN cellblock_grid_footcell_field68}
-{
-	cellId: 'footcell_field68',
-	col:0,
-	row:0,
-			style: 'footcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [ true, true, true, true ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_footcell_field68}
 											],
 				{END row_grid_2}
 							

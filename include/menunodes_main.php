@@ -7,136 +7,6 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNode = array();
 	$menuNode["id"] = "1";
-	$menuNode["name"] = "";
-	$menuNode["href"] = "";
-	$menuNode["type"] = "Group";
-	$menuNode["table"] = "";
-	$menuNode["style"] = "";
-	$menuNode["params"] = "";
-	$menuNode["parent"] = "0";
-	$menuNode["nameType"] = "Text";
-	$menuNode["linkType"] = "None";
-	$menuNode["pageType"] = strtolower("");//
-	$menuNode["pageId"] = "";
-	$menuNode["openType"] = "None";
-
-	$menuNode["icon"] = "glyphicon-th";
-	$menuNode["iconType"] = "2";
-	$menuNode["iconShow"] = "1";
-
-		$menuNode["color"] = "";
-
-	$menuNode["title"] = "";
-
-
-
-	$menuNodesObject->menuNodes["main"][] = $menuNode;
-	$menuNode = array();
-	$menuNode["id"] = "2";
-	$menuNode["name"] = "Administración";
-		$menuNode["href"] = "external.php?url=".rawurlencode("../GestionGlobal/");
-	$menuNode["type"] = "Leaf";
-	$menuNode["table"] = "";
-	$menuNode["style"] = "";
-	$menuNode["params"] = "";
-	$menuNode["parent"] = "1";
-	$menuNode["nameType"] = "Text";
-	$menuNode["linkType"] = "External";
-	$menuNode["pageType"] = strtolower("");//
-	$menuNode["pageId"] = "";
-	$menuNode["openType"] = "None";
-
-	$menuNode["icon"] = "glyphicon-new-window";
-	$menuNode["iconType"] = "2";
-	$menuNode["iconShow"] = "1";
-
-		$menuNode["color"] = "";
-
-	$menuNode["title"] = "Administración";
-
-
-
-	$menuNodesObject->menuNodes["main"][] = $menuNode;
-	$menuNode = array();
-	$menuNode["id"] = "3";
-	$menuNode["name"] = "Plan Anual de Adquisiciones";
-		$menuNode["href"] = "external.php?url=".rawurlencode("../GestionPAA/");
-	$menuNode["type"] = "Leaf";
-	$menuNode["table"] = "";
-	$menuNode["style"] = "";
-	$menuNode["params"] = "";
-	$menuNode["parent"] = "1";
-	$menuNode["nameType"] = "Text";
-	$menuNode["linkType"] = "External";
-	$menuNode["pageType"] = strtolower("");//
-	$menuNode["pageId"] = "";
-	$menuNode["openType"] = "None";
-
-	$menuNode["icon"] = "glyphicon-new-window";
-	$menuNode["iconType"] = "2";
-	$menuNode["iconShow"] = "1";
-
-		$menuNode["color"] = "";
-
-	$menuNode["title"] = "Plan Anual de Adquisiciones";
-
-
-
-	$menuNodesObject->menuNodes["main"][] = $menuNode;
-	$menuNode = array();
-	$menuNode["id"] = "4";
-	$menuNode["name"] = "Recursos Físicos";
-	$menuNode["href"] = "../GestionRF/";
-	$menuNode["type"] = "Leaf";
-	$menuNode["table"] = "";
-	$menuNode["style"] = "";
-	$menuNode["params"] = "";
-	$menuNode["parent"] = "1";
-	$menuNode["nameType"] = "Text";
-	$menuNode["linkType"] = "External";
-	$menuNode["pageType"] = strtolower("");//
-	$menuNode["pageId"] = "list";
-	$menuNode["openType"] = "None";
-
-	$menuNode["icon"] = "glyphicon-new-window";
-	$menuNode["iconType"] = "2";
-	$menuNode["iconShow"] = "1";
-
-		$menuNode["color"] = "";
-
-	$menuNode["title"] = "Recursos Físicos";
-
-
-
-	$menuNodesObject->menuNodes["main"][] = $menuNode;
-	$menuNode = array();
-	$menuNode["id"] = "5";
-	$menuNode["name"] = "Gestión de Contratos";
-		$menuNode["href"] = "external.php?url=".rawurlencode("../GestionContratos/");
-	$menuNode["type"] = "Leaf";
-	$menuNode["table"] = "";
-	$menuNode["style"] = "";
-	$menuNode["params"] = "";
-	$menuNode["parent"] = "1";
-	$menuNode["nameType"] = "Text";
-	$menuNode["linkType"] = "External";
-	$menuNode["pageType"] = strtolower("");//
-	$menuNode["pageId"] = "";
-	$menuNode["openType"] = "None";
-
-	$menuNode["icon"] = "glyphicon-new-window";
-	$menuNode["iconType"] = "2";
-	$menuNode["iconShow"] = "1";
-
-		$menuNode["color"] = "";
-
-	$menuNode["title"] = "Gestión de Contratos";
-
-
-
-	$menuNodesObject->menuNodes["main"][] = $menuNode;
-	$menuNode = array();
-	$menuNode["id"] = "6";
 	$menuNode["name"] = "Mis datos personales";
 	$menuNode["href"] = "";
 	$menuNode["type"] = "Group";
@@ -150,8 +20,8 @@ function getMenuNodes_main($menuNodesObject)
 	$menuNode["pageId"] = "";
 	$menuNode["openType"] = "None";
 
-	$menuNode["icon"] = "";
-	$menuNode["iconType"] = "0";
+	$menuNode["icon"] = "glyphicon-user";
+	$menuNode["iconType"] = "2";
 	$menuNode["iconShow"] = "1";
 
 		$menuNode["color"] = "";
@@ -162,14 +32,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "7";
+	$menuNode["id"] = "2";
 	$menuNode["name"] = "Datos personales";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "contractor_master";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "6";
+	$menuNode["parent"] = "1";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -188,14 +58,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "8";
+	$menuNode["id"] = "3";
 	$menuNode["name"] = "Registrar firma";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "contractor_master_signature";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "6";
+	$menuNode["parent"] = "1";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -214,7 +84,7 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "9";
+	$menuNode["id"] = "4";
 	$menuNode["name"] = "Mis contratos";
 	$menuNode["href"] = "";
 	$menuNode["type"] = "Group";
@@ -228,8 +98,8 @@ function getMenuNodes_main($menuNodesObject)
 	$menuNode["pageId"] = "";
 	$menuNode["openType"] = "None";
 
-	$menuNode["icon"] = "";
-	$menuNode["iconType"] = "0";
+	$menuNode["icon"] = "glyphicon-file";
+	$menuNode["iconType"] = "2";
 	$menuNode["iconShow"] = "1";
 
 		$menuNode["color"] = "";
@@ -240,14 +110,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "10";
+	$menuNode["id"] = "5";
 	$menuNode["name"] = "Contrato activo";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "contrato";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "9";
+	$menuNode["parent"] = "4";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -266,7 +136,7 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "11";
+	$menuNode["id"] = "6";
 	$menuNode["name"] = "Informes de supervisión";
 	$menuNode["href"] = "";
 	$menuNode["type"] = "Group";
@@ -280,8 +150,8 @@ function getMenuNodes_main($menuNodesObject)
 	$menuNode["pageId"] = "";
 	$menuNode["openType"] = "None";
 
-	$menuNode["icon"] = "";
-	$menuNode["iconType"] = "0";
+	$menuNode["icon"] = "glyphicon-th-list";
+	$menuNode["iconType"] = "2";
 	$menuNode["iconShow"] = "1";
 
 		$menuNode["color"] = "";
@@ -292,14 +162,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "12";
+	$menuNode["id"] = "7";
 	$menuNode["name"] = "Informes de supervisión";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "informe_intersup_contratista";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "11";
+	$menuNode["parent"] = "6";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -318,7 +188,7 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "13";
+	$menuNode["id"] = "8";
 	$menuNode["name"] = "Caracterización";
 	$menuNode["href"] = "";
 	$menuNode["type"] = "Group";
@@ -344,14 +214,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "14";
+	$menuNode["id"] = "9";
 	$menuNode["name"] = "";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "contractor_master_chart_eps";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "13";
+	$menuNode["parent"] = "8";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("Chart");//
@@ -370,14 +240,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "15";
+	$menuNode["id"] = "10";
 	$menuNode["name"] = "";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "contractor_master_chart_fondopension";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "13";
+	$menuNode["parent"] = "8";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("Chart");//
@@ -396,14 +266,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "16";
+	$menuNode["id"] = "11";
 	$menuNode["name"] = "";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "contractor_master_Chart_genero";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "13";
+	$menuNode["parent"] = "8";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("Chart");//
@@ -422,14 +292,14 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "17";
+	$menuNode["id"] = "12";
 	$menuNode["name"] = "";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "contractor_master_view";
 	$menuNode["style"] = "";
 	$menuNode["params"] = "";
-	$menuNode["parent"] = "13";
+	$menuNode["parent"] = "8";
 	$menuNode["nameType"] = "Text";
 	$menuNode["linkType"] = "Internal";
 	$menuNode["pageType"] = strtolower("List");//
@@ -448,7 +318,7 @@ function getMenuNodes_main($menuNodesObject)
 
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
-	$menuNode["id"] = "18";
+	$menuNode["id"] = "13";
 	$menuNode["name"] = "";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";

@@ -28,8 +28,8 @@
 		>
 							{BEGIN top_block}
 <div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
-		data-v-width="2"
-	data-v-margin="0"
+		data-v-width="4"
+	data-v-margin="1"
 	
 >		
 	 
@@ -46,8 +46,8 @@
 {END top_block}
 									{BEGIN above-grid_block}
 <div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
-		data-v-width="2"
-	data-v-margin="0"
+		data-v-width="4"
+	data-v-margin="1"
 	
 >		
 	</div>		
@@ -2011,20 +2011,57 @@
 						</div>
 				</div>
 	</div>
-</div>  	
-				 
-	 
-		
-					<table 
+</div>  											<table 
 	data-body-align="center"
 	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
 	class="r-edit-form" cellpadding="0" cellspacing="0" 
 	{$grid_hiddenattr} 
 		data-form-width="1"
 		
-		data-v-width="2"
+		data-v-width="4"
 	>
 	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ct_fecha_nacimiento_mun_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ct_fecha_nacimiento_mun}  r-vertical-field" data-fieldname="ct_fecha_nacimiento_mun" data-signal-error-for="ct_fecha_nacimiento_mun{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="ct_fecha_nacimiento_mun" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ct_fecha_nacimiento_mun}">
+		
+		{BEGIN ct_fecha_nacimiento_mun_label}{$label contractor_master_view ct_fecha_nacimiento_mun }{END ct_fecha_nacimiento_mun_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ct_fecha_nacimiento_mun_value}	</div>
+
+		
+</div>
+
+
+{END ct_fecha_nacimiento_mun_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c}
+								</tr>
+	 
+	 
+		
 						<tr>
 						
 
@@ -2037,7 +2074,7 @@
 				data-fullwidth
 		
 			data-cellId="grid_c3" data-pageid="{$pageid}"
-		data-v-cell="2"
+		data-v-cell="4"
 		
 >
 	<div edit-form-cell class="clearfix">
@@ -2048,8 +2085,8 @@
 {END grid_block}
 									{BEGIN below-grid_block}
 <div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
-		data-v-width="2"
-	data-v-margin="0"
+		data-v-width="4"
+	data-v-margin="1"
 	
 >		
 	 

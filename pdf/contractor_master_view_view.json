@@ -1714,6 +1714,9 @@ pdfDocument = {
 		margin: [0,0,0,15],
 	},
 				
+				
+			{"hidden":"{$item_hide_integrated_edit_field22}","stack":[{"text":"{$jslabel contractor_master_view ct_fecha_nacimiento_mun }","bold":true},{"text":{$ct_fecha_nacimiento_mun_pdfvalue}}],"margin":[0,0,0,15]},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

@@ -111,6 +111,11 @@ pdfDocument = {
 			"%",
 						{END row_grid_3}
 			 
+								{BEGIN row_grid_4}
+						
+			"%",
+						{END row_grid_4}
+			 
 				],
 	
 		body: [
@@ -288,6 +293,45 @@ pdfDocument = {
 			},
 							],
 				{END row_grid_3}
+								{BEGIN row_grid_4}
+				[
+												{BEGIN cellblock_grid_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c}
+			colSpan: {$colspan_grid_c},
+			{END colspan_grid_c}
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel informe_intersup_oe_contratista sup_aprueba }","bold":true},{"text":{$sup_aprueba_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c}
+																		{ 
+				cellId: 'c',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+							],
+				{END row_grid_4}
 					]
 	}
 }

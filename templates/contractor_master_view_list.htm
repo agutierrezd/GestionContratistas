@@ -113,6 +113,19 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_contractor_name}</span>
 						</div>
 		{END searchCtrlBlock_contractor_name}
+																{BEGIN searchCtrlBlock_ct_fecha_nacimiento_mun}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ct_fecha_nacimiento_mun}" {$filterRow_attrs_ct_fecha_nacimiento_mun}>
+			<label>{$label contractor_master_view ct_fecha_nacimiento_mun }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ct_fecha_nacimiento_mun}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ct_fecha_nacimiento_mun}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ct_fecha_nacimiento_mun}</span>
+						</div>
+		{END searchCtrlBlock_ct_fecha_nacimiento_mun}
 																{BEGIN searchCtrlBlock_contractor_city}
 
 
@@ -817,7 +830,7 @@
 	{$cell_grid_cell_field10}
 	{$recordattrs}
 	class="
-		r-align-right r-ori-vert				{$contractor_name_class}
+		r-align-right				{$contractor_name_class}
 			"
 
 			data-field="contractor_name"
@@ -832,6 +845,13 @@
 	{$label contractor_master_view contractor_name }	</span>
 {END contractor_name_fieldheadercolumn}
 
+	 
+		{BEGIN ct_fecha_nacimiento_mun_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label3" {$item_grid_field_label3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ct_fecha_nacimiento_mun">
+	{$label contractor_master_view ct_fecha_nacimiento_mun }	</span>
+{END ct_fecha_nacimiento_mun_fieldheadercolumn}
+
 	
 	</td>
 	{END cellblock_grid_cell_field10}
@@ -842,7 +862,7 @@
 	{$cell_grid_cell_field11}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$contractor_name_class}
+						{$contractor_name_class}
 			"
 
 			data-field="contractor_name"
@@ -855,7 +875,12 @@
 <span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_name" data-default-width >
 {$contractor_name_value}
 </span>
-{END contractor_name_fieldcolumn}	
+{END contractor_name_fieldcolumn}	 
+		{BEGIN ct_fecha_nacimiento_mun_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field3" {$item_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ct_fecha_nacimiento_mun" data-default-width >
+{$ct_fecha_nacimiento_mun_value}
+</span>
+{END ct_fecha_nacimiento_mun_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field11}
 						 

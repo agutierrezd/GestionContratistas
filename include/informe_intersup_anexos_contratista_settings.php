@@ -983,7 +983,7 @@ $tdatainforme_intersup_anexos_contratista[".hideMobileList"] = array();
 	$fdata["GoodName"] = "anexo_fecha";
 	$fdata["ownerTable"] = "informe_intersup_anexos";
 	$fdata["Label"] = GetFieldLabel("informe_intersup_anexos_contratista","anexo_fecha");
-	$fdata["FieldType"] = 7;
+	$fdata["FieldType"] = 135;
 
 	
 	

@@ -812,6 +812,7 @@ $proto13["m_columns"][] = "dem_genero";
 $proto13["m_columns"][] = "dem_ocupacion";
 $proto13["m_columns"][] = "dem_profesion";
 $proto13["m_columns"][] = "ct_fecha_nacimiento";
+$proto13["m_columns"][] = "ct_fecha_nacimiento_mun";
 $proto13["m_columns"][] = "ct_nacionalidad";
 $proto13["m_columns"][] = "dem_edad";
 $proto13["m_columns"][] = "dem_educacion";

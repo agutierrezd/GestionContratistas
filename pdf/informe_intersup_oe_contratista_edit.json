@@ -301,9 +301,6 @@ pdfDocument = {
 		
 	//	dynamic colspan/rowspan
 
-					{BEGIN colspan_grid_c3}
-			colSpan: {$colspan_grid_c3},
-			{END colspan_grid_c3}
 		
 						
 	
@@ -320,13 +317,33 @@ pdfDocument = {
   },
 
 {END cellblock_grid_c3}
-																		{ 
-				cellId: 'c3',
-				row:  0,
-				col:  1,
-				text: ''
-			},
-							],
+																			{BEGIN cellblock_grid_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel informe_intersup_oe_contratista sup_aprueba }","bold":true},{"text":{$sup_aprueba_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c}
+											],
 				{END row_grid_3}
 					]
 	}

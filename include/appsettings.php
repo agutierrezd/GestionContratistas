@@ -532,7 +532,7 @@ $globalSettings["isDynamicPerm"] = true;
 
 
 
-$globalSettings["LandingPageType"] = 1;
+$globalSettings["LandingPageType"] = 2;
 $globalSettings["LandingTable"] = "contractor_master";
 $globalSettings["LandingPage"] = "list";
 $globalSettings["LandingURL"] = "contractor_master_list.php?page=list";
@@ -620,7 +620,7 @@ $cEmailField = "contractor_email";
 $globalSettings["usersTableInProject"] = true;
 $globalSettings["usersDatasourceTable"] = "contractor_master";
 
-$globalSettings["jwtSecret"] = "8nddnelSrGf3aupZ1HRP";
+$globalSettings["jwtSecret"] = "G0LCddvpGgIbjmvB0Xng";
 
 if( $cDisplayNameField == '' )
 	$cDisplayNameField = $cUserNameField;
@@ -635,7 +635,7 @@ $arrCustomPages = array();
 																					$cUserNameFieldType	= 200;
 																					$cPasswordFieldType	= 200;
 																																																									$cEmailFieldType = 200;
-																																																																																																																																																																																																																																																																																																																																																																																										
+																																																																																																																																																																																																																																																																																																																																																																																																			
 $gPermissionsRefreshTime = 0;
 $gPermissionsRead = false;
 
@@ -645,9 +645,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "334_1597589837";
+$projectBuildKey = "387_1600087349";
 $wizardBuildKey = "34656";
-$projectBuildNumber = "334";
+$projectBuildNumber = "387";
 
 $mlang_messages = array();
 $mlang_charsets = array();

@@ -274,6 +274,49 @@
 								</td>
 			{END cellblock_grid_c3}
 								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+	ocolspan="2"		data-cellId="grid_c" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sup_aprueba_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sup_aprueba}  r-vertical-field" data-fieldname="sup_aprueba" data-signal-error-for="sup_aprueba{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="sup_aprueba" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_sup_aprueba}">
+		
+		{BEGIN sup_aprueba_label}{$label informe_intersup_oe_contratista sup_aprueba }{END sup_aprueba_label}
+	</label>
+	<div class="" >
+		{$sup_aprueba_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END sup_aprueba_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c}
+								</tr>
 			</tbody></table>
 {END grid_block}
 									{BEGIN below-grid_block}
